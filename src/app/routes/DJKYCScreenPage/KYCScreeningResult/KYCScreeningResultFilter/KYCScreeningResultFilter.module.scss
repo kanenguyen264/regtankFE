@@ -1,0 +1,353 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.Popover {
+  border-radius: toRem(6);
+  :global(.MuiCardContent-root) {
+    padding-bottom: toRem(0);
+  }
+  :global(.MuiAutocomplete-root .MuiOutlinedInput-root .MuiAutocomplete-input) {
+    height: toRem(36);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: toRem(12);
+    color: $grayText;
+    width: 100%;
+  }
+  :global(.MuiAutocomplete-popper) {
+    width: auto !important;
+    padding-top: toRem(10);
+  }
+  :global(.MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"]) {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  hr {
+    background-color: $sliver;
+    margin: {
+      top: toRem(18.5);
+      bottom: toRem(18.5);
+    }
+  }
+}
+.Label {
+  font-size: toRem(12);
+  font-weight: 500;
+  margin-bottom: toRem(12);
+}
+.Buttons {
+  margin-top: toRem(30);
+
+  :global(.MuiButton-root) {
+    font-weight: 600;
+  }
+}
+.FilterAction {
+  background: $primary;
+  color: $white;
+  &:hover {
+    background: $primary;
+  }
+  &.Outlined {
+    background: $white;
+    color: $steelGray;
+    border: 1px solid $steelGray;
+
+    &:hover {
+      background-color: $white;
+      color: darken($steelGray, 5%);
+      border-color: darken($steelGray, 5%);
+    }
+  }
+}
+
+.FilterActionOutlined {
+  background: $white;
+  color: $primary;
+  border: 1px solid $primary;
+
+  &:hover {
+    background-color: $white;
+    color: solid $primary;
+    border-color: solid $primary;
+  }
+}
+
+.CloseIcon {
+  right: toRem(0);
+  top: toRem(-10);
+}
+
+.MuiPickersDay-disableFuture {
+  color: red !important;
+}
+
+.FilterContainer {
+  display: flex;
+  align-items: center;
+  padding: toRem(16) toRem(24) toRem(16) toRem(24);
+  border-bottom: 1px solid $grayText1;
+  background-color: $disabledBg;
+}
+
+.textFilter {
+  font-size: toRem(16);
+  line-height: toRem(19);
+  color: $steelGray;
+  margin-right: toRem(12);
+}
+
+.FilterButtonActived {
+  font-weight: 500;
+  min-width: toRem(129);
+  height: toRem(40);
+  background: $white;
+  color: $primary;
+  border: 1px solid $primary;
+  padding: toRem(10) toRem(12) toRem(10) toRem(16);
+  svg path {
+    fill: $primary;
+    stroke: $primary;
+  }
+}
+
+.FilterButtonMore {
+  box-shadow: 0px 2px 4px rgba(34, 59, 96, 0.12);
+}
+
+.filterItemMargin {
+  margin-right: toRem(12);
+}
+
+.ButtonText {
+  font-weight: 500;
+  font-size: toRem(15);
+  line-height: toRem(20);
+  letter-spacing: 0.01em;
+  color: $darkGray;
+}
+.Content {
+  width: toRem(340);
+  :global(.MuiOutlinedInput-root) {
+    &:hover {
+      :global(.MuiOutlinedInput-notchedOutline) {
+        border-color: $default;
+      }
+    }
+
+    &:global(.Mui-focused) {
+      :global(.MuiOutlinedInput-notchedOutline) {
+        border-color: $primary !important;
+      }
+    }
+    legend {
+      display: none;
+    }
+    fieldset {
+      border: toRem(1) solid $grayBorder;
+    }
+  }
+
+  :global(.MuiInput-underline) {
+    &:before {
+      border-bottom: 1px solid $grayLight;
+    }
+    &:after {
+      border-bottom: 2px solid $primary;
+    }
+    &:global(.Mui-error):after {
+      border-color: $errorBorder;
+    }
+    &:hover {
+      &:before {
+        border-bottom: 1px solid $default;
+      }
+    }
+  }
+}
+.FilterHeader {
+  height: toRem(40);
+  margin-bottom: toRem(-20);
+}
+.searchBox {
+  :global(.form-group) {
+    min-width: toRem(221) !important;
+    input {
+      padding-right: toRem(20);
+      &::placeholder {
+        font-size: toRem(14) !important;
+        font-weight: 400 !important;
+        color: $default !important;
+      }
+    }
+  }
+}
+.formStyle {
+  overflow: hidden;
+  width: 100%;
+}
+
+.textOverflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  $white-space: nowrap;
+}
+.dropdown {
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.dash {
+  height: toRem(40);
+  display: flex;
+  align-items: center;
+  margin: 0 toRem(9) 0 toRem(9);
+  color: $defaultLight;
+  margin-top: -2px;
+}
+
+.filterSelect {
+  :global(.MuiButton-outlinedDropdown) {
+    border: 1px solid $grayLight;
+    border-radius: 8px;
+    padding: toRem(10) toRem(11) toRem(10) toRem(16);
+
+    &:hover {
+      border-color: $primary;
+      :global(.MuiSvgIcon-root path) {
+        stroke: $primary;
+      }
+    }
+
+
+    :global(.MuiButton-endIcon) {
+      padding-top: 0;
+      margin-left: toRem(16);
+      height: auto;
+      top: auto;
+      transform: none;
+      :global(.MuiSvgIcon-root) {
+        width: toRem(10);
+        height: auto;
+      }
+
+      path {
+        stroke: $default;
+        fill: $white;
+      }
+    }
+  }
+}
+
+.singleSelect,
+.multiSelect,
+.iconSelect {
+  > :global(.MuiPaper-root) {
+    width: toRem(260);
+    margin-top: toRem(8);
+    box-shadow: 0 0 8px rgba(37, 40, 43, 0.12);
+    border-radius: 8px;
+  }
+
+  :global(.MuiAutocomplete-popper) {
+    padding-bottom: toRem(12);
+    padding-top: 0;
+  }
+
+  :global(.MuiCardContent-root) {
+    padding: 0;
+  }
+
+  :global(.MuiAutocomplete-listbox) {
+    padding-top: 0;
+    overflow: visible;
+
+    padding-bottom: 0;
+  }
+  :global(.MuiAutocomplete-root) {
+    padding: toRem(18) toRem(24);
+  }
+
+  :global(.MuiAutocomplete-option) {
+    margin: 0;
+    height: auto;
+    padding: toRem(12) toRem(24);
+  }
+
+  :global(.RegScrollbarVTrack) {
+    right: toRem(8);
+  }
+
+  :global(.MuiAutocomplete-popupIndicator) {
+    display: none;
+  }
+
+  :global(.MuiAutocomplete-clearIndicator) {
+    margin-top: 1px;
+  }
+
+  :global(.optionText) {
+    &:active {
+      color: $primary;
+      background-color: rgba($primary, 0.04);
+    }
+  }
+}
+
+.iconSelect {
+  > :global(.MuiPaper-root) {
+    width: toRem(320);
+  }
+
+  :global(.optionText) {
+    width: toRem(320);
+  }
+}
+
+.morePopover,
+.contentItem {
+  box-sizing: border-box;
+}
+
+.morePopover {
+  :global(.MuiPaper-root) {
+    box-shadow: 0 2px 5px rgba(34, 59, 96, 0.14);
+    border-radius: 8px;
+    width: toRem(400);
+  }
+
+  :global(.RegCard-header) {
+    padding: toRem(16) toRem(24);
+  }
+  :global(.MuiInputBase-input::placeholder) {
+    opacity: 1;
+  }
+
+  .CloseIcon {
+    :global(.MuiSvgIcon-root path) {
+      fill: $bodyText;
+    }
+  }
+
+  :global(.RegCard-body) {
+    padding: 0 0 toRem(24);
+  }
+
+  .contentItem {
+    padding-top: 0;
+    &:not(:empty) {
+      padding: toRem(24) toRem(24) 0;
+    }
+  }
+
+  .Content {
+    width: 100%;
+    > div {
+      margin-top: 0;
+    }
+  }
+
+  .Buttons {
+    padding: 0 toRem(24);
+  }
+}

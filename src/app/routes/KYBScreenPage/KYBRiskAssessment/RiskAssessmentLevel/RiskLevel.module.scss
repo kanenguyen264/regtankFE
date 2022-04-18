@@ -1,0 +1,22 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.riskLevel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: toRem(32);
+  :global(.MuiButton-root) {
+    min-width: toRem(187);
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.textSelect {
+  font-size: toRem(12);
+  font-weight: 500;
+  color: $defaultLight;
+  text-align: center;
+  margin-bottom: toRem(20);
+}

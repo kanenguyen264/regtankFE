@@ -1,0 +1,189 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.Container {
+  :global {
+    .fade-enter {
+      opacity: 0;
+    }
+    .fade-exit {
+      opacity: 1;
+    }
+    .fade-enter-active {
+      opacity: 1;
+    }
+    .fade-exit-active {
+      opacity: 0;
+    }
+    .fade-enter-active,
+    .fade-exit-active {
+      transition: opacity 125ms;
+    }
+  }
+}
+.PageHeading {
+  composes: mb-0 from global;
+}
+
+.TextDescription {
+  font-size: rem(14px);
+  color: $default;
+  font-weight: 400;
+}
+.Link {
+  font-size: rem(14px);
+  color: $primary;
+  font-weight: 500;
+}
+.PaddingTopText {
+  margin-top: toRem(24);
+}
+.ribbon {
+  width: rem(80px);
+  height: rem(80px);
+  overflow: hidden;
+  position: absolute;
+}
+
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+  border: rem(3px) solid $primary;
+}
+
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: rem(120px);
+  background-color: #3199fc;
+  box-shadow: 0 rem(5px) rem(10px) rgba(0, 0, 0, 0.1);
+  color: #fff;
+  text-align: center;
+  padding: rem(5px) 0;
+  font-size: rem(14px);
+  font-weight: 500;
+}
+
+/* top left*/
+.ribbon-top-left {
+  top: rem(-29px);
+  left: rem(-26px);
+}
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.ribbon-top-left::before {
+  top: 0;
+  right: 0;
+}
+.ribbon-top-left::after {
+  bottom: 0;
+  left: 0;
+}
+.ribbon-top-left span {
+  right: rem(-10px);
+  top: rem(13px);
+  transform: rotate(-45deg);
+}
+
+.hasRibbon {
+  padding-left: rem(50px);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: toRem(16);
+  justify-content: space-between;
+}
+.noteRisk {
+  margin-bottom: 0;
+}
+
+.sanctionText {
+  font-size: rem(20px);
+  line-height: 1.3;
+  padding: 5px 25px;
+  border-radius: 40px;
+  font-weight: 300;
+  background: #ea2134;
+  color: #ffffff;
+}
+.approveBtnGroup {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .matchHeight {
+    min-height: rem(951.5px);
+  }
+}
+@media (min-width: 1366px) {
+  .matchHeight {
+    min-height: rem(964px);
+  }
+}
+@media (min-width: 1680px) {
+  .matchHeight {
+    min-height: rem(960px);
+  }
+}
+@media (min-width: 1920px) {
+  .matchHeight {
+    min-height: rem(973px);
+  }
+}
+@media (max-width: 767px) {
+  .approveBtnGroup {
+    display: block;
+    div:nth-child(1) {
+      hr {
+        display: none;
+      }
+      margin-bottom: rem(10px);
+    }
+    div:nth-child(2) {
+      float: right;
+    }
+  }
+}
+.riskScoreContainer {
+  :global(.RegCard-body) {
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.buttonGroup {
+  :global(.MuiButton-root:not(.MuiButton-outlinedIcon, .MuiButton-outlinedIconDefault)) {
+    width: toRem(120);
+  }
+}
+.noteContainer {
+  :global(.RegCard-root) {
+    border: unset;
+  }
+  :global(.RegCard-header) {
+    padding-bottom: 0px;
+  }
+  :global(.RegCard-body) {
+    padding-top: 0px;
+  }
+}
+.iconBack {
+  color: #232323;
+  padding: 0;
+}
+.MarginActivity {
+  margin-top: toRem(10);
+}
+.textRescreen {
+  color: rgba(35, 35, 35, 0.7);
+  font-weight: 500;
+  font-size: toRem(12);
+  padding-right: toRem(16);
+}

@@ -1,0 +1,237 @@
+{
+  "type": "array",
+  "minItems": 10,
+  "maxItems": 20,
+  "items": {
+    "$ref": "#/definitions/user"
+  },
+  "definitions": {
+    "keyword": {
+      "type": "object",
+      "required": ["text", "color"],
+      "properties": {
+        "text": {
+          "type": "string",
+          "faker": {
+            "random.arrayElement": [["PEP", "LF", "AM", "FR","SA"]]
+          }
+        },
+        "color": {
+          "type": "string",
+          "faker": {
+            "random.arrayElement": [
+              ["#D3F1F6", "#DCEFDC", "#DADCF0", "#FBD3E0"]
+            ]
+          }
+        }
+      }
+    },
+
+    "user": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "gender",
+        "bob",
+        "nationality",
+        "dobflag",
+        "country",
+        "keywords",
+        "avatar",
+        "keydata",
+        "futherinformation",
+        "connection",
+        "source"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "faker": {
+            "fake": "KYC{{random.number}}"
+          }
+        },
+        "source": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "keywords",
+            "creationDate",
+            "title",
+            "summary",
+            "original"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "faker": {
+                "fake": "KYC{{random.number}}"
+              }
+            },
+            "name": {
+              "type": "string",
+              "faker": "internet.domainName"
+            },
+            "title": {
+              "type": "string",
+              "faker": "name.findName"
+            },
+            "summary": {
+              "type": "string",
+              "faker": "name.findName"
+            },
+            "original": {
+              "type": "string",
+              "faker": "random.domain_suffix"
+            },
+            "keywords": {
+              "type": "array",
+              "minItems": 0,
+              "maxItems": 5,
+              "items": {
+                "$ref": "#/definitions/keyword"
+              }
+            },
+            "creationDate": {
+              "type": "string",
+              "faker": {
+                "date.recent": [10]
+              }
+            }
+          }
+        },
+
+        "connection": {
+          "type": "object",
+          "required": ["id", "name", "connection", "keywords", "pep"],
+          "properties": {
+            "id": {
+              "type": "string",
+              "faker": {
+                "fake": "KYC{{random.number}}"
+              }
+            },
+            "name": {
+              "type": "string",
+              "faker": "name.findName"
+            },
+            "connection": {
+              "type": "string",
+              "faker": "name.findName"
+            },
+
+            "keywords": {
+              "type": "array",
+              "minItems": 0,
+              "maxItems": 5,
+              "items": {
+                "$ref": "#/definitions/keyword"
+              }
+            },
+            "pep": {
+              "type": "number",
+              "faker": {
+                "random.number": [
+                  {
+                    "min": 1,
+                    "max": 10
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "name": {
+          "type": "string",
+          "faker": "name.findName"
+        },
+        "avatar": {
+          "type": "string",
+          "faker": "image.imageUrl"
+        },
+        "gender": {
+          "type": "string",
+          "faker": {
+            "random.arrayElement": [["Male", "Female", "Other"]]
+          }
+        },
+        "bob": {
+          "type": "number",
+          "faker": "date.past"
+        },
+        "nationality": {
+          "type": "string",
+          "faker": {
+            "address.countryCode": [2]
+          }
+        },
+        "dobflag": {
+          "type": "string",
+          "faker": {
+            "address.countryCode": [2]
+          }
+        },
+        "country": {
+          "type": "string",
+          "faker": {
+            "address.countryCode": [2]
+          }
+        },
+        "keywords": {
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 5,
+          "items": {
+            "$ref": "#/definitions/keyword"
+          }
+        },
+        "keydata": {
+          "name": {
+            "type": "string",
+            "faker": "name.findName"
+          },
+          "email": {
+            "type": "string",
+            "faker": "internet.email"
+          },
+          "telephone": {
+            "type": "string",
+            "faker": "phone.phoneNumber"
+          },
+          "address": {
+            "type": "string",
+            "faker": "address.streetAddress"
+          }
+        },
+        "futherinformation": {
+          "political": {
+            "type": "string",
+            "faker": "name.findName"
+          },
+          "notes": {
+            "type": "string",
+            "faker": "random.words"
+          }
+        },
+        "connections": {
+          "type": "array",
+          "minItems": 30,
+          "maxItems": 40,
+          "items": {
+            "$ref": "#/definitions/user/properties/connection"
+          }
+        },
+
+        "sources": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 6,
+          "items": {
+            "$ref": "#/definitions/user/properties/source"
+          }
+        }
+      }
+    }
+  }
+}

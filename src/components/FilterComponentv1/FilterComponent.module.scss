@@ -1,0 +1,567 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+$gutter: toRem(26);
+
+.itemContainer {
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom: 1 solid #f4f4f4;
+}
+.headerTitle {
+  font-size: toRem(21) !important;
+  padding-top: toRem(20);
+  padding-left: toRem(20);
+  border-bottom: 1 solid #f4f4f4;
+  padding-bottom: toRem(20);
+  color: #252525;
+}
+.JRCardStyle {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.itemContent {
+  padding-left: toRem(20);
+  padding-bottom: toRem(10);
+  padding-top: toRem(10);
+}
+.itemPadding {
+  padding-left: toRem(20);
+  padding-bottom: toRem(10);
+  padding-top: toRem(10);
+}
+.marginTop {
+  margin-top: -1torem !important;
+}
+.textStatus {
+  font-size: 1torem !important;
+  color: #252525 !important;
+}
+.description {
+  font-size: 1torem !important;
+  color: #808080 !important;
+}
+.textDateTime {
+  color: #9e9e9e !important;
+  font-size: 1torem !important;
+}
+.Link {
+  color: #3f51b5 !important;
+  cursor: pointer;
+  svg {
+    margin-right: toRem(9.4);
+    height: toRem(16.37);
+    width: toRem(17.12);
+    margin-top: toRem(-6);
+  }
+}
+.Ids {
+  // @include table-cell-lines(1);
+  width: toRem(100);
+  height: toRem(22);
+}
+.TextLink {
+  color: green !important;
+}
+.textActivityDateTime {
+  color: #9e9e9e;
+  font-size: toRem(15);
+  font-weight: 400;
+}
+
+.MoreFilterButtonContainedActive {
+  border: 1px solid $primary !important;
+  svg path {
+    stroke: $primary;
+  }
+}
+.FilterButton {
+  background-color: white !important;
+}
+.searchBox {
+  :global(.form-group) {
+    min-width: toRem(222) !important;
+    input {
+      font-size: toRem(12);
+      padding-right: toRem(0);
+      &::placeholder {
+        font-size: toRem(12) !important;
+        font-weight: 500 !important;
+        color: $default !important;
+      }
+    }
+  }
+  @media (max-width: 1440px) {
+    :global(.search-icon) {
+      left: 2px !important;
+    }
+    :global(.form-group) {
+      input {
+        padding-left: toRem(36) !important;
+      }
+    }
+  }
+}
+
+.FilterBorder::placeholder {
+  font-size: toRem(14);
+  color: #a3a3a3;
+}
+.FilterButtonContainer {
+  background: $primary;
+  color: white;
+  &:hover {
+    background: $primary;
+  }
+  min-width: toRem(104);
+  height: toRem(36);
+}
+
+.Popover {
+  border-radius: toRem(5);
+  :global(.MuiCardContent-root) {
+    padding: toRem(16) toRem(24);
+  }
+  :global(.MuiFormGroup-row) {
+    margin-top: toRem(-8.5);
+  }
+  hr {
+    background-color: $borderTable;
+    margin: {
+      top: toRem(18.5);
+      bottom: toRem(18.5);
+    }
+  }
+
+  &.NameFilter {
+    :global(.MuiAutocomplete-popper) {
+      width: 100% !important;
+    }
+    :global(.MuiCardContent-root) {
+      padding: toRem(16);
+    }
+    :global(.MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"]) {
+      padding: 2;
+    }
+  }
+}
+.checkBoxStyle {
+  color: $primary;
+}
+.formStyle {
+  overflow: hidden;
+  width: 100%;
+}
+.checkBox {
+  padding: 0px !important;
+  margin-right: toRem(10);
+}
+.popoverContainer {
+  max-height: 100;
+  overflow-y: auto;
+}
+.popoverBody {
+  height: 50;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  padding-left: toRem(16);
+  padding-right: toRem(16);
+}
+.textOverflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  // margin-left: 0px !important;
+  // margin-right: 0px !important;
+}
+
+.textLabel {
+  font-weight: 500;
+  padding-bottom: toRem(6);
+  padding-top: toRem(6);
+}
+
+.labelList {
+  padding-left: toRem(24);
+}
+@media (min-width: 1366) {
+  .labelList {
+    padding-left: toRem(22);
+  }
+}
+@media (min-width: 1920) {
+  .labelList {
+    padding-left: toRem(16);
+  }
+}
+.mr10 {
+  margin-right: toRem(12);
+}
+.textFilter {
+  font-size: toRem(14);
+  font-weight: 400;
+}
+.filterItemMargin {
+  margin-right: toRem(12);
+}
+.mb12 {
+  margin-bottom: toRem(12);
+}
+.textCapitalize {
+  text-transform: capitalize;
+}
+.textFilterLabel {
+  font-size: toRem(16);
+  font-weight: 400;
+  color: "#7A7A7A";
+  height: toRem(40);
+  align-items: center;
+  display: flex;
+}
+.container {
+  background-color: $disabledBg;
+  align-items: center;
+  padding-left: toRem(24);
+  padding-right: toRem(24);
+  padding-top: toRem(16);
+  padding-bottom: toRem(12);
+  :global(.MuiButton-iconSizeMedium > *:first-child) {
+    font-size: toRem(16);
+  }
+  :global(.MuiDivider-root) {
+    background-color: #eceef0 !important;
+    height: toRem(30) !important;
+  }
+  :global(.MuiChip-root) {
+    background-color: white;
+    max-width: 100% !important;
+    border: 1px solid #90c8ff;
+  }
+}
+.paddingChip {
+  margin-right: toRem(8);
+  background-color: $primary;
+}
+
+.chipDelete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: toRem(4) toRem(4);
+}
+.FilterButtonOutline {
+  color: $primary;
+  border: 1 solid $primary;
+  svg path {
+    fill: $primary;
+  }
+  height: toRem(40);
+}
+.PopoverContainerFull {
+  min-width: toRem(208);
+  box-shadow: none;
+  filter: drop-shadow(0 3 6 rgba(0, 0, 0, 0.161));
+}
+.FilterButtonCalendarReset {
+  height: toRem(38);
+  width: toRem(114);
+  color: #7e7e7e;
+}
+.FilterButtonCalendarApply {
+  height: toRem(38);
+  width: toRem(114);
+  background: $primary;
+  color: #ffffff;
+}
+.FilterButtonCalendarApply:hover {
+  height: toRem(38);
+  width: toRem(114);
+  background: $primary;
+  color: #ffffff;
+}
+.noAvailable {
+  font-size: toRem(16) !important;
+  padding: toRem(10) toRem(30);
+  stroke: #c2c2c2;
+}
+.disabledButton {
+  background: #f5f5f5;
+  opacity: 0.7;
+  border: 1 solid #b6b6b6 !important;
+}
+.dropdownPadding {
+  padding-left: toRem(16);
+  padding-right: toRem(16);
+  max-width: 100%;
+  overflow: hidden;
+  :global(.MuiButton-root) {
+    @media (min-width: 1440px) {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+}
+.dropdownButton {
+  border: 1px solid #e9e9e9 !important;
+  border-radius: 6px;
+  min-width: toRem(130);
+  :global(.MuiButton-endIcon) {
+    display: inherit;
+    margin-left: 8px;
+    margin-right: -4px;
+  }
+  span {
+    color: #232323b2 !important;
+    font-weight: 400 !important;
+    font-size: toRem(16);
+  }
+}
+.moreFilter {
+  min-width: toRem(40) !important;
+}
+.popover {
+  margin-top: toRem(3);
+  hr {
+    border-top: 1px solid $borderTable !important;
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  :global(.MuiButton-root) {
+    min-width: toRem(80);
+  }
+}
+
+.chipPadding {
+  margin: toRem(16);
+}
+
+.chipGroup {
+  max-width: 100%;
+  overflow: hidden;
+}
+.chipContainer {
+  padding-left: toRem(70);
+  margin-top: toRem(4);
+}
+//test
+.SelectIconType {
+  width: 100% !important;
+  :global(.optionText) {
+    padding-left: 0 !important;
+  }
+  .dropdownActive {
+    :global(.optionText:hover) {
+      padding-left: 0 !important;
+      color: white !important;
+    }
+  }
+}
+
+.filterDatePicker {
+  :global(.MuiPaper-root) {
+    box-shadow: none;
+    border: 1px solid #eceef0;
+    border-radius: 6px;
+  }
+  :global(.rdrMonthName),
+  :global(.rdrWeekDays) {
+    display: none !important;
+  }
+
+  :global(.rdrNextPrevButton) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+      width: 10px;
+      height: 10px;
+      display: block;
+      transform: none;
+      border: 0;
+      // background: url("../../../../assets/icons/IcoArrowLeft.svg") no-repeat
+      //   center center;
+      background: url("../../assets/icons/IcoArrowLeft.svg") no-repeat center
+        center;
+      margin: 0;
+    }
+  }
+
+  :global(.rdrNextButton i) {
+    transform: rotate(180deg);
+    transform-origin: center;
+  }
+  :global(.rdrDay:not(.rdrDayPassive)) {
+    :global(.rdrInRange ~ .rdrDayNumber span) {
+      color: #606e7b;
+    }
+  }
+  :global(.rdrMonth) {
+    width: toRem(336);
+  }
+  :global(.rdrMonthName) {
+    display: none;
+  }
+
+  :global(.rdrDayDisabled) {
+    background-color: #fff;
+
+    :global(.rdrDayNumber span) {
+      color: $grayLight;
+    }
+  }
+
+  :global(.rdrNextPrevButton) {
+    background-color: #fff;
+  }
+
+  :global(.MuiPopover-paper) {
+    padding: toRem(16);
+  }
+
+  :global(.rdrMonthAndYearWrapper),
+  :global(.rdrNextPrevButton) {
+    margin: 0;
+  }
+
+  :global(.rdrMonthAndYearWrapper) {
+    height: auto;
+    margin-bottom: toRem(16);
+  }
+
+  :global(.rdrMonth),
+  :global(.rdrMonthAndYearWrapper) {
+    padding: 0;
+  }
+
+  :global(.rdrMonthAndYearPickers select) {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid $grayLight;
+    white-space: pre;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: toRem(10) toRem(32) toRem(10) toRem(16);
+  }
+
+  :global(.rdrDay) {
+    width: toRem(48);
+    height: toRem(48);
+  }
+
+  :global(.rdrDayNumber span) {
+    font-weight: 500;
+    font-size: toRem(12);
+    line-height: toRem(16);
+    color: #606e7b;
+  }
+
+  :global(.rdrInRange) {
+    background: rgba(236, 238, 240, 0.4) !important;
+    border-radius: 0 !important;
+    ~ :global(.rdrDayNumber span) {
+      color: $primary !important;
+    }
+  }
+
+  :global(.rdrStartEdge),
+  :global(.rdrEndEdge) {
+    border-radius: 8px !important;
+  }
+
+  :global(.rdrInRange),
+  :global(.rdrStartEdge),
+  :global(.rdrEndEdge) {
+    width: toRem(48);
+    height: toRem(48);
+    top: 0;
+    right: 0 !important;
+    left: 0 !important;
+    bottom: 0;
+  }
+
+  :global(.rdrDayHovered) {
+    border: 0;
+  }
+
+  :global(.rdrDayStartPreview),
+  :global(.rdrDayEndPreview),
+  :global(.rdrDayInPreview) {
+    border-radius: 0 !important;
+    height: toRem(35);
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translatey(-50%);
+  }
+
+  :global(.rdrDateRangeWrapper + div) {
+    display: none;
+  }
+}
+.clsDisableBorderLRT {
+  justify-content: space-between;
+  border-right: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-radius: 0px;
+}
+.clsDisableBorderLRT:hover {
+  border-color: $grayLight;
+  justify-content: space-between;
+  border-right: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-radius: 0px;
+  svg path {
+    stroke: $grayLight;
+  }
+}
+.clsLabelDefaul {
+  color: $disabledColor;
+  font-size: toRem(14);
+  font-weight: 400;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: rem(11px) rem(24px);
+  position: static;
+  width: rem(90px);
+  height: rem(40px);
+  background: $white;
+  border: 1px solid $grayBorder;
+  box-sizing: border-box;
+  border-radius: rem(6px);
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(14px);
+  line-height: rem(18px);
+  letter-spacing: rem(0.2px);
+  color: $defaultLight;
+}
+.popoverDialog {
+  max-height: rem(450px);
+}
+.buttonLabelPopover {
+  color: $primary !important;
+}
+.clsTitileLable {
+  font-weight: 500;
+  color: $default;
+  font-size: rem(12px);
+}
+.clsTitileLableActive {
+  color: $primary !important;
+  svg path {
+    stroke: $primary;
+  }
+}
+.clsDisableBorderLRTActive {
+  border-color: $primary;
+}

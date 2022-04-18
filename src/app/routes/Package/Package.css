@@ -1,0 +1,71 @@
+.Pricing-table {
+  width: 100%;
+}
+
+.Pricing-table .MuiTab-textColorPrimary.Mui-selected {
+  color: white !important;
+  background: #3f51b5 !important;
+}
+
+.Pricing-table .MuiTab-textColorPrimary {
+  color: #000;
+}
+
+.Pricing-table .title {
+  font-weight: bold;
+}
+
+.Pricing-table .header {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.Pricing-table .card {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  margin-bottom: 1.875rem;
+  position: relative;
+  border-radius: 0.41176rem;
+}
+
+.Pricing-table .PageHeading-title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  font-size: 1.05882rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 0.29412rem;
+  margin-top: 0.11765rem;
+  line-height: 1.33333;
+  padding: 1.05882rem 1.76471rem 0rem 1.76471rem !important;
+}
+
+.Pricing-table .btn-group-custom {
+  width: 500px !important;
+  height: 40px !important;
+}
+
+.cardPricing .headerCard {
+  background-color: #3f51b5;
+  color: white;
+  min-height: 10rem;
+  padding: 10px;
+}
+
+.cardPricing .button-card {
+  color: #3f51b5 !important;
+  border-radius: 30px;
+  padding: 5px 30px;
+  background: white;
+}
+
+.cardPricing .card-body-custom {
+  min-height: 15rem !important;
+}
+
+.cardPricing .lablePackage {
+  padding: 1rem;
+}
+/*# sourceMappingURL=Package.css.map */

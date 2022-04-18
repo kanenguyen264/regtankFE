@@ -1,0 +1,9 @@
+{
+  "credit.yourAccountCreditBalance": "您账号的积分余额",
+  "credit.top-up": "充值",
+  "credit.credits": "积分",
+  "credit.buyNow": "现在购买",
+  "credit.confirmTopUp": "确认充值？",
+  "credit.creditTopUp": "积分充值",
+  "credit.content": "请联系您的客户经理或发送电子邮件至 <a href=\"{linkEmail}\">{email}</a> 以充值积分"
+}

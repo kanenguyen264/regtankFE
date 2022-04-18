@@ -1,0 +1,42 @@
+@import "~@protego/sdk/styles/global/_global-dir";
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.notes {
+  ::placeholder {
+    font-style: italic;
+    font-size: toRem(14);
+    color: $disabledColor;
+    font-weight: 400;
+  }
+}
+
+.dialogWrap {
+  :global(.MuiDialogTitle-root) {
+    padding: toRem(16) toRem(24);
+  }
+  :global(.MuiDialogContent-root) {
+    padding: 0 toRem(24) toRem(24);
+    text-align: left;
+  }
+
+  :global(.MuiDialogActions-root) {
+    padding-top: toRem(18);
+  }
+
+  :global(.MuiFormHelperText-root) {
+    margin-left: 0;
+    font-size: toRem(12);
+  }
+
+  :global(.reg-MuiCloseableDialogTitle-root svg) {
+    path {
+      fill: $bodyText;
+    }
+  }
+}
+
+.assignee{
+  :global(.MuiOutlinedInput-notchedOutline  legend) {
+    display: none;
+  }
+}

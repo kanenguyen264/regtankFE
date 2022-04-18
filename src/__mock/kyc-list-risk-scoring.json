@@ -1,0 +1,109 @@
+[
+    {
+        "riskParameter": "Sanctioned Person or Country",
+        "information": "No",
+        "riskScore": 0,
+        "type": "String",
+        "child": [
+            {
+                "type": "String",
+                "riskParameter": "PEP",
+                "information": "Tier 4",
+                "riskScore": 0
+            },
+            {
+                "type": "String",
+                "riskParameter": "Previously Sanctioned - person",
+                "information": "No",
+                "riskScore": 0
+            },
+            {
+                "type": "String",
+                "riskParameter": "Financial Regulator",
+                "information": "No",
+                "riskScore": 0
+            },
+            {
+                "type": "String",
+                "riskParameter": "Adverse Media",
+                "information": "No",
+                "riskScore": 0
+            }
+        ]
+    },
+    {
+        "riskParameter": "RESIDENCE",
+        "information": "No",
+        "riskScore": 0,
+        "type": "flag",
+        "child": [
+            {
+                "type": "flag",
+                "riskParameter": "FATF",
+                "information": "No",
+                "riskScore": 0
+            },
+            {
+                "type": "flag",
+                "riskParameter": "Basel AML Index ",
+                "information": "No",
+                "riskScore": 0
+            },
+            {
+                "type": "flag",
+                "riskParameter": "Corruption Perception Index",
+                "information": "No",
+                "riskScore": 0
+            }
+        ]
+    },
+    {
+        "riskParameter": "Government ID",
+        "information": "No",
+        "riskScore": 0,
+        "type": "flag",
+        "child": [
+            {
+                "riskParameter": "FATF",
+                "information": "No",
+                "riskScore": 0
+            },
+            {
+                "riskParameter": "Basel AML Index ",
+                "information": "No",
+                "riskScore": 0
+            },
+            {
+                "riskParameter": "Corruption Perception Index",
+                "information": "No",
+                "riskScore": 0
+            }
+        ]
+    },
+    {
+        "riskParameter": "Nationality",
+        "information": "No",
+        "riskScore": 0,
+        "type": "flag",
+        "child": [
+            {
+                "type": "flag",
+                "riskParameter": "FATF",
+                "information": "No",
+                "riskScore": 0
+            },
+            {
+                "type": "flag",
+                "riskParameter": "Basel AML Index ",
+                "information": "No",
+                "riskScore": 0
+            },
+            {
+                "type": "flag",
+                "riskParameter": "Corruption Perception Index",
+                "information": "No",
+                "riskScore": 0
+            }
+        ]
+    }
+]

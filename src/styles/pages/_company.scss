@@ -1,0 +1,63 @@
+/*Company Page Styles*/
+$primary-dark-theme: #38424b !default;
+$secondary-dark-theme: lighten($primary-dark-theme, 3%);
+$dark-theme-text: #d3d3d3 !default;
+@import "~@protego/sdk/styles/global/_global-dir";
+
+.company-list-search {
+  width: rem(500px);
+  margin-left: 10px;
+  .ellipse-shape {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+    height: 100%;
+    width: 560px;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 870px;
+      position: absolute;
+      top: -20px;
+      right: -300px;
+      height: 280px;
+      z-index: 1;
+      background-color: rgba($white, 0.06);
+      @include border-radius(50% 0 0 50%);
+    }
+  }
+
+  & .search-bar input {
+    @include transition($transition-base);
+    background-color: rgba($white, 1);
+
+    & + .search-icon {
+      top: 0;
+      bottom: 0;
+
+      & i {
+        color: #919090;
+      }
+    }
+
+    &:focus {
+      background-color: $white;
+      color: $body-color;
+
+      + .search-icon {
+        & i {
+          color: rgba($body-color, 0.8);
+        }
+      }
+    }
+  }
+}
+
+.jr-padding {
+  padding-left: 1.1765rem !important;
+  padding-right: 1.1765rem !important;
+  padding-top: 1.1765rem !important;
+}

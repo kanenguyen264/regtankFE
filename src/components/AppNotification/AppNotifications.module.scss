@@ -1,0 +1,14 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.NotificationItem {
+  b {
+    font-weight: 500;
+  }
+}
+.icon {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+}
+.datePadding {
+  padding-top: toRem(4);
+}

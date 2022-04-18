@@ -1,0 +1,29 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.riskCoreViewDialog {
+  :global(.reg-MuiPromptDialog-actions) {
+    display: "none";
+  }
+  :global(.MuiDialogContent-root) {
+    padding : 0;
+  }
+  .contentWrapper {
+    padding-left: toRem(24);
+    height: toRem(540);
+  }
+  .contentActionsWrapper {
+    padding: 0;
+    margin-top: toRem(17);
+    margin-bottom: toRem(17);
+    margin-left: toRem(23);
+    margin-right: toRem(5);
+    .numOfRevisions {
+      color: #232323;
+      font-weight: 500;
+    }
+    :global(.MuiGrid-root) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

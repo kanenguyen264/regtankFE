@@ -1,0 +1,217 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.textPlaceholder {
+  width: toRem(143) !important;
+  ::placeholder {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 1900px) {
+  .addCountry {
+    :global(.MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"]) {
+      padding: toRem(5) !important;
+    }
+  }
+}
+.SelectOutlinedNoLabel {
+  :global(.MuiOutlinedInput-root) {
+    border-radius: 6px;
+    height: toRem(48) !important;
+    width: toRem(280) !important;
+  }
+  :global(.MuiOutlinedInput-notchedOutline) {
+    border: 1px solid $grayBorder;
+  }
+}
+.InputOutlinedNoLabel {
+  :global(.MuiInputAdornment-outlined) {
+    z-index: 1;
+  }
+  :global(.MuiOutlinedInput-root) {
+    border-radius: 6px;
+    height: toRem(48) !important;
+    width: toRem(280) !important;
+    margin-top: 0;
+    padding-bottom: 0;
+    :global(.MuiOutlinedInput-notchedOutline) {
+      top: 0;
+      legend {
+        display: none;
+      }
+    }
+  }
+}
+.dropdownInputDisable {
+  background: $disabledBg;
+  input[disabled] {
+    background: $disabledBg;
+  }
+}
+.dropdownIconSearch {
+  width: toRem(20);
+  height: toRem(20);
+}
+.dropdownIconSearch > path {
+  stroke: $defaultLight;
+}
+.TextFileIPAddress {
+  width: toRem(348) !important;
+  ::placeholder {
+    font-size: 1rem !important;
+  }
+}
+.toggleButton {
+  width: toRem(60) !important;
+  border-radius: 8px !important;
+  height: toRem(40) !important;
+  border: 1px solid $borderPrimaryColor;
+  color: $primary !important;
+  letter-spacing: toRem(0.2);
+  font-weight: 600;
+  font-size: toRem(14);
+  line-height: toRem(18);
+  background-color: #fff !important;
+  margin-top: toRem(4);
+  &:hover {
+    background-color: rgba(0, 128, 255, 0.04) !important;
+  }
+}
+.tableContainer {
+  margin-top: toRem(40) !important;
+  overflow: auto;
+  border: 1px solid $grayText1;
+  border-radius: 8px;
+  :global(.MuiTableCell-head) {
+    background-color: $backgroundHeader;
+    border-top: 0 !important;
+    padding-top: toRem(12);
+    padding-bottom: toRem(12);
+  }
+  :global(.MuiTableRow-root) {
+    & > *:first-child {
+      padding-left: toRem(24);
+    }
+    &:last-child {
+      :global(.MuiTableCell-body) {
+        border-bottom: 0 !important;
+      }
+    }
+  }
+  :global(.MuiTableCell-root) {
+    color: $bodyText !important;
+    font-weight: 500;
+    font-size: toRem(14) !important;
+    line-height: toRem(20);
+    padding-top: toRem(12);
+    padding-bottom: toRem(12);
+  }
+  :global(.MuiTableBody-root) {
+    max-height: toRem(200);
+  }
+  :global(.MuiTableCell-body) {
+    font-weight: normal;
+  }
+}
+.columnAction {
+  text-align: center;
+  width: toRem(160);
+}
+.tableList {
+  & tr td {
+    border: 0px;
+  }
+}
+.tablePaginationRow {
+  margin-top: toRem(16);
+  color: $grayText;
+  font-weight: normal;
+  font-size: toRem(12);
+  line-height: toRem(16);
+  letter-spacing: toRem(0.1);
+}
+.buttonRemove {
+  padding: 0 toRem(14);
+  &:hover {
+    background-color: initial;
+  }
+}
+.labelRemove {
+  font-weight: 400;
+}
+.labelRemoveDisable {
+  font-weight: 400;
+}
+.pointer {
+  cursor: pointer;
+}
+.colorDisable {
+  color: $disabledColor;
+}
+.containerPadding {
+  padding: toRem(24);
+  width: calc(100% + #{toRem(24)});
+  margin-left: toRem(-24);
+}
+.containerPadding > * {
+  padding-left: toRem(24);
+}
+.tabContentHeader {
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+}
+.tabContentHeaderTitle {
+  display: flex;
+  font-style: normal;
+  font-weight: 500;
+  font-size: toRem(14);
+  line-height: toRem(20);
+  color: #000;
+}
+.tabContentHeaderRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $grayText;
+  :global(.MuiSwitch-root) {
+    margin-right: toRem(10);
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.tabContentBox {
+  padding-top: 18px;
+  padding-right: 24px;
+  padding-bottom: 25px;
+  padding-left: 24px;
+}
+.btnCustom {
+  width: toRem(140);
+  &:global(.MuiButton-containedWhite) {
+    color: $default;
+    border-color: $default;
+  }
+}
+.boxTableBody {
+  max-height: toRem(200);
+}
+.tableInner {
+  :global(.MuiTableRow-root) {
+    display: flex;
+    width: calc(100% - 7px);
+
+    :global(.MuiTableCell-root) {
+      display: flex;
+      &:first-child {
+        width: calc(100% - 160px);
+      }
+      &:last-child {
+        width: 160px;
+        justify-content: center;
+      }
+    }
+  }
+}

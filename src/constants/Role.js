@@ -1,0 +1,9 @@
+export const USER_ROLE = "USER";
+export const ADMIN_ROLE = "ADMIN";
+export const STAFF_ROLE = "STAFF";
+export const SUPERADMIN_ROLE = "SUPERADMIN";
+export const ROLE_TYPE_ADMIN = "ADMINISTRATOR";
+export const DATA_ACCESS_VIEW_ALL = "VIEW_ALL";
+export const DATA_ACCESS_VIEW_SELF = "VIEW_SELF";
+export const DATA_ACCESS_VIEW_OWN_DEPT = "VIEW_OWN_DEPT";
+export const DATA_ACCESS_VIEW_RELATED = "VIEW_RELATED";

@@ -1,0 +1,107 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.Container {
+  :global(.MuiPaper-root) {
+    margin-top: 0;
+  }
+  :global(.MuiTabs-root) {
+    font-size: toRem(14);
+    background-color: $white;
+    border-top-left-radius: toRem(4);
+    border-top-right-radius: toRem(4);
+    border: 1px solid $borderTable;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: unset;
+
+    :global(.MuiTabs-fixed) {
+      padding-bottom: 0.37px;
+    }
+
+    :global(.MuiTab-root) {
+      text-transform: capitalize;
+      min-width: toRem(128);
+      font-size: toRem(14);
+      line-height: toRem(20);
+      font-weight: 500;
+      color: $defaultDark;
+      padding-top: toRem(26);
+      padding-bottom: toRem(26);
+
+      &:global(.Mui-selected) {
+        font-weight: 500;
+        color: $primary;
+        font-size: toRem(14);
+      }
+      &:hover {
+        color: $primary !important;
+      }
+    }
+
+    :global(.MuiTabs-indicator) {
+      height: 4px;
+      border-radius: 2px;
+      background: linear-gradient($primary 50%, transparent 50%);
+      bottom: -2px;
+    }
+  }
+}
+
+.ExportSelected {
+  display: block;
+  border: none !important;
+  color: #343a40 !important;
+  font-size: toRem(12) !important;
+  font-weight: 500 !important;
+
+  // &:hover {
+  //   background-color: unset !important;
+  //   color: $primary !important;
+  // }
+  // &:focus {
+  //   background-color: rgba(0, 128, 255, 0.04) !important;
+  //   color: $primary;
+  // }
+  // &:visited {
+  //   color: inherit;
+  //   text-decoration: none;
+  // }
+}
+
+.addToArchive {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.heading {
+  background-color: white;
+  padding: toRem(21) toRem(24);
+  border-bottom: 1px solid #e6e6e6;
+  font-size: toRem(20);
+  color: #252525;
+  font-weight: 500;
+}
+
+.bulkActionPopover {
+  margin-top: 4px;
+}
+.mainTabChild {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.bulkButton {
+  min-width: toRem(152);
+  :global(.MuiButton-endIcon) {
+    display: inherit;
+    margin-left: 10px;
+  }
+}
+.importButton {
+  min-width: toRem(152);
+  :global(.MuiButton-endIcon) {
+    display: inherit;
+    margin-left: 10px;
+  }
+}

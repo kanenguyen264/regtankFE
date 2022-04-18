@@ -1,0 +1,100 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.activityDlg {
+  :global(.MuiPaper-root) {
+    width: toRem(700);
+  }
+
+  .activityDlg_content {
+    margin-top: 0;
+    padding: toRem(20) 0 !important;
+    overflow: hidden;
+  }
+
+  .activityDlg_title {
+    padding: toRem(20) toRem(24);
+    :global(.MuiTypography-root) {
+      font-weight: 600;
+      font-size: toRem(16);
+      line-height: toRem(20);
+      color: rgba(35, 35, 35, 0.9);
+    }
+
+    :global(.MuiSvgIcon-root) {
+      width: toRem(22);
+      path {
+        fill: $defaultDark;
+      }
+    }
+  }
+}
+
+.logItem {
+  padding: toRem(20) 0;
+  border-bottom: 1px solid $grayText1;
+  margin-left: toRem(24);
+  margin-right: toRem(24);
+  &:first-child {
+    padding-top: 0;
+  }
+  .logItem_header {
+    display: flex;
+    margin-bottom: toRem(12);
+    :global(.MuiTypography-root) {
+      font-weight: 500;
+      font-size: toRem(14);
+      line-height: 20px;
+      color: $defaultDark;
+      &:nth-child(1) {
+        width: 40%;
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        width: 30%;
+      }
+    }
+  }
+  .logItem_body {
+    display: flex;
+    * {
+      font-weight: normal;
+      font-size: toRem(16);
+      line-height: toRem(20);
+    }
+    div:nth-child(1) {
+      width: 40%;
+    }
+    div:nth-child(2),
+    div:nth-child(3) {
+      width: 30%;
+    }
+  }
+
+  .logItem_name {
+    color: rgba(35, 35, 35, 0.9);
+    display: flex;
+    align-items: flex-start;
+    font-weight: 500;
+    :global(.MuiSvgIcon-root) {
+      font-size: toRem(24);
+      margin-right: toRem(9);
+    }
+  }
+
+  .logItem_modifiedBy {
+    color: #00cc69;
+  }
+
+  .logItem_DateTime {
+    color: $bodyText;
+    font-weight: 400;
+  }
+}
+
+.vScrollbar {
+  right: toRem(16);
+}
+
+.vScrollbarThumb {
+  background: #e3e3e3;
+}

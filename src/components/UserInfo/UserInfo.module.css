@@ -1,0 +1,33 @@
+.Dropdown {
+  composes: mdc-elevation--z2 from global;
+}
+
+.Dropdown:global(.dropdown-menu) {
+  padding: 1.17647rem;
+  padding-bottom: 0.58824rem;
+}
+
+.Profile {
+  min-width: calc(400px - 2.35294rem);
+}
+
+.Profile > :first-child {
+  padding-bottom: 1.17647rem;
+  border-bottom: 0px solid #eaeaea;
+  margin-bottom: 0.58824rem;
+}
+
+.Profile :global(.MuiAvatar-root) {
+  margin-right: 1.17647rem;
+}
+
+.Profile :global(.MuiTypography-root) {
+  line-height: 1.7;
+}
+
+.Profile :global(.MuiMenuItem-root) {
+  padding-top: 0.58824rem;
+  padding-bottom: 0.58824rem;
+  padding-left: 0;
+}
+/*# sourceMappingURL=UserInfo.module.css.map */

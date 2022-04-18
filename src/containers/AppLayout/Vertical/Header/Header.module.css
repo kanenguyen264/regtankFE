@@ -1,0 +1,64 @@
+.NotiDropdown {
+  composes: mdc-elevation--z2 from global;
+  border: none;
+}
+
+.HeaderCover {
+  position: "absolute";
+  background-color: "#0578FD";
+  border-top-left-radius: "100%";
+  width: "45%";
+  right: 0;
+  padding-right: toRem(40);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "row";
+          flex-direction: "row";
+  -webkit-box-align: "center";
+      -ms-flex-align: "center";
+          align-items: "center";
+  -ms-flex-line-pack: "flex-end";
+      align-content: "flex-end";
+  display: "flex";
+}
+
+.AppBarBackground {
+  background-color: "#0080FF";
+}
+
+@media (min-width: 768px) {
+  .PaddingSize {
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .PaddingSize {
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .PaddingSize {
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logoStyle {
+    margin-left: -58px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .logoStyle {
+    margin-left: -54px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .logoStyle {
+    margin-left: -35px;
+  }
+}
+/*# sourceMappingURL=Header.module.css.map */

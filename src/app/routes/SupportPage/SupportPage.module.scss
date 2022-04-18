@@ -1,0 +1,119 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+$gutter: rem(26px);
+$baseWidth: 1506 - 26;
+.Container {
+  :global {
+    .fade-enter {
+      opacity: 0;
+    }
+    .fade-exit {
+      opacity: 1;
+    }
+    .fade-enter-active {
+      opacity: 1;
+    }
+    .fade-exit-active {
+      opacity: 0;
+    }
+    .fade-enter-active,
+    .fade-exit-active {
+      transition: opacity 125ms;
+    }
+  }
+}
+.SupportPage {
+  height: 100%;
+}
+.PageHeading {
+  margin-bottom: rem(30.2px);
+}
+.Section {
+  padding: rem(30.8px) rem(30px);
+}
+.SectionCommon > div {
+  margin: -$gutter/2;
+  display: flex;
+  > div {
+    padding: $gutter/2;
+    &:nth-child(1) {
+      flex: 1 1 percentage(394 / $baseWidth);
+      display: flex;
+      justify-content: center;
+    }
+    &:nth-child(2) {
+      flex: 1 1 percentage(($baseWidth - 394) / $baseWidth);
+    }
+  }
+}
+.contentContainer {
+  margin: auto;
+  max-width: toRem(750);
+  > :global(.MuiGrid-container) {
+    > :global(.MuiGrid-item:not(:last-child)) {
+      margin-bottom: toRem(43);
+    }
+    > :global(.MuiGrid-item.mb-custom) {
+      margin-bottom: toRem(32);
+    }
+  }
+}
+.contentHeader {
+  flex: 1;
+  margin: 0px;
+  max-height: 100%;
+  background-color: #fafbff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.container {
+  flex-direction: row;
+  flex: 1;
+  display: flex;
+}
+.titleMargin {
+  margin-bottom: 40px !important;
+}
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  flex: 1;
+  float: right;
+}
+.tySupportContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.tySupportTitle {
+  font-weight: 500;
+  font-size: toRem(26);
+  line-height: toRem(32);
+  color: $primary;
+  padding-top: toRem(24);
+  padding-bottom: toRem(16);
+  letter-spacing: toRem(0.2);
+}
+.tySupportDescription {
+  font-weight: 600;
+  font-size: toRem(18);
+  line-height: toRem(24);
+  text-align: center;
+  letter-spacing: toRem(0.2);
+  color: $bodyText;
+}
+.tySupportButton {
+  margin-top: toRem(38);
+  min-width: toRem(248);
+  letter-spacing: toRem(0.2);
+  font-weight: 600;
+  font-size: toRem(14);
+  line-height: toRem(18);
+  border-radius: 8px;
+}
+.titleForm {
+  text-align: center;
+  display: block;
+}

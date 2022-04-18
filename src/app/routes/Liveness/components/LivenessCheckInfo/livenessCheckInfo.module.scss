@@ -1,0 +1,63 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.LivenessCheckInfoWrapper {
+  .itemContent {
+    font-size: rem(14px);
+    font-weight: 400;
+    color: $mainBlackText;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    margin-bottom: toRem(16);
+    img {
+      width: 100%;
+      object-fit: contain;
+      overflow: hidden;
+      background-color: #c4c4c4;
+    }
+    video {
+      width: 100%;
+      background-color: #c4c4c4;
+    }
+  }
+  .itemContent:last-child {
+    margin-bottom: 0;
+  }
+  .imgResize {
+    overflow: hidden;
+    width: 100%;
+    height: rem(203px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: toRem(8);
+  }
+  .imgResize img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  .itemFooter {
+    font-size: toRem(12);
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: toRem(6);
+    text-align: center;
+    color: $grayText;
+  }
+  .livenessCheck {
+    height: toRem(160);
+    text-align: center;
+    .iconCheckResult {
+      margin-top: toRem(10);
+      margin-bottom: toRem(26);
+    }
+  }
+  .FacialMatch {
+    :global(.RegCard-body){
+      padding-top: 0
+    }
+  }
+}

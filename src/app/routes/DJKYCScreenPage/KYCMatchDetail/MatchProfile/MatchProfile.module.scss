@@ -1,0 +1,88 @@
+@import "~@protego/sdk/styles/global/_global-dir";
+@import "../../../KYCScreenPage/component/MatchProfile/MatchProfile.module.scss";
+
+.DataItem {
+  margin-bottom: rem(16px);
+}
+
+.DataVal {
+  font-size: rem(16px);
+  line-height: 1.4;
+  color: $bodyText;
+}
+
+.DataItemTable {
+  width: 100%;
+  border-collapse: collapse;
+  color:  $bodyText;
+
+  .TableCol {
+    font-size: rem(16px);
+    line-height: 1.4;
+    padding: rem(16px) rem(20px);
+    vertical-align: top;
+  }
+
+  .TableRow:not(:last-child) .TableCol {
+    border-bottom: 1px solid $grayText1;
+  }
+
+  .TableHead {
+    text-transform: uppercase;
+    font-size: rem(14px);
+    line-height: rem(16px);
+  }
+}
+
+.DataLink {
+  cursor: pointer;
+  display: block;
+  margin-bottom: rem(8px);
+
+  span {
+    color: $primary;
+  }
+  &:disabled {
+    color: $steelGray !important;
+    background-color: $primary;
+  }
+  &:visited,
+  &:hover span {
+    color: $primaryDark;
+  }
+
+  &:hover {
+    text-decoration: underline $primaryDark dashed;
+    text-underline-offset: 2px;
+  }
+
+  svg {
+    margin-left: 5px;
+    width: 12px;
+
+    path {
+      fill: $steelGray;
+    }
+  }
+  span {
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+}
+
+.TableContent {
+  padding-top: rem(24px);
+  min-height: auto !important;
+}
+
+.CardContainer,
+
+.ProfileTabContainer {
+  height: 100%;
+  padding-bottom: rem(20px);
+}
+
+.HeightFlag {
+  max-height: 100% !important;
+}
+

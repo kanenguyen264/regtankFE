@@ -1,0 +1,33 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.securityWrapper {
+  .tabWrapper {
+    background-color: $white;
+    border: 1px solid $grayText1;
+    box-sizing: border-box;
+    border-radius: toRem(8);
+    height: toRem(880);
+    .tabPanel {
+      padding: 0;
+    }
+    .tabHeader {
+      border-bottom: 1px solid $grayText1;
+      padding-left: toRem(24);
+      :global(.MuiButtonBase-root) {
+        text-transform: capitalize;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: toRem(26);
+        padding-bottom: toRem(26);
+        margin-right: toRem(48);
+        min-width: auto;
+        font-weight: 500;
+        color: $grayText;
+        line-height: toRem(20);
+      }
+      :global(.MuiButtonBase-root.Mui-selected) {
+        color: $primary;
+      }
+    }
+  }
+}

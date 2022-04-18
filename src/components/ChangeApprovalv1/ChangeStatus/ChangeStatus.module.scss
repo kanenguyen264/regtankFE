@@ -1,0 +1,90 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.headerPopup {
+  background: #0080ff;
+  padding-left: rem(32px);
+  font-size: rem(21px);
+}
+.label {
+  color: #494949;
+  font-size: rem(17px);
+  margin-bottom: rem(8px);
+  font-style: normal;
+  font-weight: normal;
+}
+.contentHeight {
+  height: rem(540px);
+}
+.icActivityLog {
+  margin-right: rem(8px);
+}
+.viewMore {
+  color: #0080ff;
+  cursor: pointer;
+}
+.textArea {
+  :global(.MuiInputBase-multiline) {
+    margin-top: toRem(6);
+    padding-bottom: 0;
+  }
+
+  :global(.MuiOutlinedInput-root) {
+    ::placeholder {
+      font-style: italic;
+    }
+  }
+  :global(textarea) {
+    padding-top: toRem(12) !important;
+    padding-bottom: toRem(12) !important;
+    max-height: toRem(170);
+  }
+}
+.dropdownButton {
+  height: toRem(40);
+  color: #444444;
+  box-shadow: none;
+  border: 1px solid #e6e6e6;
+  background-color: #ffffff;
+  &:hover {
+    background: #ffffff;
+    box-shadow: none;
+  }
+  width: 100%;
+  font-size: rem(12px);
+}
+.btn {
+  min-width: toRem(120);
+}
+.dialogForm {
+  width: 100%;
+  :global(.MuiButton-outlinedDropdown) {
+    border: 1px solid $borderButton;
+  }
+  :global(.MuiOutlinedInput-notchedOutline) {
+    border: 1px solid $borderButton;
+    border-radius: 6px;
+  }
+}
+.changeStatusDialog {
+  :global(.MuiDialogTitle-root ) {
+    padding-left: toRem(24);
+    padding-right: toRem(24);
+    :global(.MuiIconButton-root) {
+      padding: 0;
+      right: toRem(4);
+    }
+  }
+  :global(.MuiPromptDialog-content) {
+    min-width: toRem(520);
+  }
+  :global(.MuiDialogContent-root) {
+    padding-left: toRem(24);
+    padding-right: toRem(24);
+  }
+  :global(.MuiDialogActions-root) {
+    padding-top: toRem(16);
+    padding-left: toRem(24);
+    padding-right: toRem(24);
+    padding-bottom: toRem(24);
+  }
+}

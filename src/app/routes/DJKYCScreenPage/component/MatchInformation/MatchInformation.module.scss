@@ -1,0 +1,68 @@
+@import "~@protego/sdk/styles/global/_global-dir";
+@import "../../../KYCScreenPage/component/MatchInformation/MatchInformation.module.scss";
+.CardHeaderTitle {
+  width: 100%;
+  > span:not(:global(.MuiCopyButton-root)) {
+    font-size: rem(14px);
+    line-height: rem(26px);
+    color: #7a7a7a;
+  }
+}
+
+.HeaderCustom {
+  padding-top: rem(6px);
+  padding-bottom: rem(6px);
+}
+
+.assigneeBottom {
+  margin-bottom: rem(21px);
+  :global(.MuiAvatar-circle) {
+    width: rem(34px);
+    height: rem(34px);
+    font-size: rem(14px);
+    line-height: rem(16px);
+    color: #fff;
+  }
+}
+
+.CardContainer {
+  height: 100%;
+}
+
+.IconButtonStyle {
+  margin-left: calc(#{rem(11px)} - 8px);
+}
+
+.tooltipIcon {
+  box-sizing: border-box;
+  width: 13px;
+  height: 13px;
+  path {
+    fill: #7a7a7a;
+  }
+}
+.copyButton {
+  &:hover {
+    svg {
+      path:nth-child(2) {
+        fill: unset !important;
+      }
+    }
+  }
+  svg {
+    float: left;
+    width: toRem(16.67);
+    height: toRem(16.67);
+    font-size: toRem(16.67);
+    position: relative;
+    top: toRem(0);
+  }
+}
+.JRCardBorder {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  :global(.RegCard-header) {
+    height: toRem(96);
+    padding-top: toRem(20);
+  }
+}

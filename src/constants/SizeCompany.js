@@ -1,0 +1,10 @@
+// export const FROM_1_TO_9 = "FROM_1_TO_9";
+// export const FROM_10_TO_49 = "FROM_10_TO_49";
+// export const FROM_50_TO_249 = "FROM_50_TO_249";
+// export const FROM_250_AND_MORE = "FROM_250_AND_MORE";
+export const FROM_0_TO_1 = "FROM_0_TO_1";
+export const FROM_2_TO_10 = "FROM_2_TO_10";
+export const FROM_11_TO_50 = "FROM_11_TO_50";
+export const FROM_51_TO_200 = "FROM_51_TO_200";
+export const FROM_201_TO_500 = "FROM_201_TO_500";
+export const FROM_500_AND_MORE = "FROM_500_AND_MORE";

@@ -1,0 +1,45 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.KeywordWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Root {
+  display: flex;
+  flex-wrap: nowrap;
+  background: #626262;
+  border-radius: toRem(18);
+  color: #ffffff;
+  padding: toRem(6) toRem(50);
+  align-items: center;
+}
+.textRiskScore {
+  color: rgba(35, 35, 35, 0.7);
+  font-weight: 500;
+  font-size: toRem(14);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 1336px) {
+    margin-top: -15px;
+  }
+  @media (min-width: 1440px) {
+    margin-top: -30px;
+  }
+  @media (min-width: 1500px) {
+    margin-top: -15px;
+  }
+  @media (min-width: 1680px) {
+    margin-top: -15px;
+  }
+  @media (min-width: 1920px) {
+    margin-top: -20px;
+  }
+}

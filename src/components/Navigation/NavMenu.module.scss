@@ -1,0 +1,18 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.NavSection {
+  box-sizing: border-box;
+  :global(.nav-collapse .nav-collapse) {
+    margin-bottom: 0;
+    :global(.nav-collapse-btn) {
+      padding: toRem(15) toRem(16) toRem(15) toRem(48);
+      :global(.MuiSvgIcon-root) {
+        opacity: 0;
+      }
+    }
+  }
+
+  :global(.nav-collapse .nav-collapse .nav-collapse-item a) {
+    padding-left: toRem(32);
+  }
+}

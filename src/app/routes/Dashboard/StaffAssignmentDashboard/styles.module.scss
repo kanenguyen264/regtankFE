@@ -1,0 +1,64 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+.tableWrap {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px solid $grayText1;
+  overflow: hidden;
+
+  :global(.MuiTableCell-root),
+  .textCell {
+    font-weight: normal;
+    font-size: toRem(14);
+    line-height: toRem(20);
+    color: $defaultDark;
+  }
+
+  .tableHeader {
+    margin: 0;
+    padding: toRem(24);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: $bodyText;
+    background-color: $white;
+    border-bottom: 1px solid $grayText1;
+  }
+  .tableRoot {
+    :global(.MuiTableCell-root) {
+      padding: toRem(12) 0;
+      &:first-child {
+        padding-left: toRem(24) !important;
+      }
+    }
+
+    :global(.MuiTableRow-root .MuiTableCell-root) {
+      border-bottom: 1px solid $grayText1;
+    }
+
+    :global(.MuiTableHead-root) {
+      :global(.MuiTableRow-head) {
+        background-color: $backgroundHeader;
+      }
+    }
+
+    :global(.MuiTableCell-head) {
+      :global(.MuiButtonBase-root span) {
+        font-weight: 500;
+        font-size: toRem(12);
+        line-height: toRem(16);
+        color: $bodyText;
+      }
+    }
+
+    .dotCircle {
+      width: 8px;
+      height: 8px;
+      display: block;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+  }
+  :global(.RegTable-footer) {
+    display: none;
+  }
+}

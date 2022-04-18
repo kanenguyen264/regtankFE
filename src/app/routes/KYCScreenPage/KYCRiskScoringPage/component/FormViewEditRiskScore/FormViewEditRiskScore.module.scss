@@ -1,0 +1,93 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.headerPopup {
+  background: #0080ff;
+}
+
+.container {
+  background: #ffffff;
+  box-shadow: unset;
+  font-weight: normal;
+  font-size: toRem(12);
+}
+
+.containerRow {
+  margin-bottom: toRem(5);
+}
+
+.colLeft {
+  color: #7a7a7a;
+}
+
+.colRight {
+  color: #252525;
+}
+
+.footerHistoryTotalRisk {
+  background: #f8fbff;
+  justify-content: flex-end;
+  height: toRem(40);
+}
+
+.labelMore {
+  color: #0080ff;
+  cursor: pointer;
+}
+
+.labelRiskScore {
+  font-weight: 500;
+  margin-right: toRem(15);
+}
+
+.legendBullet {
+  display: inline-block;
+  width: toRem(10);
+  height: toRem(10);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.containerView {
+  font-size: toRem(14);
+}
+.content {
+  padding-left: toRem(60);
+  padding-right: toRem(40);
+  padding-top: toRem(10);
+  @media (max-width: 1440px) {
+    padding-left: toRem(30);
+    padding-right: toRem(20);
+  }
+}
+
+.dialog {
+  width: toRem(450);
+  :global(.MuiButton-outlinedDropdown) {
+    border: 1px solid #e9e9e9;
+  }
+  :global(.MuiOutlinedInput-notchedOutline) {
+    border: 1px solid #e9e9e9;
+    border-radius: 6px;
+  }
+  :global(.MuiOutlinedInput-root) {
+    &:hover fieldset {
+      border-color: #e9e9e9 !important;
+    }
+  }
+}
+.textScore {
+}
+.textArea {
+  :global(.MuiInputBase-multiline) {
+    margin-top: toRem(6);
+  }
+
+  :global(.MuiOutlinedInput-root) {
+    ::placeholder {
+      font-style: italic;
+    }
+  }
+}
+.textLabel {
+  margin-bottom: toRem(2);
+}

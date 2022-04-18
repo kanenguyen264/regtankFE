@@ -1,0 +1,15 @@
+{
+  "dj.match.detail.Deceased": "Deceased",
+  "appModule.filter.DJ/PEP": "Politically Exposed Person - PEP",
+  "appModule.filter.DJ/RCA": "Relative or Close Associate - RCA",
+  "appModule.filter.DJ/SAN": "Sanctions List - SAN",
+  "appModule.filter.DJ/OOL": "Other Official Lists - OOL",
+  "appModule.filter.DJ/SI": "Special Interest Person - SI",
+  "appModule.filter.DJ/SI-LT": "Special Interest Person Lower Threshold - SI-LT",
+  "setting.generalSettings.dj.credit.title": "No credits will be deducted as this is a free <br/>trial until November 15, 2021.",
+  "dj.screen.tooltip.rescreening": "Enable this to rescreen this entity based on risk assessment.<br /><br />See <b>Settings > Dow Jones KYC</b> for details.",
+  "dj.screen.tooltip.rescreening.disabled": "Screening in Archive List cannot use this feature",
+  "djkyc.import.template.instruction.dateOfBirth": "dd/MM/yyyy. Deactivate if using Year of Birth Range",
+  "djkyc.import.template.instruction.yearOfBirth": "yyyy - yyyy. Deactivate if using Date of Birth.",
+  "djkyc.import.template.instruction.strictDateMatch": "TRUE | FALSE (will be FALSE if keep it blank). Deactivate if using Year of Birth Range"
+}

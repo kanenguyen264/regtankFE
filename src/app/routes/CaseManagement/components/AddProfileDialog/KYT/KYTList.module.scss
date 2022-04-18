@@ -1,0 +1,59 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.Ids {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+  width: rem(166px);
+}
+.walletAddress {
+  :global(.MuiGrid-root){
+    :global(div){
+      text-align: start !important;
+    }
+  }
+}
+.Link {
+  color: #0080ff !important;
+  cursor: pointer;
+  svg {
+    height: rem(12.38px);
+    width: rem(12.36px);
+  }
+}
+.Header {
+  white-space: nowrap;
+}
+.width130 {
+  width: rem(130px);
+}
+
+img.Flag {
+  width: rem(30px);
+  height: rem(30px);
+}
+.searchBoxStyle {
+  width: rem(533px);
+  ::placeholder {
+    font-size: toRem(14) !important;
+  }
+  input {
+    height: rem(48px);
+    font-size: toRem(14) !important;
+  }
+}
+.textPlaceholder {
+  color: #7a7a7a !important;
+}
+.width50 {
+  width: rem(50px);
+}
+.contentTable {
+  padding-top: rem(120px);
+}
+.MuiTableCell-root:first-child {
+  padding-left: 0 !important;
+}

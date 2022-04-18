@@ -1,0 +1,204 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.wrapperTable {
+  padding-right: toRem(30);
+  width: 100%;
+  .profileTable {
+    width: 100% !important;
+    background-color: $white;
+    border-radius: toRem(10);
+    box-shadow: 0 toRem(1) toRem(8) rgba(0, 0, 0, 0.04);
+
+    .profileTable_header {
+      background: #e7e7e7;
+
+      :global(.MuiTableCell-head) {
+        font-weight: 500;
+        font-size: toRem(12);
+        line-height: toRem(20);
+        color: #656565;
+      }
+    }
+
+    .profileTable_controls {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      :global(.MuiButtonBase-root) {
+        padding: 0;
+        background: none;
+
+        :global(.MuiSvgIcon-root) {
+          width: toRem(24);
+        }
+      }
+
+      :global(.MuiSvgIcon-root) {
+        width: toRem(20);
+        cursor: pointer;
+      }
+    }
+
+    .profileTable_spacer {
+      width: rem(1px);
+      height: rem(16px);
+      display: inline-block;
+      background: #c4c4c4;
+      margin-left: rem(8px);
+      margin-right: rem(6px);
+    }
+
+    :global(.MuiTableRow-root) {
+      border-bottom: toRem(1) solid #ffffff;
+    }
+    :global(.MuiTableRow-head) {
+      border-bottom: 0;
+    }
+
+    :global(.MuiTableCell-root) {
+      border-bottom: 0;
+    }
+    .profileTable_table {
+      table-layout: fixed;
+      min-width: 100% !important;
+      width: auto;
+      // overflow-x: auto;
+    }
+    .profileTable__keywords {
+      width: toRem(135);
+      margin: auto;
+    }
+    .nameLv1 {
+      width: 15%;
+    }
+    .IdLv1 {
+      width: 10.89%;
+    }
+    .riskLevelLv1 {
+      width: 10%;
+    }
+    .keywordsLv1 {
+      width: 20%;
+    }
+    .walletLv1 {
+      width: 16%;
+    }
+    .statusLv1 {
+      width: 18.6%;
+      :global(.screenStatusBageWrapper) {
+        justify-content: unset;
+      }
+    }
+    .balanceLv1 {
+      width: 8.6%;
+    }
+    .ownerLv1 {
+      width: 14%;
+    }
+    .remarkLv1 {
+      width: auto;
+    }
+    .actionLv1 {
+      width: 8%;
+    }
+    .profileTable__collapseIcon {
+      :global(.MuiSvgIcon-root path) {
+        fill: #d7d7d7;
+      }
+    }
+    .rowHasChildern {
+      :global(.MuiTableCell-body) {
+        border-bottom: 0;
+      }
+    }
+  }
+  .ChidrenTable {
+    width: 1080px !important;
+    border-bottom: 0;
+    .profileTable_tableLv2 {
+      table-layout: fixed;
+      min-width: 1080px !important;
+      width: auto;
+      overflow: hidden !important;
+    }
+    :global(.MuiTableCell-body) {
+      border-bottom: 0;
+    }
+    :global(.MuiTypography-Subtitle2) {
+      margin-top: toRem(13);
+      margin-bottom: toRem(13);
+      display: inline-block;
+    }
+    :global(.MuiTableContainer-root) {
+      border-radius: 2px;
+    }
+    :global(.MuiTableHead-root) {
+      background: #f9f9f9;
+    }
+    .relationshipSelect {
+      width: 15%;
+      :global(.MuiSelect-outlined) {
+        font-size: toRem(14);
+        color: #232323;
+      }
+      :global(.MuiMenuItem-root) {
+        font-size: toRem(14);
+        color: #232323;
+        opacity: 0.9;
+      }
+
+      :global(.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline) {
+        border-color: $default;
+      }
+      :global(.MuiOutlinedInput-root.Mui-focused
+          .MuiOutlinedInput-notchedOutline) {
+        border-color: $primary;
+      }
+    }
+    :global(.MuiSvgIcon-root) {
+      fill:  $default;
+    }
+    .nameLv2 {
+      width: 15%;
+    }
+    .IdLv2 {
+      width: 12%;
+    }
+    .riskLevelLv2 {
+      width: 12%;
+    }
+    .keywordsLv2 {
+      width: 18%;
+    }
+    .walletLv2 {
+      width: 16%;
+    }
+    .statusLv2 {
+      width: 15%;
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 12px;
+      :global(.screenStatusBageWrapper) {
+        justify-content: unset;
+      }
+    }
+    .balanceLv2 {
+      width: 8.6%;
+    }
+    .ownerLv2 {
+      width: 14%;
+    }
+    .remarkLv2 {
+      width: 16.6%;
+    }
+    .actionLv2 {
+      width: auto;
+      :hover {
+        cursor: pointer;
+      }
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: toRem(10);
+    }
+  }
+}

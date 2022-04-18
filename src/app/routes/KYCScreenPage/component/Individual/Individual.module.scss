@@ -1,0 +1,232 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.FormIndividual {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  background-color: #ffffff;
+  :global(.MuiRadio-root) {
+    padding: toRem(6) toRem(10);
+  }
+
+  :global(.MuiOutlinedInput-root) {
+    margin-bottom: 0;
+  }
+
+  :global(.MuiOutlinedInput-root) input {
+    padding-top: toRem(14);
+    padding-bottom: toRem(13);
+    height: toRem(23);
+  }
+  :global(.MuiSelect-select) {
+    padding-top: toRem(16);
+    padding-bottom: toRem(11);
+    height: toRem(23);
+    color: $grayText1;
+  }
+
+  :global(.MuiAutocomplete-inputRoot) {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: toRem(32) !important;
+  }
+  :global(.MuiDivider-root) {
+    height: 1px;
+    background-color: $grayText1;
+    width: "100%";
+  }
+
+  :global(.MuiButton-outlined) {
+    border: 1px solid $grayBorder;
+    color: $grayText;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: toRem(16);
+    line-height: 20px;
+    min-width: toRem(120);
+    &:hover {
+      background-color: #fcfcfc;
+    }
+
+    &:focus {
+      background-color: #fcfcfc;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.08);
+    }
+  }
+  :global(.MuiButton-contained) {
+    font-weight: 600;
+    line-height: toRem(0.2);
+  }
+  .switchTitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: toRem(14);
+    line-height: toRem(20);
+    color: $defaultDark;
+  }
+}
+
+.colorRadio {
+  color: #7e7e7e;
+}
+
+.widthBoxYear input {
+  padding-right: 0 !important;
+}
+.cardReScreening {
+  padding: toRem(13) toRem(20);
+  border-radius: 6px;
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
+  > div {
+    font-style: normal;
+    font-weight: 500;
+    font-size: toRem(14);
+    line-height: toRem(20);
+    color: $defaultDark;
+  }
+}
+
+.spacingLine {
+  margin-top: toRem(27);
+  margin-bottom: toRem(27);
+}
+
+.containerSwitches {
+  .boxSwitches {
+    &:first-child {
+      margin-right: toRem(80);
+    }
+  }
+}
+
+.reScreening {
+  margin-left: 0px;
+}
+.DatasetsContainer {
+  background-color: #fbfbfb;
+}
+
+.Datasets {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-top: 0;
+  font-family: Montserrat;
+
+  .DatasetContainer {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin-left: toRem(-24);
+  }
+
+  .DatasetsTitle {
+    margin-bottom: toRem(8);
+    span {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: toRem(12);
+      line-height: toRem(16);
+      letter-spacing: toRem(0.2);
+      color: $default;
+      margin-right: toRem(16);
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .DatasetDeselectAll {
+    padding: 0;
+    color: $primary !important;
+    font-weight: 500;
+    font-size: toRem(12);
+    line-height: 1;
+    border-bottom: 1px dashed #fff;
+    border-radius: 0;
+    min-width: auto;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .DatasetContent {
+    margin-top: toRem(22);
+    height: "100%" !important;
+  }
+
+  .DatasetField {
+    flex-grow: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    flex-basis: calc((100% / 3) - #{toRem(24)});
+    margin-left: toRem(24) !important;
+    box-sizing: border-box;
+    margin-right: 0;
+    .label {
+      font-size: toRem(14) !important;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      line-height: toRem(20);
+      color: $grayText;
+    }
+  }
+
+  :global(.MuiFormControlLabel-label) {
+    font-size: toRem(17);
+    line-height: toRem(22);
+    color: #464646;
+  }
+
+  :global(.MuiIconButton-root) {
+    padding: 0;
+    margin-right: toRem(12);
+  }
+
+  :global(.MuiFormControlLabel-root) {
+    margin-left: 0;
+    svg {
+      fill: #bdbdbd;
+    }
+  }
+
+  :global(.Mui-checked) {
+    svg {
+      fill: $primary;
+    }
+  }
+}
+.Individual {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  :global(.RegCard-body) {
+    padding-right: toRem(8) !important;
+    @media (max-width: 1366px) {
+      padding-right: toRem(12) !important;
+    }
+    @media (width: 1440px) {
+      padding-right: toRem(6) !important;
+      padding-left: toRem(12) !important;
+    }
+  }
+}
+.groupAction {
+  padding: toRem(20) toRem(24);
+}
+.label {
+  font-size: toRem(12) !important;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: toRem(16);
+  color: $default;
+  letter-spacing: toRem(0.2);
+}
+.datasetPadding {
+  margin-left: toRem(-10) !important;
+}

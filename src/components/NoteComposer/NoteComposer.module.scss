@@ -1,0 +1,176 @@
+@import "~@protego/sdk/styles/global/_global-dir";
+
+@mixin scrollbar($bg-color: #f5f5f5) {
+  &::-webkit-scrollbar {
+    width: rem(6px);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: $bg-color;
+  }
+}
+
+.Notes {
+  margin-bottom: rem(8px);
+  textarea {
+    border: none;
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.NoteButtons {
+  display: flex;
+  justify-content: space-between;
+
+  .NoteAttach {
+    svg {
+      height: rem(17px);
+      width: auto;
+    }
+  }
+
+  .NoteSubmit {
+    margin-left: rem(8px);
+
+    svg {
+      width: rem(15.96px);
+      height: auto;
+    }
+    &:disabled svg path {
+      fill: #bfbfbf;
+    }
+
+    svg path {
+      fill: #0080ff;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+.NoteList {
+  margin: {
+    left: rem(-20px);
+    right: rem(-14px);
+    top: rem(20px);
+  }
+
+  min-height: 1px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-grow: 1;
+  > div {
+    padding: rem(20px) {
+      bottom: rem(14px);
+    }
+    border-bottom: 1px solid #f4f4f4;
+    :global(.MuiAvatar-root) {
+      width: rem(40px);
+      height: rem(40px);
+      font-size: rem(17px);
+    }
+  }
+
+  > div:first-child {
+    padding-top: 0;
+  }
+
+  @include scrollbar;
+}
+
+.NoteHeight {
+  height: rem(240px);
+  display: flex;
+  flex-direction: column;
+}
+
+.NotesInline {
+  padding: rem(14px) rem(15px) !important;
+  border: 1.5px solid #f5f5f5;
+  box-shadow: 0px rem(2px) rem(4px) rgba(35, 35, 35, 0.1);
+  border-radius: rem(9px);
+
+  form {
+    display: flex;
+    align-items: center;
+  }
+
+  &:focus-within {
+    border: 1.5px solid #ebebeb;
+    box-shadow: none;
+    border-radius: rem(6px);
+  }
+
+  .NoteInput {
+    margin-right: rem(52px);
+    font-size: rem(15px);
+    color: #464646;
+    line-height: rem(20px);
+    max-height: rem(60px);
+    padding: 0px rem(5px) 0 0;
+    @include scrollbar(#e6e6e6);
+
+    &::placeholder {
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+
+  .NoteButtons {
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: absolute;
+    top: rem(10px);
+    right: rem(13px);
+  }
+}
+
+@media (min-width: 768px) {
+  .NoteHeight {
+    height: rem(240px);
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.NoteText {
+  width: rem(300px);
+  overflow: hidden;
+  word-break: break-word;
+  font-size: rem(15px);
+  line-height: rem(20px);
+  padding-right: 5px;
+}
+
+@media (min-width: 768px) {
+  .NoteText {
+    width: rem(225px);
+    overflow: hidden;
+    word-break: break-word;
+  }
+}
+
+@media (min-width: 1366px) {
+  .NoteText {
+    width: rem(210px);
+    overflow: hidden;
+  }
+}
+@media (min-width: 1920px) {
+  .NoteText {
+    width: rem(280px);
+    overflow: hidden;
+  }
+}
+@media (min-width: 2056px) {
+  .NoteText {
+    width: rem(320px);
+    overflow: hidden;
+  }
+}

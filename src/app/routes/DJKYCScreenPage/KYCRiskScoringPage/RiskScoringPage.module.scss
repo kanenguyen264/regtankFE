@@ -1,0 +1,78 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.EscalateWrap {
+  min-width: auto !important;
+}
+.buttonGroup {
+  :global(.MuiButton-root:not(.MuiButton-outlinedIcon, .MuiButton-outlinedIconDefault)) {
+    width: toRem(120);
+  }
+}
+.Link {
+  font-size: rem(14px);
+  color: $primary;
+  font-weight: 500;
+}
+.MarginActivity {
+  margin-top: toRem(10);
+}
+.iconBack {
+  color: #232323;
+  padding: 0;
+}
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: toRem(16);
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .matchHeight {
+    min-height: rem(951.5px);
+  }
+}
+@media (min-width: 1366px) {
+  .matchHeight {
+    min-height: rem(964px);
+  }
+}
+@media (min-width: 1680px) {
+  .matchHeight {
+    min-height: rem(960px);
+  }
+}
+@media (min-width: 1920px) {
+  .matchHeight {
+    min-height: rem(973px);
+  }
+}
+.TextDescription {
+  font-size: rem(14px);
+  color: $default;
+  font-weight: 400;
+}
+.PaddingTopText {
+  margin-top: toRem(24);
+}
+.noteContainer {
+  :global(.RegCard-root) {
+    border: unset;
+  }
+  :global(.RegCard-header) {
+    padding-bottom: 0px;
+  }
+  :global(.RegCard-body) {
+    padding-top: 0px;
+  }
+}
+.noteRisk {
+  margin-bottom: 0;
+}
+.riskScoreContainer {
+  :global(.RegCard-body) {
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

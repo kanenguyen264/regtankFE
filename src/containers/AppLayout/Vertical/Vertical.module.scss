@@ -1,0 +1,15 @@
+.AppContainer {
+  composes: app-container from global;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.AppMainContainer {
+  composes: app-main-container from global;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  background-color: #fafafa;
+}

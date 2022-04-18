@@ -1,0 +1,207 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+.Link {
+  color: $primary;
+  cursor: pointer;
+  svg {
+    width: rem(12.36px);
+  }
+
+  :global(.MuiCopyButton-copyButton) {
+    padding-left: toRem(5);
+  }
+
+  :global(.MuiTypography-root) {
+    font-size: toRem(16);
+    line-height: toRem(20);
+  }
+}
+.addNew {
+  :global(.MuiButton-root) {
+    height: toRem(40);
+    font-weight: 600;
+    font-size: toRem(14);
+    line-height: toRem(20);
+    box-shadow: none !important;
+    background-color: $primary !important;
+    text-transform: capitalize;
+  }
+
+  :global(.MuiButton-startIcon) {
+    margin-right: toRem(8);
+    transform: none !important;
+    top: auto !important;
+  }
+
+  :global(.MuiSvgIcon-root) {
+    width: toRem(18);
+  }
+}
+
+.dropdownButton {
+  :global(.MuiButton-root) {
+    width: toRem(140);
+    font-weight: 600 !important;
+    font-size: toRem(14);
+    line-height: toRem(20);
+    height: toRem(40);
+    padding: toRem(9) toRem(15);
+    background: #ffc129 !important;
+    text-transform: capitalize;
+    border: 0;
+  }
+
+  :global(.MuiSvgIcon-root) {
+    width: toRem(12);
+
+    path {
+      fill: $white;
+    }
+  }
+
+  :global(.Mui-selected) {
+    background: none;
+  }
+
+  :global(.MuiButton-endIcon) {
+    margin-left: toRem(5);
+    top: auto !important;
+    transform: none !important;
+  }
+}
+
+.filterBox {
+  display: flex;
+  align-items: center;
+  > span {
+    font-weight: 500;
+    font-size: toRem(14);
+    line-height: toRem(20);
+    color: rgba(35, 35, 35, 0.7);
+    margin-right: toRem(16);
+  }
+  :global(.MuiFormControl-root) {
+    min-width: toRem(130);
+    padding: toRem(8) 0;
+    border: 1px solid $borderButton;
+    border-radius: 6px;
+    height: toRem(40);
+    background-color: $white;
+
+    legend {
+      display: none;
+    }
+  }
+  :global(.MuiSelect-select) {
+    padding: 0 toRem(40) 0 toRem(10) !important;
+    font-size: toRem(16);
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    color: rgba(35, 35, 35, 0.9);
+  }
+  :global(.MuiSvgIcon-root) {
+    width: toRem(12);
+    position: relative;
+    right: toRem(17);
+    pointer-events: none;
+    path {
+      fill: rgba(35, 35, 35, 0.7);
+    }
+  }
+
+  :global(.MuiSelect-outlined) {
+    margin-bottom: 0 !important;
+  }
+  :global(.MuiOutlinedInput-notchedOutline) {
+    border: 1px solid $borderButton !important;
+    border-radius: 6px;
+    width: toRem(130);
+    border-color: $borderButton !important;
+    border: none !important;
+  }
+}
+
+.containerWrap {
+  background-color: $white;
+  overflow: hidden;
+  :global(.RegCard-header) {
+    padding: toRem(15) toRem(20) !important;
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    :global(.MuiTypography-root) {
+      font-weight: 600;
+      font-size: toRem(18);
+      line-height: toRem(20);
+
+      color: rgba(35, 35, 35, 0.9);
+    }
+  }
+
+  :global(.RegCard-body) {
+    padding: 0 !important;
+  }
+
+  :global(.search-bar) {
+    margin: 0 toRem(20);
+
+    :global(.form-control::placeholder) {
+      font-style: italic;
+    }
+
+    :global(.form-group) {
+      height: toRem(40);
+      position: relative;
+      min-height: auto;
+    }
+  }
+
+  :global(.search-icon svg) {
+    fill: $white;
+    width: toRem(22);
+  }
+
+  .filterBox {
+    padding: 0 toRem(20);
+  }
+
+  .buttonsHeader {
+    display: flex;
+  }
+
+  .searchWrap {
+    padding: toRem(11) 0;
+    background: #f9f9f9;
+  }
+
+  :global(.RegStatusBadge-wrap) {
+    justify-content: flex-start;
+  }
+
+  :global(.MuiTablePagination-root) {
+    flex-grow: 2;
+    + ul {
+      margin-right: toRem(80);
+    }
+  }
+}
+
+.dropdownList {
+  box-sizing: border-box;
+
+  :global(.MuiMenuItem-root) {
+    font-weight: 500;
+    font-size: toRem(12);
+    line-height: toRem(16);
+    color: #606e7b;
+    padding: toRem(8) toRem(14) !important;
+  }
+
+  :global(.MuiPaper-root.MuiPaper-rounded) {
+    box-shadow: 0px 0px 8px rgba(37, 40, 43, 0.12);
+    margin-top: toRem(8);
+  }
+}

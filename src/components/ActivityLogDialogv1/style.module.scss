@@ -1,0 +1,129 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+.dialogWrapper {
+  .headerPopup {
+    background: $primary;
+    padding-left: toRem(20);
+    padding-right: toRem(20);
+  }
+  .label {
+    color: $grayText;
+    font-size: toRem(12);
+    opacity: 0.8;
+    line-height: toRem(16);
+    font-weight: 500;
+  }
+  .text {
+    color: $bodyText;
+    font-size: toRem(14);
+    line-height: toRem(20);
+  }
+  .updateBy {
+    color: $success;
+    font-size: toRem(14);
+    line-height: toRem(20);
+    line-height: toRem(20);
+  }
+  .textTitle {
+    font-size: toRem(21);
+    color: $white;
+    font-weight: 500;
+  }
+  .noteContent {
+    color: $bodyText;
+    font-size: toRem(14);
+    line-height: toRem(20);
+  }
+  .contentHeight {
+    height: toRem(620);
+    padding: 0;
+    margin-right: 0;
+    overflow: hidden;
+  }
+  .dialogContent {
+    padding-top: 0;
+    height: 100%;
+    padding-right: 0;
+    padding-left: toRem(24);
+  }
+  .icActivityLog {
+    padding-right: toRem(8);
+  }
+  .viewMore {
+    color: $primary;
+    cursor: pointer;
+    padding-left: toRem(5);
+    font-size: toRem(14);
+  }
+  .textNote {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    word-break: break-word;
+  }
+  .collapsed {
+    overflow: hidden;
+  }
+  .expanded {
+    overflow: visible;
+    height: auto;
+    white-space: inherit;
+  }
+
+  .breakWord {
+    word-break: break-word;
+  }
+  .gridItem {
+    margin-top: toRem(6);
+  }
+  .itemContent {
+    padding-right: toRem(24);
+    margin-bottom: toRem(16);
+  }
+  .itemNote {
+    padding-top: toRem(16);
+  }
+  .dividerPadding {
+    padding-top: toRem(16);
+    :global(.MuiDivider-root) {
+      border-bottom: 1px solid $grayText1;
+    }
+  }
+  :global(.MuiDivider-root) {
+    border-style: unset;
+    border-color: $grayText1;
+    border-bottom-width: thin;
+  }
+  :global(.MuiPaper-root) {
+    width: toRem(746);
+    max-width: toRem(800);
+  }
+
+  :global(.MuiDialogContent-root) {
+    margin-right: toRem(6);
+  }
+
+  :global(.MuiDialogTitle-root) {
+    padding: toRem(16) toRem(24);
+  }
+
+  :global(.reg-MuiCloseableDialogTitle-title) {
+    :global(.MuiSvgIcon-root path) {
+      fill: $bodyText;
+    }
+  }
+
+  :global(.RegScrollbarVTrack) {
+    right: toRem(8);
+    width: toRem(6) !important;
+  }
+
+  :global(.RegScrollbarVThumb) {
+    background-color: $grayBorder;
+  }
+}

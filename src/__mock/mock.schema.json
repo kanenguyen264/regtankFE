@@ -1,0 +1,162 @@
+{
+  "type": "object",
+  "required": ["data", "users"],
+  "properties": {
+    "data": {
+      "$ref": "#/definitions/resultPaged"
+    },
+    "users": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 20,
+      "items": {
+        "$ref": "#/definitions/user"
+      }
+    }
+  },
+  "definitions": {
+    "result": {
+      "type": "object",
+      "required": [
+        "screeningId",
+        "name",
+        "dob",
+        "gender",
+        "nationality",
+        "keywords",
+        "lastModifiedAt",
+        "lastModifiedBy",
+        "notes",
+        "status"
+      ],
+      "properties": {
+        "screeningId": {
+          "type": "string",
+          "faker": "random.uuid"
+        },
+        "name": {
+          "type": "string",
+          "faker": "name.findName"
+        },
+        "dob": {
+          "type": "string",
+          "faker": {
+            "date.past": [40]
+          }
+        },
+        "gender": {
+          "type": "string",
+          "faker": {
+            "random.arrayElement": [["male", "female", "unspecified"]]
+          }
+        },
+        "nationality": {
+          "type": "string",
+          "faker": {
+            "random.arrayElement": [["US", "CN", "VN", "SG"]]
+          }
+        },
+        "keywords": {
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 3,
+          "items": {
+            "$ref": "#/definitions/keyword"
+          }
+        },
+        "assignee": {
+          "type": "object",
+          "jsonPath": "$.users[*]"
+        },
+        "lastModifiedBy": {
+          "type": "object",
+          "jsonPath": "$.users[*]"
+        },
+        "lastModifiedAt": {
+          "type": "string",
+          "faker": {
+            "date.recent": [3]
+          }
+        },
+        "notes": {
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 2,
+          "items": {
+            "$ref": "#/definitions/note"
+          }
+        },
+        "status": {
+          "type": "string",
+          "faker": {
+            "random.arrayElement": [["unresolved", "positive", "false"]]
+          }
+        }
+      }
+    },
+    "resultPaged": {
+      "type": "object",
+      "properties": {
+        "records": {
+          "type": "array",
+          "minItems": 10,
+          "maxItems": 20,
+          "items": {
+            "$ref": "#/definitions/result"
+          }
+        },
+        "total_records": {
+          "type": "number",
+          "jsonPath": "$..records.length"
+        }
+      },
+      "required": ["records", "total_records"]
+    },
+    "keyword": {
+      "type": "object",
+      "required": ["text", "color"],
+      "properties": {
+        "text": {
+          "type": "string",
+          "faker": {
+            "fake": "{{name.jobType}} {{name.jobType}}"
+          }
+        },
+        "color": {
+          "type": "string",
+          "faker": {
+            "internet.color": [88, 88, 88]
+          }
+        }
+      }
+    },
+    "user": {
+      "type": "object",
+      "faker": "custom.user"
+    },
+    "note": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "faker": "random.uuid"
+        },
+        "createdAt": {
+          "type": "string",
+          "faker": {
+            "date.recent": [30]
+          }
+        },
+        "createdBy": {
+          "type": "object",
+          "jsonPath": "$.users[*]"
+        },
+        "content": {
+          "type": "string",
+          "faker": "lorem.sentences"
+        }
+      },
+      "required": ["id", "createdAt", "createdBy", "content"]
+    }
+  }
+}

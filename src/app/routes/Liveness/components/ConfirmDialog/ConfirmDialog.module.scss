@@ -1,0 +1,21 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+.confirmDialog {
+	:global(.MuiDialogTitle-root ) {
+		padding-left: toRem(24);
+		padding-right: toRem(24);
+		:global(.MuiIconButton-root) {
+			padding: 0;
+			right: toRem(4);
+		}
+	}
+	:global(.MuiDialogContent-root) {
+		padding-left: toRem(24);
+		padding-right: toRem(24);
+	}
+	:global(.MuiDialogActions-root) {
+		padding-top: toRem(16);
+		padding-left: toRem(24);
+		padding-right: toRem(24);
+		padding-bottom: toRem(24);
+	}
+}

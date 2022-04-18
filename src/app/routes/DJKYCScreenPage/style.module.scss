@@ -1,0 +1,141 @@
+@import "~@protego/sdk/styles/global/_global-dir";
+$gutter: rem(24px);
+$baseWidth: 1506 - 26;
+.Container {
+  :global {
+    .fade-enter {
+      opacity: 0;
+    }
+    .fade-exit {
+      opacity: 1;
+    }
+    .fade-enter-active {
+      opacity: 1;
+    }
+    .fade-exit-active {
+      opacity: 0;
+    }
+    .fade-enter-active,
+    .fade-exit-active {
+      transition: opacity 125ms;
+    }
+  }
+}
+.PageHeading {
+  margin-bottom: rem(30.2px);
+}
+.Section {
+  padding: rem(30.8px) rem(30px);
+}
+.SectionCommon > div {
+  margin: -$gutter/2;
+  display: flex;
+  > div {
+    padding: $gutter/2;
+    &:nth-child(1) {
+      flex: 1 1 percentage(394 / $baseWidth);
+      display: flex;
+      justify-content: center;
+    }
+    &:nth-child(2) {
+      flex: 1 1 percentage(($baseWidth - 394) / $baseWidth);
+    }
+  }
+}
+.contentContainer {
+  width: 64.7%;
+}
+.contentHeader {
+  flex: 1;
+  margin: 0px;
+  max-height: 100%;
+  background-color: #fafbff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.container {
+  flex-direction: row;
+  flex: 1;
+  display: flex;
+}
+.titleMargin {
+  margin-bottom: 40px !important;
+}
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: rem(30px);
+  flex: 1;
+}
+.tySupportContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.tySupportTitle {
+  font-weight: 400 !important;
+  font-size: 2rem !important;
+  color: #3f51b5 !important;
+  padding-top: rem(45px);
+}
+.tySupportDescription {
+  font-weight: 400 !important;
+  font-size: 2rem !important;
+  color: #3f51b5 !important;
+}
+.tySupportButton {
+  margin-top: rem(65px) !important;
+  width: rem(466px) !important;
+}
+
+.MatchesStatus {
+  position: relative;
+  overflow: hidden;
+  padding: 6px 16px;
+  border: 0 !important;
+  box-shadow: none;
+
+  :global(.MuiDropdown-dropdownLabel) {
+    font-weight: normal;
+  }
+
+  :global(.MuiButton-endIcon) {
+    padding-left: 8px;
+    &:before {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      margin-left: -8px;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+.StatusButtonTbl {
+  :global(.MuiButton-label) {
+    min-width: rem(128px);
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.vCustomScrollBarThumb,
+.hCustomScrollBarThumb {
+  background-color: #f5f5f5;
+  border-radius: 100px;
+}
+
+.vCustomScrollBarTrack {
+  position: absolute;
+  width: 6px;
+  right: 4px;
+  bottom: 3px;
+  top: 15px;
+  border-radius: 3px;
+}

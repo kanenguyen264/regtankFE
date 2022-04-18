@@ -1,0 +1,36 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.btnIsReject {
+  background-color: #d44333 !important;
+  color: #ffffff !important;
+  &:hover {
+    background: #d44333;
+  }
+  border: #d44333 !important;
+}
+
+.btnPrimary {
+  height: toRem(40);
+}
+
+.btnIsApprove {
+  background-color: #55d05b !important;
+  color: #ffffff;
+  &:hover {
+    background: #55d05b;
+  }
+  &:disabled {
+    color: white;
+  }
+  margin-left: 0px;
+}
+.textViewLog {
+  cursor: pointer;
+  color: #0080ff;
+  font-size: toRem(15);
+  padding-left: toRem(18);
+  padding-right: toRem(18);
+}
+.editButton {
+  min-width: toRem(36) !important;
+}

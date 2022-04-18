@@ -1,0 +1,80 @@
+@import "~@protego/sdk/styles/global/_global-dir";
+
+.headerPopup {
+  background: #0080ff;
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+}
+.label {
+  color: #7a7a7a;
+  font-size: rem(14px);
+}
+.text {
+  color: #252525;
+  font-size: rem(14px);
+}
+.textTitle {
+  font-size: rem(21px);
+  color: #ffffff;
+  font-weight: 500;
+}
+.noteContent {
+  color: #252525;
+  font-size: rem(14px);
+  line-height: rem(20px);
+}
+.contentHeight {
+  height: rem(540px);
+  padding: 0px;
+}
+.dialogContent {
+  padding-top: rem(23px);
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+}
+.icActivityLog {
+  padding-right: rem(8px);
+}
+.viewMore {
+  color: #0080ff;
+  cursor: pointer;
+  padding-left: rem(5px);
+  font-size: rem(14px);
+}
+.textNote {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+  word-break: break-word;
+}
+.collapsed {
+  overflow: hidden;
+}
+.expanded {
+  overflow: visible;
+  height: auto;
+  white-space: inherit;
+}
+
+.breakWord {
+  word-break: break-word;
+}
+.gridItem {
+  margin-top: rem(6px);
+  min-height: rem(40px);
+}
+.itemContent {
+  margin-bottom: rem(24px);
+}
+.itemNote {
+  padding-top: rem(16px);
+}
+.dividerPadding {
+  padding-top: rem(15px);
+}

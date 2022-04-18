@@ -1,0 +1,322 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+.assign {
+  width: toRem(80);
+}
+.assignPadding {
+  @media (max-width: 1440px) {
+    margin-left: toRem(4);
+  }
+}
+.Ids {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+  min-width: toRem(180);
+}
+.Link {
+  color: #0080ff;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  :global(.MuiTypography-root) {
+    font-size: toRem(14);
+    line-height: toRem(0) !important;
+  }
+
+  :global(.MuiSvgIcon-root) {
+    height: toRem(18);
+    width: toRem(16);
+  }
+}
+.Header {
+  white-space: nowrap;
+}
+.Score {
+  margin: {
+    top: rem(-3px);
+    bottom: rem(-3px);
+  }
+}
+img.Flag {
+  width: rem(30px);
+  height: rem(30px);
+}
+.dropdownBorder {
+  border: 1px solid #606981 !important;
+  color: #454545;
+  background-color: #ffffff !important;
+}
+.iconMf {
+  margin-left: 0.5rem;
+}
+.cleanPadding {
+  padding: rem(10px);
+  height: rem(500px);
+}
+@media (min-width: 1366px) {
+  .cleanPadding {
+    padding: rem(20px);
+  }
+}
+@media (min-width: 1920px) {
+  .cleanPadding {
+    padding: rem(10px);
+  }
+}
+.searchBoxStyle {
+  ::placeholder {
+    font-size: toRem(14) !important;
+  }
+}
+.searchWidth {
+  width: rem(460px);
+}
+.addButton {
+  display: inline-block;
+  padding-bottom: 0;
+  svg {
+    width: rem(14px);
+    height: auto;
+  }
+  path {
+    stroke: #d3d3d3;
+  }
+
+  &:hover path {
+    stroke: #0080ff !important;
+    opacity: 0.7;
+  }
+}
+.refreshButton {
+  min-width: rem(20px) !important;
+}
+// .btn {
+//   font-weight: 500;
+//   min-width: rem(104px);
+//   height: rem(40px);
+//   background: #0080ff;
+//   color: white;
+//   border: 1px solid #0080ff;
+//   &:hover {
+//     background: #0080ff;
+//   }
+//   &:disabled {
+//     background: #ffffff;
+//     border: 1px solid #d3d3d3;
+//   }
+// }
+// .btnAdd {
+//   min-width: rem(30px);
+// }
+.btn {
+  min-width: toRem(104);
+  height: toRem(40);
+}
+.btnAdd {
+  min-width: toRem(30);
+}
+.btn {
+  min-width: toRem(104);
+  height: toRem(40);
+}
+.btnAdd {
+  min-width: toRem(30);
+}
+.btnRemove {
+  color: #ea2134;
+  border: 1px solid #ea2134;
+  background-color: white;
+  &:hover {
+    background: #ea2134;
+    color: white;
+  }
+}
+.btnPlaceholder {
+  color: #7a7a7a;
+  border: 1px solid #c2c2c2;
+  background-color: white;
+  &:hover {
+    background: #0080ff;
+    color: white;
+  }
+}
+.dialogCenter {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.textPlaceholder {
+  color: #7a7a7a !important;
+}
+.width30 {
+  width: rem(50px);
+}
+@media (min-width: 1280px) {
+  .width30 {
+    min-width: rem(50px);
+  }
+}
+@media (min-width: 1920px) {
+  .width30 {
+    min-width: rem(50px);
+  }
+}
+.iconButton {
+  background-color: #ebebeb;
+  color: #7a7a7a;
+  margin-right: rem(10px);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.textPlaceholderAdd {
+  color: #7a7a7a !important;
+  font-size: rem(14px);
+}
+.btnPrimary {
+  background-color: #0080ff;
+  color: white;
+  &:disabled {
+    background: #d3d3d3;
+  }
+  &:hover {
+    background: #0080ff;
+    color: white;
+  }
+}
+
+.bgTabGroup {
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.14);
+  padding-top: toRem(16);
+}
+.width80 {
+  width: rem(20px);
+}
+@media (min-width: 1280px) {
+  .width80 {
+    min-width: rem(80px);
+  }
+}
+@media (min-width: 1920px) {
+  .width80 {
+    width: rem(20px);
+    background-color: #0080ff;
+  }
+}
+.searchBoxGroupList {
+  width: toRem(300);
+  :global(.form-group) {
+    min-width: toRem(100);
+  }
+}
+.tablePadding {
+  background-color: #0080ff;
+}
+.textOverSize {
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+  display: "block";
+}
+.marginHeader {
+  margin-top: -20px;
+}
+@media (min-width: 1280px) {
+  .marginHeader {
+    margin-top: -10px;
+  }
+}
+.contentTable {
+  padding-top: rem(120px);
+}
+
+.dropdown {
+  width: rem(160px);
+}
+.textOverflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #0080ff;
+}
+.boxTabPanel {
+  padding-top: rem(13px);
+  padding-bottom: rem(12px);
+  padding-right: rem(16px);
+  border-bottom: 1px solid #f4f4f4;
+}
+.colorTitleDialog {
+  color: #0080ff;
+}
+.customScrollbarView {
+  padding-left: 2px;
+  padding-right: 10px;
+}
+.tableDialog {
+  margin-top: toRem(20);
+  :global(.MuiTable-root) {
+    :global(.MuiTableCell-root:first-child) {
+      padding-left: 0 !important;
+      width: toRem(33);
+    }
+    :global(.MuiTableHead-root) {
+      background-color: #fff;
+      :global(.MuiTableRow-root) {
+        :global(.MuiTableCell-root) {
+          span {
+            font-style: normal;
+            font-weight: 500;
+            font-size: toRem(14);
+            color: #232323;
+          }
+        }
+      }
+    }
+    :global(.MuiTableBody-root) {
+      :global(.MuiTableRow-root) {
+        :global(.MuiTableCell-root) {
+          font-size: toRem(14);
+          font-weight: 500;
+          color: #232323;
+          line-height: toRem(26);
+          :global(.MuiIconButton-root) {
+            // background-color: #ebf5ff;
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+}
+.CustomColWrapper {
+  margin-top: toRem(16);
+  color: #606e7b;
+  :global(.headerText) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: toRem(12);
+    line-height: 16px;
+    color: #232323;
+  }
+}
+.groupListDialogWrapper {
+  :global(.MuiDialogContent-root) {
+    padding-right: toRem(10);
+  }
+}
+
+.refreshPadding {
+  padding-right: toRem(16);
+}
+.divider {
+  height: toRem(26) !important;
+  background-color: #e9e9e9 !important;
+  width: 1px;
+}
+.Update {
+  width: toRem(140);
+}

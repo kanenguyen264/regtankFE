@@ -1,0 +1,24 @@
+{
+  "type": "array",
+  "minItems": 10,
+  "maxItems": 15,
+  "items": { "$ref": "#/definitions/item" },
+  "definitions": {
+    "item": {
+      "type": "object",
+      "required": ["label", "group"],
+      "properties": {
+        "label": {
+          "type": "string",
+          "faker": "company.companyName"
+        },
+        "group": {
+          "label": "string",
+          "faker": {
+            "random.arrayElement": [["Customer", "Staff Members", "Contacts"]]
+          }
+        }
+      }
+    }
+  }
+}

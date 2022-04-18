@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EAChB,QAAQ,EAAE,oCAAoC;EAC9C,OAAO,EAAE,qBAAqB;CAI/B;;AAND,AAGE,iBAHe,CAGf,OAAQ,CAAA,eAAe,EAAE;EACvB,YAAY,EAAE,MAAM;CACrB",
+    "sources": [
+        "AppNotifications.module.scss"
+    ],
+    "names": [],
+    "file": "AppNotifications.module.css"
+}

@@ -1,0 +1,277 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+$gutter: rem(26px);
+.LivenessWrapper {
+  .itemLabel {
+    font-size: rem(14px);
+    color: #7a7a7a;
+  }
+  .itemContent {
+    font-size: rem(16px);
+    font-weight: 400;
+    color: #252525;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: rem(12px);
+    img {
+      width: rem(300px);
+      object-fit: contain;
+      overflow: hidden;
+      background-color: #c4c4c4;
+    }
+    video {
+      width: rem(300px);
+      background-color: #c4c4c4;
+    }
+  }
+  .actions {
+    button {
+      margin-left: rem(16px);
+    }
+  }
+  .actionsRight {
+    button {
+      margin-right: rem(16px);
+    }
+  }
+
+  .textDelete {
+    font-size: rem(17px);
+    color: #0080ff;
+  }
+  .textTitle {
+    font-size: rem(20px);
+    color: #2b2b2b;
+    font-weight: 500;
+  }
+  .mb24 {
+    margin-bottom: rem(24px);
+  }
+  .mb16 {
+    margin-bottom: rem(16px);
+  }
+  .module {
+    padding-bottom: rem(32px);
+    padding-top: rem(32px);
+    padding-left: rem(30px);
+  }
+  .textLabelBold {
+    font-size: rem(18px);
+    font-weight: 500;
+    color: #2b2b2b;
+  }
+  .chip {
+    background-color: #b5daff !important;
+  }
+  .faceMatchText {
+    font-size: rem(20px);
+    font-weight: 500;
+  }
+  .groupAction {
+    padding-top: rem(60px);
+    padding-bottom: rem(30px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: rem(88px);
+    button {
+      margin-left: rem(16px);
+    }
+    :global(.MuiDivider-root) {
+      width: 1px;
+      background-color: #e6e6e6 !important;
+      // margin: toRem(6) 0 toRem(6) 0;
+      margin-top: toRem(8);
+      margin-bottom: toRem(6);
+    }
+  }
+  .container {
+    border: 1px solid #e8e8e8;
+    :global(.MuiButton-outlined) {
+      height: rem(40px);
+      color: #0080ff;
+      border: 1px solid #0080ff;
+      box-shadow: 0px 2px 4px rgba(34, 59, 96, 0.12);
+      padding: rem(16px);
+    }
+    :global(.MuiButton-contained) {
+      height: rem(40px);
+      background: #0080ff;
+    }
+  }
+  .btn {
+    min-width: rem(172px);
+  }
+  .imgResize {
+    border: 1px solid #e6e6e6;
+    overflow: hidden;
+    width: rem(300px);
+    height: rem(300px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .imgResize img {
+    object-fit: contain;
+    width: 100%;
+    min-height: 100%;
+  }
+  .jrCard {
+    padding: 0px;
+  }
+  .cellName {
+    // width: rem(180px);
+    // word-break: break-word;
+  }
+  .cellEmail {
+    word-break: break-word;
+  }
+  .titleHeader {
+    font-size: rem(28px) !important;
+    font-weight: 500;
+    color: #2b2b2b;
+  }
+  .actionsGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .btnClose {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: rem(15px);
+  }
+  .clsOnboardingPage {
+    .headerTitleTable {
+      font-weight: 600;
+    }
+    .card {
+      :global(.RegCard-body) {
+        padding: 0;
+      }
+    }
+  }
+  .iconRefresh {
+    float: right;
+    cursor: pointer;
+    // padding-top: rem(16px);
+    // padding-bottom: rem(16px);
+  }
+  .filterSearch {
+    background-color: #f9f9fa;
+    padding: rem(16px);
+  }
+  .paddingIconRefesh {
+  }
+  .filterBy {
+    color: #646f79;
+    font-size: rem(14px);
+  }
+  .searchOnboarding {
+    float: right;
+  }
+  .iconBack {
+    color: #232323;
+    padding: 0;
+  }
+  .headerDetail {
+    display: flex;
+    align-items: center;
+    margin-bottom: toRem(16);
+    justify-content: space-between;
+  }
+  .titleBox {
+    font-weight: 500;
+    font-size: toRem(12);
+    line-height: 16px;
+    letter-spacing: 0.12px;
+    color: $grayText;
+  }
+  .valueBox {
+    color: $bodyText;
+    font-weight: normal;
+    font-size: toRem(14);
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    margin-top: toRem(6);
+    word-break: break-all;
+    :global(span) {
+      color: $bodyText;
+      font-weight: normal;
+      font-size: toRem(14);
+      line-height: 20px;
+      letter-spacing: 0.1px;
+      word-break: break-all;
+      margin: 0;
+    }
+  }
+  :global(.RegCard-header *) {
+    font-weight: 600;
+    font-size: toRem(18);
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $bodyText;
+  }
+  .summaryBox {
+    :global(.RegCard-body) {
+      padding-bottom: toRem(48);
+    }
+    :global(.screenStatusBageWrapper) {
+      :global(.screenStatusBage) {
+        word-break: break-word;
+        text-align: center;
+        min-height: toRem(28);
+        height: auto !important;
+      }
+    }
+  }
+  .activityTrackerContainer {
+    display: flex;
+    align-items: center;
+  }
+  .iconClock {
+    width: toRem(24);
+    height: toRem(24);
+    path {
+      stroke: $default;
+    }
+  }
+  .activityTrackerRow {
+    display: flex;
+    align-items: center;
+  }
+  .activityTrackerItem {
+    font-weight: normal;
+    font-size: toRem(14);
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: $grayText;
+    margin-left: toRem(8);
+    &:last-child {
+      padding-left: toRem(12);
+      position: relative;
+      &:before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: toRem(8);
+        width: toRem(4);
+        height: toRem(4);
+        background: $default;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        -webkit-transform: translatey(-50%);
+        transform: translatey(-50%);
+      }
+    }
+  }
+  .headerOnboardingDetail {
+    :global(.PageHeading-root) {
+      margin-top: -3.875rem;
+    }
+  }
+}

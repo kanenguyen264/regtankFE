@@ -1,0 +1,42 @@
+{
+  "type": "array",
+  "minItems": 8,
+  "maxItems": 10,
+  "items": { "$ref": "#/definitions/noti" },
+  "definitions": {
+    "noti": {
+      "type": "object",
+      "required": ["id", "name", "title", "color", "date", "marked"],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "faker": "custom.incrementId"
+        },
+        "name": {
+          "type": "string",
+          "faker": "name.findName"
+        },
+        "title": {
+          "type": "string",
+          "faker": "lorem.sentence"
+        },
+        "color": {
+          "type": "string",
+          "faker": {
+            "internet.color": [64, 64, 64]
+          }
+        },
+        "date": {
+          "type": "string",
+          "faker": {
+            "date.recent": [1]
+          }
+        },
+        "marked": {
+          "type": "boolean",
+          "faker": "random.boolean"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+#!/usr/bin/env node
+const jsf = require("json-schema-faker");
+const fs = require("fs"),
+  path = require("path"),
+  range = require("lodash/range");
+
+const alphaNumeric = [
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "x",
+  "y",
+  "z"
+];
+
+jsf.extend("faker", () => {
+  const faker = require("faker");
+  let incrementId = 0,
+    incrementUserId = 0;
+  faker.custom = {
+    incrementId: () => ++incrementId,
+    walletId: () => {
+      return range(66)
+        .map((i) => {
+          const c = faker.random.arrayElement(alphaNumeric);
+          return faker.random.boolean() ? c.toUpperCase() : c;
+        })
+        .join("");
+    },
+    user: () => {
+      const firstName = faker.name.firstName(),
+        lastName = faker.name.lastName();
+      return {
+        id: ++incrementUserId,
+        firstName,
+        lastName,
+        avatar: (firstName[0] + lastName[0]).toUpperCase(),
+        colorCode: faker.internet.color(128, 128, 128)
+      };
+    }
+  };
+  return faker;
+});
+require("yargs") // eslint-disable-line
+  .command(
+    "$0 [name] [schemaFile]",
+    "generate faker data",
+    function () {},
+    ({ name, schemaFile }) =>
+      new Promise((resolve) => {
+        const fullSchemaFile = path.join(__dirname, schemaFile),
+          fullSchemaDir = path.dirname(fullSchemaFile);
+        const schema = JSON.parse(fs.readFileSync(fullSchemaFile));
+        jsf.resolve(schema).then((mock) => {
+          fs.writeFileSync(
+            path.join(fullSchemaDir, `${name}.json`),
+            JSON.stringify(mock)
+          );
+          resolve();
+        });
+      })
+  ).argv;

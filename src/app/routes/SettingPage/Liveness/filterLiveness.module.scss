@@ -1,0 +1,9 @@
+@import "../SettingsPage.module.scss";
+.filterLivenessWrapper {
+  width: 100%;
+  :global(.MuiSlider-root) {
+    span:nth-last-child(2) {
+      margin-left: -19px !important;
+    }
+  }
+}

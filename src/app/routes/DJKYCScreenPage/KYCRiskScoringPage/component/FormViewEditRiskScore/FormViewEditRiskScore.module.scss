@@ -1,0 +1,47 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.container {
+  background: $white;
+  box-shadow: unset;
+  font-weight: normal;
+  font-size: toRem(12);
+}
+.content {
+  padding-left: toRem(60);
+  padding-right: toRem(40);
+  padding-top: toRem(10);
+  @media (max-width: 1440px) {
+    padding-left: toRem(30);
+    padding-right: toRem(20);
+  }
+}
+.containerRow {
+  margin-bottom: toRem(5);
+}
+
+.colLeft {
+  color: #7a7a7a;
+}
+.colRight {
+  color: #252525;
+}
+.labelRiskScore {
+  font-weight: 500;
+  margin-right: toRem(15);
+}
+
+.legendBullet {
+  display: inline-block;
+  width: toRem(10);
+  height: toRem(10);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.containerRow {
+  margin-bottom: toRem(5);
+}
+.footerHistoryTotalRisk {
+  background: #f8fbff;
+  justify-content: flex-end;
+  height: toRem(40);
+}

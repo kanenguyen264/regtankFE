@@ -1,0 +1,280 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+$gutter: rem(26px);
+
+.CardHeaderContainer {
+  margin-left: rem(25px);
+  margin-right: rem(25px);
+  flex-direction: row;
+  display: flex;
+}
+.CardHeaderTitle {
+  font-size: rem(21px);
+}
+
+.TextDescription {
+  font-size: rem(14px);
+  color: $steelGray;
+}
+.CardContainer {
+  padding: 0 !important;
+  padding-top: rem(23px) !important;
+  margin-bottom: rem(5px) !important;
+}
+
+.PaddingTopText {
+  padding-top: rem(10px);
+}
+
+.IconButtonUnActiveStyle {
+  opacity: 0.6 !important;
+}
+
+.BodyBackground {
+  padding-top: rem(20px) !important;
+  padding-left: rem(25px) !important;
+  padding-right: rem(25px) !important;
+  margin-bottom: rem(5px) !important;
+  padding-bottom: rem(16px) !important;
+  border-top: 0.5px solid $extraWhiteLight;
+  min-height: rem(190px);
+}
+
+.linkSrc {
+  cursor: pointer;
+  display: block;
+  word-break: break-word;
+  overflow: hidden;
+  color: $primary;
+  &:hover {
+    text-decoration-thickness: 1px;
+    color: $primary;
+    text-decoration-color: $primary;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 2px;
+  }
+  font-size: toRem(14);
+  font-weight: 400;
+}
+
+.TextHeaderDescription {
+  text-align: end;
+  align-items: center;
+  font-size: rem(14px);
+  color: $steelGray;
+  padding-left: 1rem;
+}
+.TextPossible {
+  color: $primary;
+}
+
+.KeywordStyle {
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+  padding-top: rem(4px);
+  padding-bottom: rem(4px);
+  border-radius: rem(12px);
+  margin-right: rem(10px);
+  margin-top: rem(4px);
+  margin-bottom: rem(4px);
+  font-size: rem(12px) !important;
+}
+.KeywordWrap {
+  flex-wrap: wrap;
+  flex: 1;
+  display: flex;
+  align-items: center !important;
+}
+
+.ProfileTabContainer {
+  padding: 0px !important;
+  margin: 0px !important;
+  border-radius: 10px;
+}
+.TableContent {
+  padding-left: rem(23px);
+  padding-right: rem(23px);
+  padding-top: rem(20px);
+  min-height: rem(562px);
+}
+@media (min-width: 768px) {
+  .TableContent {
+    padding-left: rem(23px);
+
+    padding-top: rem(20px);
+    min-height: rem(598px);
+  }
+}
+@media (min-width: 1366px) {
+  .TableContent {
+    padding-left: rem(23px);
+    padding-right: rem(23px);
+    padding-top: rem(20px);
+    min-height: rem(598px);
+  }
+}
+@media (min-width: 1920px) {
+  .TableContent {
+    padding-left: rem(23px);
+    padding-right: rem(23px);
+    padding-top: rem(20px);
+    min-height: rem(595px);
+  }
+}
+.boxTabPanel {
+  border-bottom-left-radius: rem(6px);
+  border-bottom-right-radius: rem(6px);
+  background-color: $white;
+  box-shadow: 0.5px 1px 5px 3px rgba(26, 26, 26, 0.1);
+}
+.tabContainer {
+  :global(.MuiTabs-indicator) {
+    background-color: $white;
+  }
+  :global(.MuiTab-root) {
+    min-height: rem(48px);
+    @media (min-width: 600px) {
+      min-width: unset;
+    }
+  }
+  &:global(.MuiTabs-root) {
+    min-height: rem(48px);
+  }
+}
+
+.buttonGroup {
+  align-items: flex-start !important;
+  justify-content: flex-start;
+  display: flex;
+  flex: 1;
+  margin-top: rem(25px);
+}
+
+.backIcon {
+  padding-left: rem(10px);
+  padding-top: 0;
+  margin-bottom: rem(15px);
+  margin-top: rem(-15px);
+}
+.PageHeading {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.textarea {
+  border-style: none;
+  border-color: Transparent;
+  overflow: auto;
+  width: 100%;
+  border: 0 !important;
+  font-size: 1rem;
+  ::placeholder {
+    font-size: 2rem !important;
+  }
+}
+
+.textarea::placeholder {
+  font-size: 1rem;
+}
+
+.HeightFlag {
+  max-height: rem(20px) !important;
+}
+
+.TextOverFlow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: rem(332px) !important;
+}
+
+.TableSource {
+  table-layout: fixed;
+  :global(.MuiTableHead-root) {
+    height: toRem(50);
+    background-color: $disabledBg;
+  }
+}
+.disabledDiv {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.copyIcon {
+  button {
+    position: absolute;
+    top: -10px;
+    svg {
+      height: rem(16.37px);
+      width: rem(17.12px);
+    }
+  }
+}
+
+.removeHoverButton {
+  a {
+    color: $steelGray;
+  }
+  a:hover,
+  button:hover {
+    color: $steelGray;
+    background: transparent;
+    text-decoration: none;
+  }
+}
+
+.tabCustom {
+  min-width: 0px !important;
+  width: 25% !important;
+}
+
+.userAvatarInMatch {
+  font-size: 28px;
+  line-height: 36px;
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+.iconBack {
+  color: $bodyText;
+  padding: 0;
+}
+.header {
+  margin-bottom: toRem(16);
+}
+.Ids {
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+}
+.textOverflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.dialogPaper {
+  max-width: 52vh;
+  & hr {
+    border-top: 1px solid $grayText1;
+    margin-top: toRem(24);
+    margin-bottom: toRem(18);
+  }
+}
+.TableConnection {
+  :global(.MuiTableHead-root) {
+    height: toRem(50);
+    background-color: $disabledBg;
+  }
+
+  :global(.MuiTableBody-root) {
+    :global(.MuiTableCell-root) {
+      padding: toRem(16) 0;
+      :global(.MuiTypography-root) {
+        line-height: toRem(20);
+      }
+    }
+  }
+}

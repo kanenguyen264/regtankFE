@@ -1,0 +1,40 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.boxUploadFile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  button {
+    margin-right: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    svg {
+      margin-right: 8px;
+    }
+  }
+}
+.uploadFileButton {
+  display: flex;
+}
+.uploadFileText {
+  display: block;
+  font-weight: normal;
+  font-size: toRem(12);
+  line-height: toRem(16);
+  letter-spacing: 0.2px;
+  color: $default;
+}
+.boxListFile {
+  display: flex;
+}
+
+.boxListFileItem {
+  display: flex;
+  flex-wrap: wrap;
+  button.uploadFileButton {
+    margin-right: 12px;
+  }
+  > span:not(:last-child) {
+    margin-right: 8px;
+  }
+}

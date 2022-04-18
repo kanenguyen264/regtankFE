@@ -1,0 +1,274 @@
+@import "~@protego/sdk/styles/global/_global-dir";
+$gutter: rem(26px);
+
+.itemContainer {
+  padding-left: 0px;
+  padding-right: 0px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.headerTitle {
+  font-size: rem(21px) !important;
+  padding-top: rem(20px);
+  padding-left: rem(20px);
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: rem(20px);
+  color: #252525;
+}
+.JRCardStyle {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.itemContent {
+  padding-left: rem(20px);
+  padding-bottom: rem(10px);
+  padding-top: rem(10px);
+}
+.itemPadding {
+  padding-left: rem(20px);
+  padding-bottom: rem(10px);
+  padding-top: rem(10px);
+}
+.marginTop {
+  margin-top: -1rem !important;
+}
+.textStatus {
+  font-size: 1rem !important;
+  color: #252525 !important;
+}
+.description {
+  font-size: 1rem !important;
+  color: #808080 !important;
+}
+.textDateTime {
+  color: #9e9e9e !important;
+  font-size: 1rem !important;
+}
+.Link {
+  color: #3f51b5 !important;
+  cursor: pointer;
+  svg {
+    margin-right: rem(9.4px);
+    height: rem(16.37px);
+    width: rem(17.12px);
+    margin-top: rem(-6px);
+  }
+}
+.Ids {
+  @include table-cell-lines(1);
+  width: rem(100px);
+  height: rem(22px);
+}
+.TextLink {
+  color: green !important;
+}
+.textActivityDateTime {
+  color: #9e9e9e;
+  font-size: rem(15px);
+  font-weight: 400;
+}
+.FilterButtonContained {
+  font-weight: 500;
+  min-width: rem(104px);
+  height: rem(40px);
+  background: white;
+  color: #7a7a7a;
+  border: 1px solid #e6e6e6;
+  font-size: rem(14px);
+  padding: 0 rem(12px) 0 rem(12px);
+}
+
+.MoreFilterButtonContainedActive {
+  font-weight: 500;
+  min-width: rem(104px);
+  height: rem(40px);
+  background: white;
+  color: #0080ff;
+  border: 1px solid #0080ff;
+  svg path {
+    fill: #0080ff;
+  }
+  padding: 0 rem(12px) 0 rem(12px);
+}
+.FilterButton {
+  font-weight: 500;
+  height: rem(40px);
+}
+.FilterBorder {
+  border: 1px solid #e6e6e6;
+}
+.FilterBorder::placeholder {
+  font-size: rem(14px);
+  color: #a3a3a3;
+}
+.FilterButtonContainer {
+  background: #0080ff;
+  color: white;
+  &:hover {
+    background: #0080ff;
+  }
+  min-width: rem(104px);
+  height: rem(36px);
+}
+
+.Popover {
+  border-radius: rem(5px);
+  :global(.MuiCardContent-root) {
+    padding: rem(16px) rem(24px);
+  }
+  :global(.MuiFormGroup-row) {
+    margin-top: rem(-8.5px);
+  }
+  hr {
+    background-color: #bfbfbf;
+    margin: {
+      top: rem(18.5px);
+      bottom: rem(18.5px);
+    }
+  }
+
+  &.NameFilter {
+    :global(.MuiAutocomplete-popper) {
+      width: 100% !important;
+    }
+    :global(.MuiCardContent-root) {
+      padding: rem(16px);
+    }
+    :global(.MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"]) {
+      padding: 2px;
+    }
+  }
+}
+.checkBoxStyle {
+  color: #0080ff;
+}
+.formStyle {
+  padding-bottom: rem(8px);
+  padding-top: rem(8px);
+  overflow: hidden;
+}
+.popoverContainer {
+  max-height: 100px;
+  overflow-y: auto;
+}
+.popoverBody {
+  height: 50px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  padding-left: rem(16px);
+  padding-right: rem(16px);
+}
+.textOverflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  font-size: rem(14px);
+}
+
+.textLabel {
+  font-weight: 500;
+  padding-bottom: rem(6px);
+  padding-top: rem(6px);
+}
+
+.labelList {
+  padding-left: rem(24px);
+}
+@media (min-width: 1366px) {
+  .labelList {
+    padding-left: rem(22px);
+  }
+}
+@media (min-width: 1920px) {
+  .labelList {
+    padding-left: rem(16px);
+  }
+}
+.mr10 {
+  margin-right: rem(12px);
+}
+.textFilter {
+  font-size: rem(14px);
+  font-weight: 400;
+}
+.filterItemMargin {
+  margin-right: rem(12px);
+}
+.mb12 {
+  margin-bottom: rem(12px);
+}
+.textCapitalize {
+  text-transform: capitalize;
+}
+.textFilterLabel {
+  font-size: rem(16px);
+  font-weight: 400;
+  color: "#7A7A7A";
+  padding-right: rem(16px);
+  height: rem(40px);
+  align-items: center;
+  display: flex;
+}
+.container {
+  background-color: #ffffff;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+  padding-left: rem(30px);
+  padding-right: rem(30px);
+  padding-top: rem(16px);
+  padding-bottom: rem(16px);
+  :global(.MuiButton-iconSizeMedium > *:first-child) {
+    font-size: rem(16px);
+  }
+}
+.paddingChip {
+  margin-right: rem(8px);
+  margin-top: rem(8px);
+}
+
+.chipDelete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.FilterButtonOutline {
+  color: #0080ff;
+  border: 1px solid #0080ff;
+  svg path {
+    fill: #0080ff;
+  }
+  height: rem(40px);
+}
+.PopoverContainerFull {
+  min-width: rem(208px);
+  box-shadow: none;
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+}
+.FilterButtonCalendarReset {
+  height: rem(38px);
+  width: rem(114px);
+  color: #7e7e7e;
+}
+.FilterButtonCalendarApply {
+  height: rem(38px);
+  width: rem(114px);
+  background: #0080ff;
+  color: #ffffff;
+}
+.FilterButtonCalendarApply:hover {
+  height: rem(38px);
+  width: rem(114px);
+  background: #0080ff;
+  color: #ffffff;
+}
+.noAvailable {
+  font-size: rem(16px) !important;
+  padding: rem(10px) rem(30px);
+  stroke: #c2c2c2;
+}
+.disabledButton {
+  background: #f5f5f5;
+  opacity: 0.7;
+  border: 1px solid #b6b6b6 !important;
+}

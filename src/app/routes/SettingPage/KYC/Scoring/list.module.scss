@@ -1,0 +1,11 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+.riskLevelScoringWrapper {
+  margin-top: toRem(24);
+  :global(.RegCard-body) {
+    padding: 0 !important;
+  }
+  .bullAction {
+    width: rem(143px);
+    margin-right: toRem(25);
+  }
+}

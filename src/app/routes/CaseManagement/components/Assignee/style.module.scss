@@ -1,0 +1,134 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.assigneeDialog {
+  :global(.MuiPaper-root) {
+    width: toRem(600);
+    border-radius: 8px;
+    overflow-x: hidden;
+  }
+
+  :global(.MuiDialogTitle-root) {
+    padding: toRem(17) toRem(24);
+    font-weight: 600;
+    background-color: $white;
+    border-bottom: 1px solid $grayText1;
+
+    :global(.MuiTypography-root) {
+      font-weight: 600;
+      font-size: toRem(16);
+      line-height: toRem(26);
+      color: rgba(35, 35, 35, 0.9);
+    }
+
+    :global(.MuiButtonBase-root) {
+      padding: 0;
+      &:hover,
+      &:focus,
+      &:active {
+        background: unset;
+      }
+    }
+  }
+
+  :global(.MuiDialogContent-root) {
+    margin: toRem(20) 0 0;
+    min-width: 100%;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .assigneeDialog__search {
+    padding: 2px toRem(24);
+    margin-bottom: toRem(20);
+
+    input {
+      font-size: toRem(14);
+
+      &::placeholder {
+        font-size: toRem(14);
+      }
+    }
+  }
+
+  .assigneeDialog__listWrap {
+    padding-left: toRem(24);
+    padding-right: toRem(12);
+  }
+
+  .assigneeDialog__list {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+    padding-right: toRem(12);
+  }
+
+  .assigneeDialog__item {
+    padding: toRem(9) toRem(16) toRem(9) toRem(16);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: toRem(4);
+
+    svg {
+      width: toRem(24);
+      pointer-events: none;
+    }
+    &:hover {
+      background-color: #f5faff;
+      :global(.reg-MuiUserAvatar-description span) {
+        color: $primary !important;
+      }
+    }
+  }
+
+  .scrollbarView {
+    padding-right: toRem(12);
+  }
+
+  :global(.MuiDialogActions-root) {
+    padding: toRem(16) toRem(24);
+    border-top: 1px solid $grayText1;
+    margin-top: toRem(5);
+    justify-content: flex-end;
+
+    :global(.MuiButton-root) {
+      min-height: toRem(40);
+      min-width: toRem(110);
+      font-weight: 600;
+      text-transform: capitalize;
+      box-sizing: border-box;
+      box-shadow: none;
+      &:not(:first-child) {
+        margin-left: toRem(16);
+      }
+      &:first-child {
+        background-color: $white;
+        color: $defaultDark;
+        border: 1px solid $defaultDark;
+      }
+
+      &:global(.Mui-disabled) {
+        background-color: #c4c4c4;
+        color: $white;
+      }
+    }
+  }
+
+  :global(.search-bar) {
+    :global(.form-control) {
+      font-size: toRem(14);
+    }
+    :global(.form-group .form-control::placeholder) {
+      font-size: toRem(14);
+      line-height: toRem(17);
+      color: #a3a3a3;
+    }
+
+    :global(.search-icon svg) {
+      width: toRem(17);
+      path {
+        fill: #a3a3a3;
+      }
+    }
+  }
+}

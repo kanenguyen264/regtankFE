@@ -1,0 +1,9 @@
+.NotificationItem {
+  composes: media align-items-center from global;
+  padding: 0.912rem 0 !important;
+}
+
+.NotificationItem :global(.MuiAvatar-root) {
+  margin-right: 0.7rem;
+}
+/*# sourceMappingURL=AppNotifications.module.css.map */

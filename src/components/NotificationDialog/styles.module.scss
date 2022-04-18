@@ -1,0 +1,43 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+:global(.MuiDialog-paper) {
+  border-radius: toRem(8);
+  box-shadow: 0px toRem(12) toRem(40) rgba(37, 40, 43, 0.32);
+  :global(.MuiDialogTitle-root) {
+    padding: toRem(24);
+    max-height: toRem(74);
+    height: auto;
+  }
+  :global(.MuiDialogContent-root) {
+    padding-left: toRem(24);
+    padding-right: toRem(24);
+    padding-bottom: 0;
+    margin-top: toRem(24);
+  }
+  :global(.MuiDialogActions-root) {
+    padding: toRem(24);
+    padding-top: toRem(21);
+  }
+  :global(.MuiDialogActions-root) {
+    button {
+      padding: toRem(11) toRem(24);
+      min-width: auto;
+    }
+  }
+}
+
+.notificationDialogContentTitle {
+  font-weight: 500;
+  font-size: toRem(14);
+  line-height: toRem(20);
+  color: $bodyText;
+  margin-bottom: toRem(8);
+}
+
+.notificationDialogContentDetail {
+  font-weight: 500;
+  font-size: toRem(14);
+  line-height: toRem(20);
+  color: $defaultDark;
+  margin: 0;
+}

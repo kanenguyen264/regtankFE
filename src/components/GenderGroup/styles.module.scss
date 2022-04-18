@@ -1,0 +1,20 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.radioItem {
+  transform: translateY(toRem(12));
+  span {
+    color: $grayText;
+    &:global(.Mui-checked) span,
+    &:global(.MuiButtonBase-root):hover span {
+      color: $primary;
+      > svg:last-child {
+        transform: scale(1);
+      }
+    }
+  }
+  p {
+    color: $grayText;
+    font-weight: 500;
+    line-height: toRem(20);
+  }
+}

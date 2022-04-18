@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACZ,QAAQ,EAAE,yBAAyB;EACnC,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,SAAS,EAAE,MAAM;EACjB,KAAK,EAAE,IAAI;CACZ;;AACD,AAAA,iBAAiB,CAAC;EAChB,QAAQ,EAAE,8BAA8B;EACxC,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "Vertical.module.scss"
+    ],
+    "names": [],
+    "file": "Vertical.module.css"
+}

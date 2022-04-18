@@ -1,0 +1,209 @@
+@import "../../KYCScreenPage/MyKYC/KYCList.module.scss";
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+:global(.MuiTabs-root) {
+  box-shadow: none !important;
+}
+
+// .KYCListWrap {
+//   :global(.MuiTabs-flexContainer) {
+//     border-bottom: 1px solid #e6e6e6 !important;
+//     padding-left: rem(20px);
+//     padding-right: rem(20px);
+
+//     :global(.MuiTab-root) {
+//       min-width: auto;
+//     }
+//   }
+// }
+
+.FilterWrap {
+  > div {
+    padding-left: 4px;
+  }
+
+  .MoreFilter {
+    color: #2b2b2b;
+    box-shadow: 0px 2px 4px rgba(34, 59, 96, 0.12);
+  }
+
+  .MoreFilterActive {
+    color: #0080ff;
+    :global(.MuiButton-startIcon) {
+      svg {
+        color: #0080ff;
+      }
+    }
+  }
+
+  :global(.MuiButton-startIcon) {
+    color: #2b2b2b;
+    svg {
+      width: rem(20px);
+      height: auto;
+    }
+  }
+}
+
+.CopyButton {
+  display: flex;
+
+  :global(.MuiTypography-root) {
+    max-width: rem(105px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.searchWidth {
+  .searchBoxStyle {
+    box-shadow: 0px 2px 4px rgba(34, 59, 96, 0.12);
+    border: 0;
+    padding-left: rem(48px) !important;
+
+    &:placeholder {
+      color: #a3a3a3;
+    }
+
+    :global(.search-icon) {
+      i {
+        color: #a3a3a3;
+      }
+    }
+  }
+
+  :global(.search-icon) {
+    padding: 0;
+  }
+}
+
+.refreshButton {
+  min-width: rem(20px) !important;
+}
+.width120 {
+  width: rem(140px);
+}
+.fullName, .width120 {
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: rem(14px) !important;
+  line-height: rem(20px) !important;
+  letter-spacing: rem(0.1px) !important;
+  color: $defaultDark !important;
+}
+.fullName, .width195 {
+  width: toRem(195);
+  min-width: 8.125rem
+}
+.width140 {
+  width: rem(180px);
+}
+.wKeywords {
+  width: 120px;
+}
+.wStatus {
+  width: 150px;
+}
+.contentStatus {
+  font-size: rem(15px);
+  text-align: center;
+}
+.update {
+  width: rem(180px);
+  min-width: rem(180px);
+}
+.assignPadding {
+  @media (max-width: 1440px) {
+    margin-left: toRem(4);
+  }
+}
+.dialog {
+  :global(.MuiDialogActions-root) {
+    padding-bottom: 0px !important;
+  }
+}
+.colorTitleDialog {
+  color: $primary;
+}
+.searchBox {
+  :global(.form-group) {
+    input {
+      padding-right: toRem(20);
+      &::placeholder {
+        background-color: green;
+        font-size: toRem(12) !important;
+        font-weight: 500 !important;
+        color: #95a1ac !important;
+      }
+    }
+  }
+  @media (max-width: 1440px) {
+    :global(.search-icon) {
+      left: 2px !important;
+    }
+    :global(.form-group) {
+      input {
+        padding-left: toRem(36) !important;
+      }
+    }
+  }
+}
+.labelPadding {
+  margin-bottom: toRem(8);
+}
+.cellColl {
+  margin-left: toRem(65);
+  width: toRem(624);
+  margin-bottom: toRem(12);
+  margin-top: toRem(12);
+}
+.groupListDialogWrapper {
+  :global(.MuiDialogContent-root) {
+    padding-right: toRem(10);
+  }
+}
+.customScrollbarView {
+  padding-left: 2px;
+  padding-right: 10px;
+}
+.Name {
+  min-width: toRem(110);
+  @media (min-width: 1440px) {
+    min-width: toRem(130);
+  }
+}
+.KeywordWrap {
+  display: flex;
+  align-items: center;
+}
+.Badge {
+  font-weight: 500;
+  background-color: rgba(235, 235, 235, 0.7);
+  min-width: toRem(83);
+  min-height: toRem(14);
+  border-radius: 100px;
+  color: rgba(43, 43, 43, 0.5);
+  text-align: center;
+  font-size: toRem(11);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: toRem(2) toRem(8);
+  display: flex;
+  -webkit-justify-content: center;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+}
+.width115 {
+  width: toRem(115);
+}
+.Update {
+  width: toRem(140);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: rem(12px) !important;
+  line-height: rem(16px) !important;
+  letter-spacing: rem(0.1px) !important;
+  color: $defaultDark !important;
+}

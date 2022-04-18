@@ -1,0 +1,199 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+@import "../style.module.scss";
+
+.detailPage {
+  align-items: flex-start;
+  box-shadow: none;
+  border-width: 0 1 0 1;
+  border-color: $grayText1;
+  border-radius: 8px;
+}
+
+.leftPanel {
+  width: toRem(390);
+  padding-left: toRem(38);
+  padding-right: toRem(38);
+  margin: auto 0;
+  :global(.MuiAvatar-root) {
+    width: toRem(200) !important;
+    height: toRem(200) !important;
+    box-shadow: none;
+  }
+
+  .titleAvatar {
+    font-weight: 600;
+    font-size: toRem(65);
+    line-height: 1;
+    color: $disabledBg;
+  }
+
+  .color {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  :global(.circleButton) {
+    width: toRem(80);
+    height: toRem(80);
+    margin: toRem(12);
+    display: block;
+  }
+}
+
+.rightPanel {
+  border: 1px solid $grayText1;
+  .header {
+    padding: toRem(24);
+    border-bottom: 1px solid $grayText1;
+  }
+
+  .generalTitle {
+    font-weight: 500;
+    font-size: toRem(18);
+    line-height: toRem(24);
+    color: $bodyText;
+  }
+  .form {
+    padding: toRem(24) toRem(12);
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+.field {
+  margin-bottom: toRem(43);
+  padding: 0 toRem(12);
+  min-height: 0;
+
+  > :global(.MuiFormControl-root .MuiFormLabel-root) {
+    display: block;
+    font-weight: 500;
+    font-size: toRem(12);
+    line-height: toRem(16);
+    color: $default;
+    margin-bottom: 6px;
+  }
+
+  :global(.MuiInputLabel-root) {
+    color: $default;
+  }
+  :global(.MuiInput-underline::before) {
+    border-width: 1px !important;
+  }
+
+  :global(.MuiOutlinedInput-notchedOutline) {
+    top: 0;
+    border-color: #dbdde0;
+  }
+
+  :global(.MuiInputBase-root) {
+    position: relative;
+    &:hover :global(.MuiOutlinedInput-notchedOutline) {
+      border-color: $default;
+    }
+
+    &:global(.Mui-focused) {
+      :global(.MuiOutlinedInput-notchedOutline) {
+        border-color: $focusColor !important;
+      }
+    }
+  }
+
+  :global(.MuiFormControl-root) {
+    width: 100%;
+  }
+}
+
+.selectFieldType {
+  box-sizing: border-box;
+  width: 100%;
+  :global(.MuiOutlinedInput-notchedOutline) {
+    border: 0;
+    border-bottom: 1px solid #dbdde0;
+    border-radius: 0;
+  }
+  :global(.MuiSelect-select) {
+    padding-right: 0 !important;
+    padding-left: 0;
+    font-size: toRem(14);
+    line-height: toRem(20);
+  }
+
+  :global(.MuiSelect-icon) {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+
+    path {
+      fill: $disabledColor;
+    }
+  }
+}
+
+.security {
+  > div,
+  .generalTitle {
+    padding: toRem(24);
+  }
+  .generalTitle {
+    border-bottom: 1px solid $grayText1;
+  }
+
+  :global(.MuiFormControl-root) {
+    top: 0;
+    min-width: 100% !important;
+  }
+
+  > div {
+    display: flex;
+  }
+
+  :global(.MuiTypography-root) {
+    color: $bodyText;
+  }
+
+  .autTxt {
+    margin-right: toRem(242);
+  }
+
+  .authButtons {
+    padding: toRem(11) toRem(16);
+    border: 1px solid #43a4ff;
+    border-radius: 8px;
+    :global(.MuiTypography-root) {
+      color: $primaryLight;
+      font-size: toRem(14);
+      line-height: toRem(18);
+      font-weight: 600;
+    }
+
+    &.disabled {
+      background-color: $defaultLight;
+      border-color: $defaultLight;
+
+      :global(.MuiTypography-root) {
+        color: $white;
+      }
+    }
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  padding: toRem(24);
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: toRem(104);
+
+  :global(.MuiTypography-root) {
+    font-size: toRem(12);
+    line-height: toRem(18);
+    color: #000000;
+    padding-left: toRem(10);
+  }
+
+  :global(.MuiButtonBase-root) {
+    min-width: toRem(120);
+  }
+}

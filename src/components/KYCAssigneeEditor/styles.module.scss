@@ -1,0 +1,16 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.AssigneeEditorInput {
+  margin-top: toRem(-2);
+  margin-bottom: toRem(-2);
+  margin: {
+    left: toRem(14);
+    right: toRem(-10);
+  }
+  min-width: toRem(200);
+  .AssigneeEditorInputUser {
+    margin-top: toRem(-6);
+    margin-bottom: toRem(-6);
+    margin-left: toRem(-4);
+  }
+}

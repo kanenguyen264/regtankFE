@@ -1,0 +1,5 @@
+@import "~@protego/sdk/styles/global/_global-dir";
+.input::placeholder {
+  font-size: rem(17px);
+  color: #a3a3a3;
+}

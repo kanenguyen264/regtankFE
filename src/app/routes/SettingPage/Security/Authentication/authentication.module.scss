@@ -1,0 +1,52 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.authenticationWrapper {
+  width: toRem(645);
+  .cardFA {
+    padding: 0;
+    border: 6px;
+    box-shadow: none;
+    margin-bottom: rem(25px);
+    display: inline-block;
+    width: 100%;
+    border: 1px solid $grayText1;
+    padding: toRem(24) toRem(24);
+    .textContent {
+      font-size: toRem(14);
+      line-height: 20px;
+      color: $mainBlackText;
+    }
+  }
+  .authOptions {
+    padding-left: toRem(24);
+    .labelCheckBox {
+      font-size: toRem(14);
+      line-height: 20px;
+      color: $mainBlackText;
+      margin-left: toRem(-16);
+      position: relative;
+      top: toRem(3);
+    }
+  }
+  .buttonGroup {
+    margin-top: toRem(50);
+  }
+  .titleTab {
+    font-size: rem(14px);
+    font-weight: 500;
+    line-height: 20px;
+    padding-left: toRem(24);
+    margin-top: toRem(24);
+    margin-bottom: toRem(28);
+    color: $mainBlackText;
+  }
+  .disableText {
+    color: rgba(0, 0, 0, 0.26);
+  }
+  .boxSwitches {
+    box-shadow: none;
+  }
+  .btnSwitch {
+    margin-left: rem(28px);
+  }
+}

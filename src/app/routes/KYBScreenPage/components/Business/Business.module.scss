@@ -1,0 +1,86 @@
+@import "~@protego/sdk/styles/global/_global-dir";
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.FormIndividual {
+  :global(.MuiRadio-root) {
+    padding: 6px 10px;
+  }
+
+  :global(.MuiOutlinedInput-root) {
+    margin-bottom: 0;
+  }
+
+  :global(.MuiOutlinedInput-root) input {
+    padding-top: rem(14px);
+    padding-bottom: rem(13px);
+    height: rem(23px);
+  }
+  :global(.MuiSelect-select) {
+    padding-top: rem(16px);
+    padding-bottom: rem(11px);
+    height: rem(23px);
+    color: #7e7e7e;
+  }
+
+  :global(.MuiAutocomplete-input) {
+    padding-top: rem(14px) !important;
+    padding-bottom: rem(13px) !important;
+    height: rem(23px);
+  }
+
+  :global(.MuiAutocomplete-inputRoot) {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 32px !important;
+  }
+
+  :global(.MuiButton-contained) {
+    min-width: toRem(120);
+    background-color: $defaultLight;
+    font-weight: 600;
+    line-height: toRem(0.2);
+  }
+  :global(.MuiButton-outlined) {
+    border: 1px solid $grayBorder;
+    color: $defaultDark;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: toRem(16);
+    line-height: 20px;
+    min-width: toRem(120);
+    &:hover {
+      background-color: $whiteLight;
+    }
+
+    &:focus {
+      background-color: $whiteLight;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.08);
+    }
+  }
+}
+
+.colorRadio {
+  color: #7e7e7e;
+}
+
+.formError {
+  color: $danger;
+  font-size: rem(12px);
+}
+.widthBoxYear input {
+  padding-right: 0 !important;
+}
+.widthfull {
+  width: 100%;
+  input {
+    padding-right: 0 !important;
+  }
+  svg {
+    cursor: pointer;
+  }
+}
+.omMargin {
+  margin-top: rem(40px);
+  margin-bottom: rem(22px);
+}

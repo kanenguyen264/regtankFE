@@ -1,0 +1,44 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.kytRiskCoreEditDialog {
+  :global(.reg-MuiPromptDialog-actions) {
+    display: none;
+  }
+  :global(.MuiOutlinedInput-notchedOutline) {
+    border: 1px solid #eceef0;
+  }
+  .dialogActions {
+    padding: 0;
+    margin-top: toRem(32);
+  }
+  .notes {
+    ::placeholder {
+      font-style: italic !important;
+      font-size: toRem(14);
+    }
+  }
+  .labelInput {
+    font-weight: 500;
+    font-size: toRem(12);
+    line-height: 16px;
+    color: $default;
+    margin-bottom: toRem(10);
+  }
+  .riskcoreLabel {
+    margin-bottom: toRem(-15);
+  }
+  .dropdwonWrapper {
+    top: 3px;
+    :global(.MuiButton-endIcon) {
+      path {
+        fill: #abb4bd;
+      }
+      top: 65%;
+      margin-left: 0.375rem;
+      left: 10px;
+    }
+    :global(.MuiButton-root) {
+      border: 1px solid #eceef0;
+    }
+  }
+}

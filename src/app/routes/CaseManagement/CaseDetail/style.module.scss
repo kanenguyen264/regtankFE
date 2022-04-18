@@ -1,0 +1,23 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.notes {
+  min-height: toRem(460);
+  :global(.RegCard-body) {
+    padding: 0;
+  }
+
+  :global(.RegCard-header) {
+    padding-bottom: 0;
+  }
+
+  :global(.RegNote-form),
+  :global(.RegNote-upload),
+  :global(.RegNote-item) {
+    padding-left: toRem(20);
+    padding-right: toRem(20);
+  }
+
+  .vScrollBarTrack {
+      right: toRem(6);
+  }
+}

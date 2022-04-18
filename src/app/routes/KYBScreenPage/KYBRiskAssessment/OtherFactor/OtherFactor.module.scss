@@ -1,0 +1,62 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+.otherFactorContainer {
+  :global(.MuiOutlinedInput-root) {
+    min-height: toRem(48);
+    font-size: toRem(14);
+    color: $bodyText;
+    margin-top: toRem(6);
+    padding-top: toRem(2);
+    border-radius: 6px;
+
+    &:hover {
+      & svg path {
+        fill: $defaultDark;
+      }
+      :global(.MuiOutlinedInput-notchedOutline) {
+        border-color: $default !important;
+      }
+    }
+    legend {
+      display: none;
+    }
+    fieldset {
+      top: 0;
+      border: toRem(1) solid $grayBorder;
+    }
+  }
+}
+.selectStyle {
+  :global(.MuiTypography-root) {
+    font-size: toRem(14);
+    font-weight: 400;
+    color: $mainBlackText;
+  }
+}
+.textDefault {
+  color: $disabledColor !important;
+}
+.menuPaper {
+  border-radius: 8px;
+  margin-top: 8px;
+  box-shadow: $boxShadow !important;
+  :global(.MuiList-root) {
+    padding: toRem(8) 0 !important;
+  }
+  :global(.MuiMenuItem-root) {
+    padding: toRem(12) toRem(16);
+    font-weight: 500;
+    font-size: toRem(12);
+    line-height: toRem(16);
+    color: $defaultDark;
+    border-radius: 0;
+    &:hover {
+      background-color: $itemHover;
+      color: $primary;
+    }
+
+    &:global(.Mui-selected) {
+      color: $primary;
+      background-color: transparent;
+    }
+  }
+}

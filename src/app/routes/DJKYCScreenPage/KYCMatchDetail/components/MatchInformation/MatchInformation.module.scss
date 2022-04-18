@@ -1,0 +1,147 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+$gutter: toRem(26);
+
+.CardHeaderTitle {
+  font-size: toRem(21);
+  padding-left: toRem(20);
+  padding-right: toRem(20);
+}
+
+.CardContainer {
+  width: 100%;
+  padding: 0px !important;
+  margin: 0px;
+  min-height: toRem(910);
+  display: flex;
+  flex-direction: column;
+}
+.BodyBackground {
+  padding-bottom: toRem(20);
+  padding-left: toRem(25) !important;
+  padding-right: toRem(25) !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.Container {
+  padding-top: 0;
+  :global(.MuiSwitch-root) {
+    margin-left: 0px;
+  }
+  :global(.MuiGrid-item) {
+    &:nth-last-child(-n + 2) {
+      border-bottom: unset !important;
+    }
+    &:nth-child(3) {
+      min-height: toRem(56);
+    }
+    min-height: toRem(52);
+    border-bottom: 1px solid $borderTable;
+    display: flex;
+    align-items: center;
+  }
+
+  :global(.MuiGrid-item) {
+    padding: toRem(16) 0;
+
+    :global(.MuiTypography-root) {
+      line-height: toRem(20);
+    }
+  }
+
+  :global(.MuiLink-root) {
+    color: $primary;
+  }
+
+  :global(.MuiSwitch-root) {
+    margin-right: 2px;
+  }
+
+  :global(.MuiTypography-Subtitle2) {
+    svg {
+      width: toRem(16);
+    }
+  }
+
+  :global(.MuiTypography-subtitleGray) {
+    color: $bodyText;
+  }
+}
+
+.TextOverFlow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.copyIcon {
+  button {
+    position: absolute;
+    top: -10px;
+    svg {
+      height: toRem(16.37);
+      width: toRem(17.12);
+    }
+  }
+}
+
+.hr {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.MatchContainer {
+  height: 100%;
+
+  :global(.RegCard-body) {
+    padding-bottom: 0px;
+    height: 100%;
+  }
+
+  :global(.RegCard-header) {
+    line-height: toRem(20);
+  }
+}
+.lastChild {
+  border-bottom: unset !important;
+}
+
+.copyButton {
+  &:hover {
+    svg {
+      path:nth-child(2) {
+        fill: unset !important;
+      }
+    }
+  }
+  svg {
+    float: left;
+    width: toRem(18.33);
+    height: toRem(18.33);
+    font-size: toRem(18.33);
+    position: relative;
+    top: toRem(3);
+  }
+}
+.noteButton {
+  min-width: toRem(40);
+  border: 1px solid $grayText1;
+  border-radius: 8px;
+}
+.noteButtonActive {
+  min-width: toRem(40);
+  border: 1px solid $primary;
+}
+.noteContainer {
+  :global(.RegCard-root) {
+    border: unset;
+  }
+}
+.textOm {
+  & b {
+    font-weight: 600;
+  }
+}

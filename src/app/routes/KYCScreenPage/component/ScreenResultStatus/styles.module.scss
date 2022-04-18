@@ -1,0 +1,69 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.card {
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 217, 100, 0.1) 0%,
+    rgba(255, 217, 100, 0) 100%
+  );
+  min-height: toRem(89);
+  display: flex;
+  align-items: center;
+  height: toRem(96);
+}
+.cardPositive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: toRem(89);
+  background-image: linear-gradient(
+    90deg,
+    rgba(92, 200, 115, 0.1) 0%,
+    rgba(92, 200, 115, 0) 100%
+  );
+}
+.dividerPositive {
+  width: 10px;
+  min-height: toRem(96);
+  background-color: #5cc873;
+}
+.dividerFalse {
+  width: 10px;
+  min-height: toRem(96);
+  background-color: #f21840;
+}
+.dividerUnresolved {
+  width: 10px;
+  min-height: toRem(96);
+  background-color: #ffd964;
+}
+
+.cardFalse {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    90deg,
+    rgba(242, 24, 64, 0.1) 0%,
+    rgba(242, 24, 64, 0) 100%
+  );
+  min-height: toRem(96);
+}
+.cardContained {
+  :global(.RegCard-header) {
+    height: toRem(68) !important;
+    display: flex;
+    align-items: center;
+  }
+
+  :global(.RegCard-root) {
+    height: 100% !important;
+  }
+}
+.cardContent {
+  margin-top: toRem(0);
+
+  > :global(.MuiGrid-root:first-child) {
+    padding-top: 0;
+  }
+}

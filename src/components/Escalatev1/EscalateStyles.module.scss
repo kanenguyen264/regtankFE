@@ -1,0 +1,22 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.btnOutlined {
+  height: toRem(40);
+}
+.textViewLog {
+  cursor: pointer;
+  color: #0080ff;
+  font-size: toRem(15);
+  padding-left: toRem(18);
+  padding-right: toRem(18);
+}
+.divider {
+  background-color: #e6e6e6;
+  height: toRem(32);
+  margin-left: toRem(12);
+  margin-right: toRem(12);
+}
+.escalateWidth {
+  display: flex;
+  align-items: center;
+}

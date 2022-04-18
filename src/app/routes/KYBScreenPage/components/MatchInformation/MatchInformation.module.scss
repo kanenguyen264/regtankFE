@@ -1,0 +1,167 @@
+@import "~@protego/sdk/styles/global/_global-dir";
+$gutter: rem(26px);
+
+.CardHeaderTitle {
+  font-size: rem(21px);
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+}
+.CardHeaderTitleSafari {
+  font-size: rem(18px);
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+}
+@media (min-width: 1920px) {
+  .CardHeaderTitleSafari {
+    font-size: rem(21px);
+    padding-left: rem(20px);
+    padding-right: rem(20px);
+  }
+}
+
+.CardHeaderName {
+  font-size: rem(21px);
+  font-weight: 600;
+}
+.TextDescription {
+  font-size: rem(14px);
+  color: #7a7a7a;
+}
+.CardContainer {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  // height: rem(910px);
+  display: flex;
+  flex-direction: column;
+}
+.HeaderCustom {
+  background-color: white;
+  padding-top: rem(5px);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-bottom: rem(5px);
+}
+.BodyBackground {
+  padding-bottom: rem(20px);
+  padding-left: rem(25px) !important;
+  padding-right: rem(25px) !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+.PaddingUserID {
+  padding-top: rem(15px);
+  padding-bottom: rem(15px);
+}
+.PaddingTopText {
+  padding-top: rem(10px);
+}
+.IconButtonStyle {
+  margin-left: calc(#{rem(11px)} - 12px);
+  margin-top: rem(-12px);
+  margin-bottom: rem(-12px);
+}
+.MarginLeftIconButtonStyle {
+  margin-left: rem(30px);
+}
+
+.buttonComment {
+  background-color: #606981;
+  border-radius: 3px;
+  color: white;
+}
+.TextOverFlow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.flexRow {
+  flex-direction: row;
+  display: flex;
+}
+.flexCenter {
+  margin-top: rem(-20px) !important;
+}
+.iconCopyStyle {
+  display: contents;
+}
+.flexEnd {
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex: 1;
+  display: flex !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+.noteGroup {
+  // flex-direction: row;
+  display: flex;
+  align-items: center;
+  // justify-content: flex-start;
+}
+.iconCenter {
+  align-items: center !important;
+  justify-content: center !important;
+  display: flex;
+  flex: 1;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.flexGrow {
+  flex-grow: 1;
+}
+
+.NewNote {
+  margin-top: rem(17px);
+  border-top: 1px solid #c2c2c2;
+  padding-top: rem(25px);
+  height: calc(100% - 20px);
+}
+
+.copyIcon {
+  button {
+    position: absolute;
+    top: -10px;
+    svg {
+      height: rem(16.37px);
+      width: rem(17.12px);
+    }
+  }
+}
+.openNote {
+  border-radius: 46px;
+  background-color: #0080ff;
+  color: #ffffff;
+  height: 32px;
+  width: 82.67px;
+  left: 20px;
+}
+.openNote:hover {
+  border-radius: 46px;
+  background-color: #0080ff;
+  color: #ffffff;
+  height: 32px;
+  width: 82.67px;
+  left: 20px;
+}
+.openNoteClose {
+  border-radius: 46px;
+  background: #c6e0ff;
+  height: 32px;
+  width: 82.67px;
+  left: 20px;
+  color: #0080ff;
+}
+.openNoteClose:hover {
+  border-radius: 46px;
+  background: #c6e0f7;
+  height: 32px;
+  width: 82.67px;
+  left: 20px;
+  color: #0080ff;
+}

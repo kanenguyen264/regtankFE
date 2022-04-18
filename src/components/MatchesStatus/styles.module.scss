@@ -1,0 +1,81 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+$colorUnresolved: #0080ff;
+$red: #ea2134;
+$green: #4caf4f;
+$false: #fbefee;
+$positive: #f0faf3;
+$unresolved: #eceef0;
+@mixin resolveButton($color) {
+  height: toRem(28);
+  :global(.MuiButton-endIcon) {
+    height: toRem(28);
+    padding-top: toRem(15);
+  }
+
+  &:hover {
+    background-color: darken($color, 8%) !important;
+  }
+
+  composes: text-white from global;
+  background-color: $color !important;
+}
+
+.Unresolved {
+  @include resolveButton($unresolved);
+  color: #606e7b !important;
+  svg path {
+    fill: #606e7b;
+  }
+}
+
+.Positive {
+  @include resolveButton($positive);
+  color: $success !important;
+  svg path {
+    fill: $success;
+  }
+}
+
+.False {
+  @include resolveButton($false);
+  color: #d44333 !important;
+  svg path {
+    fill: #d44333;
+  }
+}
+.Disable {
+  height: toRem(28);
+  :global(.MuiButton-label) {
+    display: flex;
+    justify-content: center;
+  }
+  // width: toRem(140);
+}
+
+.dropdownPopover {
+  :global(.MuiPaper-root) {
+    /* dropdown/shadow opened */
+
+    box-shadow: 0 0 8px rgba(37, 40, 43, 0.12);
+    border-radius: 8px;
+    width: toRem(110);
+    margin-top: toRem(8);
+  }
+
+  :global(.MuiDropdown-panel) {
+    .optionText {
+      padding: 0;
+      height: auto;
+      padding: toRem(12) toRem(16);
+      color: #606e7b;
+      line-height: toRem(16);
+      &:active,
+      &:focus,
+      &:hover {
+        color: $primary;
+        background-color: rgba(0, 128, 255, 0.04);
+      }
+    }
+  }
+}

@@ -1,0 +1,187 @@
+// @import "~@protego/sdk/styles/global/_global-dir";
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+.reportModule {
+  .tabContainer {
+    background-color: $white;
+    border-bottom: 1px solid $scrollbarThumbCl;
+    border-radius: 6px 6px 0px 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .reportTitle {
+    font-size: rem(16px);
+    color: rgba($mainBlackText, 0.9);
+    font-weight: 500;
+    margin-bottom: rem(24px);
+    margin-top: rem(12px);
+  }
+  .reportHeader {
+    font-size: rem(27px);
+    color: "#2B2B2B";
+    font-weight: 700;
+    margin-top: rem(40px);
+    margin-bottom: rem(40px);
+  }
+  .label {
+    font-size: rem(17px);
+    font-weight: 400;
+    color: "#2B2B2B";
+    font-family: "Roboto";
+    line-height: rem(20px);
+    align-items: center;
+  }
+  .formContainer {
+    width: rem(616px);
+  }
+  .btn {
+    width: rem(172px);
+    height: rem(50px);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center !important;
+  }
+  .container {
+    overflow-x: hidden;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    :global(.MuiTableCell-root:first-child) {
+      padding-left: 0px;
+      border-bottom: unset;
+      padding-right: 0px;
+    }
+
+    :global(.MuiButton-outlined) {
+      justify-content: space-between;
+    }
+    :global(.CustomOutlinedInput-root) {
+      margin-bottom: 0px;
+      color: green;
+    }
+    :global(.MuiTypography-body) {
+      color: rgba(43, 43, 43, 0.7);
+      font-size: rem(15px);
+    }
+    :global(.MuiOutlinedInput-notchedOutline) {
+      border: 1.5px solid #e6e6e6;
+    }
+  }
+  .filterTitle {
+    font-size: rem(16px);
+    color: "#232323";
+    font-weight: 500;
+    display: inline;
+    margin-left: rem(10px);
+  }
+  .tabCellPadding {
+    padding-left: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: rem(10px) !important;
+  }
+  .collapsePadding {
+    padding-top: rem(24px);
+    padding-bottom: rem(24px);
+    width: 100%;
+  }
+  .dropdown {
+    justify-content: space-between;
+  }
+
+  .fixedButton {
+    // padding-top: rem(32px);
+    padding: rem(32px) 0px;
+  }
+  .modeTabPadding {
+    padding-top: rem(30px);
+  }
+  .pt24 {
+    padding-top: rem(24px);
+  }
+  .mt24 {
+    margin-top: rem(24px);
+  }
+  .pb24 {
+    padding-bottom: rem(24px);
+  }
+  .labelDiver {
+    background-color: #c4c4c4;
+    height: 2px;
+    width: 12px;
+  }
+  .checkBoxLabel {
+    color: $grayText;
+    font-size: rem(14px);
+    font-weight: 500;
+  }
+  .labelDialogGenerationEmail {
+    color: $grayText;
+    font-weight: 700;
+    font-size: rem(14px);
+  }
+  .labelDialogGenerationContent {
+    color: $grayText;
+    font-weight: 400;
+    font-size: rem(14px);
+  }
+  .tabCustom {
+    padding-top: rem(30px) !important;
+  }
+  .headerCard {
+    color: $bodyText;
+    text-align: center;
+    font-weight: 600;
+    font-size: rem(18px);
+  }
+  .tabFilterByMode {
+    font-size: rem(12px);
+    font-weight: 500;
+
+    align-items: center;
+  }
+  .placeholderInput {
+    ::placeholder {
+      font-size: rem(14px);
+      opacity: 1;
+      font-weight: 400 !important;
+      color: $disabledColor !important;
+    }
+  }
+  .disableText {
+    font-size: rem(14px);
+    color: rgba(0, 0, 0, 0.26);
+  }
+  .titleInput {
+    font-weight: 500;
+    color: #95a1ac;
+    font-size: rem(12px);
+  }
+  .clsDisableBorderLRT:hover {
+    justify-content: space-between;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-radius: 0px;
+  }
+
+  .padddingRightNull {
+    padding-right: 0px;
+  }
+  .collapseActive {
+    color: $primary;
+    background: #dfefff;
+  }
+  .collapseActive:hover {
+    color: $primary;
+    background: #dfefff;
+  }
+  .collapse {
+    color: $grayText;
+    background: $grayLight;
+  }
+  .collapse:hover {
+    color: $grayText;
+    background: $grayLight;
+  }
+}

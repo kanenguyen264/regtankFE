@@ -1,0 +1,343 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.tableWrap {
+  :global(.MuiTableHead-root) {
+    :global(.MuiTableSortLabel-root) span {
+      color: $bodyText;
+      font-weight: 500;
+    }
+
+    :global(.MuiTableSortLabel-icon) {
+      path {
+        fill: $disabledColor;
+      }
+    }
+    :global(.MuiTableSortLabel-root.Mui-active .MuiTableSortLabel-icon)
+      path:not(:first-child) {
+      fill: $primary;
+    }
+  }
+
+  :global(.MuiTableBody-root) {
+    :global(.MuiTableCell-root) {
+      font-size: toRem(14);
+      line-height: toRem(20);
+      color: $grayText;
+    }
+  }
+
+  :global(.MuiSwitch-root) {
+    margin: 0;
+  }
+  :global(.MuiTableHead-root) {
+    :global(.MuiTableSortLabel-root span) {
+      color: $bodyText;
+      font-weight: 500;
+    }
+
+    :global(.MuiTableSortLabel-icon) {
+      path {
+        fill: $disabledColor;
+      }
+    }
+    :global(.MuiTableSortLabel-root.Mui-active
+        .MuiTableSortLabel-icon
+        path:not(:first-child)) {
+      fill: $primary;
+    }
+  }
+
+  :global(.MuiTableBody-root) {
+    :global(.MuiTableRow-hover.expand .MuiTableCell-root:nth-child(3)) {
+      color: $primary;
+    }
+
+    :global(.MuiTableCell-root) {
+      font-size: toRem(14);
+      line-height: toRem(20);
+      color: $grayText;
+      &:first-child {
+        padding-left: toRem(12) !important;
+      }
+      &:nth-child(1),
+      &:nth-child(2) {
+        min-width: toRem(70) !important;
+        max-width: toRem(70) !important;
+        width: toRem(70);
+      }
+
+      :global(.reg-MuiCountryFlag-root, .mr-2) {
+        margin-right: 0 !important;
+      }
+      &:last-child :global(.MuiIconButton-root) {
+        left: 0;
+        path {
+          fill: $bodyText;
+        }
+      }
+    }
+
+    :global(.MuiIconButton-root) {
+      padding: 0;
+      background-color: transparent !important;
+
+      :global(.MuiSvgIcon-root) {
+        font-size: toRem(28);
+        path {
+          fill: $default;
+        }
+      }
+
+      &:global(.open .MuiSvgIcon-root path) {
+        fill: $primary;
+      }
+    }
+  }
+
+  :global(.MuiCollapse-root) {
+    padding-left: toRem(128);
+  }
+
+  :global(.MuiCollapse-wrapper) {
+    padding: toRem(12) 0;
+  }
+  :global(.RegActivityTracker-root) {
+    margin-top: toRem(24) !important;
+  }
+  :global(.RegActivityTracker-item) {
+    color: $default;
+    font-weight: normal;
+
+    strong {
+      font-weight: normal;
+      color: $black;
+    }
+    &:not(:first-child) {
+      padding-left: toRem(8);
+      &::before {
+        content: "";
+        background: none;
+        width: 1px;
+        height: toRem(20);
+        background: $default;
+      }
+    }
+  }
+
+  .categoriesChipWrap {
+    max-width: toRem(115);
+    margin-bottom: -4px;
+
+    .chipCategory {
+      margin-bottom: 4px;
+      color: $default;
+    }
+  }
+}
+
+//Filter
+.filterWrap {
+  padding: toRem(16) toRem(24) !important;
+  min-height: auto;
+  background-color: $disabledBg;
+
+  :global(MuiTypography-textLabel) {
+    padding-right: toRem(16);
+  }
+
+  :global(.MuiGrid-item) {
+    padding-left: toRem(16);
+  }
+
+  :global(.RegFilterChip-wrap) {
+    margin-top: 0;
+    &:not(:empty) {
+      margin-top: toRem(16);
+    }
+  }
+
+  :global(.RegFilterDropdown-wrap) {
+    padding: 0 5px;
+
+    :global(.MuiButton-root) {
+      height: toRem(40);
+      border: 1px solid $grayLight;
+      border-radius: 8px;
+      padding: toRem(10) toRem(16);
+
+      &:global(.open) {
+        border-color: $primary;
+        span {
+          color: $primary;
+        }
+        :global(.MuiSvgIcon-root path) {
+          fill: $primary;
+        }
+      }
+      span {
+        font-size: toRem(14);
+        line-height: toRem(20);
+        color: $grayText;
+        font-weight: 500;
+      }
+
+      :global(.MuiButton-endIcon) {
+        padding: 0;
+        top: auto;
+        transform: none;
+      }
+
+      :global(.MuiSvgIcon-root) {
+        font-size: toRem(22);
+
+        path {
+          fill: $default;
+        }
+      }
+    }
+  }
+
+  :global(.search-bar) {
+    width: toRem(227);
+
+    :global(.form-group) {
+      border-color: $grayLight;
+    }
+  }
+
+  :global(.RegFilterButtonGroup-wrap) {
+    :global(.MuiButton-root) {
+      min-width: toRem(90);
+    }
+
+    :global(.MuiButton-outlinedSecondary),
+    :global(.Mui-disabled) {
+      color: $defaultLight;
+      background-color: $white;
+    }
+
+    :global(.MuiButton-outlinedPrimary) {
+      color: $white;
+      background-color: $primary;
+    }
+  }
+
+  > :global(.MuiGrid-container > .MuiGrid-item) {
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+
+  :global(.MuiChip-root) {
+    margin-right: 0;
+  }
+
+  :global(.RegFilterChip-wrap) {
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: toRem(-6);
+
+    > div {
+      padding: 0 toRem(12) toRem(6) 0;
+    }
+  }
+
+  :global(.MuiChip-root) {
+    margin-right: 0;
+  }
+}
+
+.filterSelectPopover {
+  :global(.MuiPaper-root) {
+    margin: toRem(4) 0 0;
+  }
+
+  :global(.MuiFormControl-root) {
+    width: toRem(256);
+  }
+
+  :global(.MuiFormGroup-root > div) {
+    margin: 0;
+  }
+
+  :global(.MuiCheckbox-root) {
+    padding: 0;
+
+    :global(.MuiSvgIcon-root) {
+      width: 22px;
+    }
+
+    :global(.MuiTouchRipple-root) {
+      display: none;
+    }
+  }
+
+  :global(.MuiFormControlLabel-root) {
+    margin-left: 0;
+    margin-right: toRem(14);
+  }
+
+  :global(.optionText) {
+    height: auto;
+    max-width: toRem(256);
+    overflow-wrap: anywhere;
+    padding: 0;
+    > :global(.MuiFormControlLabel-root) {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: toRem(12) toRem(18);
+    }
+
+    :global(.MuiTypography-root *) {
+      white-space: normal;
+      font-size: toRem(12);
+      line-height: toRem(16);
+    }
+  }
+
+  :global(.RegFilterVScrollBarTrack) {
+    right: toRem(22);
+  }
+
+  :global(.search-bar .form-group, .MuiButton-outlinedSecondary) {
+    border: 1px solid $grayLight;
+    .MuiTypography-root {
+      font-weight: 600;
+    }
+  }
+
+  :global(.RegFilterSelectControl) {
+    margin: 0 !important;
+
+    :global(.MuiGrid-container) {
+      margin: 0;
+      width: 100%;
+      padding: toRem(8) toRem(16);
+    }
+    :global(.MuiGrid-item) {
+      padding: 0;
+    }
+  }
+}
+
+.filterDatePicker {
+  :global(.MuiPaper-root) {
+    margin-top: toRem(4);
+  }
+}
+
+.headerTxt {
+  font-size: toRem(12);
+  line-height: toRem(16);
+  font-weight: 500;
+  color: $bodyText;
+}
+
+.contentTxt {
+  font-size: toRem(14);
+  line-height: toRem(20);
+  margin-top: toRem(14);
+  font-weight: normal;
+  color: $grayText;
+}

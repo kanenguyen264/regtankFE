@@ -1,0 +1,13 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.container {
+  background-color: white;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.textTitle {
+  color: "#7A7A7A";
+}

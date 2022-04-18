@@ -1,0 +1,117 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.TableContent {
+  padding-left: toRem(24);
+  padding-right: toRem(24);
+
+  min-height: toRem(520);
+  :global(.MuiGrid-item) {
+    padding-top: toRem(16);
+    padding-bottom: toRem(16);
+    border-bottom: 1px solid $grayText1;
+
+    :global(.MuiTypography-root) {
+      line-height: toRem(20);
+    }
+  }
+  :global(.MuiGrid-item:nth-child(-n + 2)) {
+    padding-top: 0;
+  }
+  :global(.RegCard-root) {
+    border: unset;
+  }
+
+  :global(.MuiGrid-item .MuiTypography-root) {
+    font-weight: 500;
+  }
+}
+.tabPadding {
+  margin-top: toRem(24);
+}
+.TextDescription {
+  font-size: toRem(14);
+  color: $steelGray;
+}
+.ProfileTabContainer {
+  background-color: $white;
+}
+.boxTabPanel {
+  background-color: $white;
+}
+
+.tabContainer {
+  :global(.MuiTabs-indicator) {
+    background-color: $white;
+  }
+  :global(.MuiTab-root) {
+    text-transform: none;
+    min-height: toRem(48);
+    @media (min-width: 600px) {
+      min-width: unset;
+    }
+  }
+  &:global(.MuiTabs-root) {
+    min-height: toRem(48);
+  }
+
+  :global(.MuiButtonBase-root) {
+    min-width: toRem(128);
+
+    &:global(.Mui-selected .MuiTypography-root) {
+      color: $primary;
+    }
+  }
+}
+.lastChild {
+  border-bottom: unset !important;
+}
+.firstChild {
+  padding-top: toRem(-20);
+}
+.tabCustom {
+  margin: 0 toRem(24) 0 toRem(24);
+  background-color: $white;
+  border-bottom: 1px solid $grayText1;
+}
+
+.ConnectionContent {
+  padding: 0;
+
+  :global(.MuiTableHead-root) {
+    height: toRem(56);
+
+    :global(.MuiTableCell-root) {
+      border-top: 1px solid $grayText1;
+    }
+  }
+}
+
+.SourceContent {
+  padding: toRem(24) 0 0;
+}
+
+.NoteContent {
+  :global(.RegCard-body) {
+    margin-top: toRem(40);
+  }
+
+  :global(.RegNote-input) {
+    height: toRem(48);
+  }
+
+  :global(.RegNote-buttons) {
+    margin-bottom: 0;
+  }
+
+  :global(.RegNote-content .RegCard-root) {
+    margin-bottom: toRem(8);
+  }
+
+  :global(.MuiButton-root.Mui-disabled) {
+    background-color: $disabledColor;
+  }
+
+  :global(.RegFileIndicator-root:not(:empty)) {
+    margin-top: toRem(24);
+  }
+}

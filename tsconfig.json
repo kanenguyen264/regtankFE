@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["es6", "dom"],
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "baseUrl": "./src",
+    "allowSyntheticDefaultImports": true,
+    "noErrorTruncation": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "keyofStringsOnly": false,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "importsNotUsedAsValues": "preserve",
+    "paths": {
+      "@/*": ["src/*"],
+      "@@/*": ["./*"]
+    }
+  },
+  "include": ["./tslint.json"]
+}

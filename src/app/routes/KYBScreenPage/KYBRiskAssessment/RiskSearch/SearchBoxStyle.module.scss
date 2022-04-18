@@ -1,0 +1,72 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.container {
+  box-sizing: border-box;
+}
+
+.container {
+  :global(.form-group) {
+    position: relative;
+    min-height: toRem(36);
+    width: toRem(220) !important;
+    border: 1px solid $borderButton;
+    margin-right: 0px !important;
+    border-radius: 6px;
+
+    &:hover {
+      border-color: $default;
+    }
+    input {
+      box-shadow: none !important;
+      min-height: toRem(36);
+      border: 0;
+      font-size: toRem(12);
+      color: $bodyText;
+      padding-left: toRem(48) !important;
+      padding-right: toRem(6);
+      &::placeholder {
+        font-size: toRem(12);
+        line-height: toRem(20);
+        color: $default;
+        font-weight: 500;
+      }
+    }
+  }
+
+  :global(.search-icon) {
+    right: auto;
+    left: toRem(10);
+  }
+  :global(.MuiSvgIcon-root) {
+    width: toRem(20);
+  }
+}
+
+.inputFocused {
+  :global(.form-group) {
+    border-color: transparent !important;
+    box-shadow: 0 0 0 1pt $primary;
+  }
+}
+.dialogAction {
+  :global(.MuiDialogActions-root) {
+    padding: 0;
+  }
+}
+.dialog {
+  //table
+
+  :global(.MuiDialogContent-root) {
+    padding-bottom: toRem(0);
+  }
+  :global(.MuiDialogActions-root) {
+    padding-top: toRem(20);
+    margin-top: toRem(-10);
+  }
+  :global(.form-group) {
+    input {
+      font-size: toRem(12);
+      font-weight: 500;
+    }
+  }
+}

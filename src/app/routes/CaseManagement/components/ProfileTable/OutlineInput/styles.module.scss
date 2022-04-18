@@ -1,0 +1,27 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.outlinedWrapper {
+  :global(.MuiOutlinedInput-root) {
+    height: toRem(27);
+    padding-bottom: toRem(3);
+    font-size: toRem(14);
+    input {
+      padding-left: toRem(8);
+    }
+    fieldset {
+      border: toRem(1) solid #f4f4f6;
+    }
+    :hover fieldset {
+      fieldset {
+        border: toRem(1) solid #f4f4f6;
+      }
+    }
+
+    &:hover :global(.MuiOutlinedInput-notchedOutline) {
+      border-color: $default;
+    }
+    &:global(.Mui-focused .MuiOutlinedInput-notchedOutline) {
+      border-color: $primary;
+    }
+  }
+}

@@ -1,0 +1,200 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.filter {
+  &_list {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 toRem(20);
+  }
+
+  &_txt {
+    margin-right: toRem(20);
+    font-weight: 500;
+    font-size: toRem(14);
+    line-height: toRem(20);
+    color: rgba(35, 35, 35, 0.7);
+  }
+
+  &_fields {
+    display: flex;
+    align-items: center;
+    > :global(.MuiFormControl-root):not(:last-child) {
+      margin-right: toRem(16);
+    }
+  }
+
+  &_chips {
+    display: flex;
+    flex-wrap: wrap;
+    &:not(:empty) {
+      padding: toRem(9) toRem(20) 0;
+    }
+  }
+
+  &_chip {
+    border: 1px solid #9fbff8;
+    border-radius: 24px;
+    padding: toRem(4) toRem(8);
+    background: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #276ef1;
+    margin: 2px 0;
+    &:not(:last-child) {
+      margin-right: toRem(8);
+    }
+
+    :global(.MuiSvgIcon-root) {
+      font-size: toRem(16);
+      margin-left: toRem(10);
+      cursor: pointer;
+    }
+  }
+
+  //Select type
+
+  .selectType {
+    background-color: $white;
+    border: 1px solid $borderButton;
+    border-radius: 6px;
+    cursor: pointer;
+    height: toRem(40);
+
+    > :global(.MuiOutlinedInput-root) {
+      display: flex;
+      align-items: center;
+
+      legend {
+        display: none;
+      }
+      > :global(.MuiSelect-select) {
+        color: rgba(35, 35, 35, 0.7);
+        padding: toRem(8) toRem(31) toRem(8) toRem(8);
+        height: 0;
+        cursor: pointer;
+        span {
+          font-size: toRem(16);
+          line-height: toRem(20);
+        }
+
+        margin-bottom: 0;
+      }
+
+      > :global(.MuiSvgIcon-root) {
+        width: toRem(12);
+        height: auto;
+        position: absolute;
+        right: toRem(8);
+        cursor: pointer;
+        pointer-events: none;
+        path {
+          fill: rgba(35, 35, 35, 0.7);
+        }
+      }
+
+      > :global(.MuiOutlinedInput-notchedOutline) {
+        display: none;
+      }
+    }
+  }
+}
+
+.selectType_popover {
+  margin-top: 6px;
+  box-shadow: 0 0 8px rgba(37, 40, 43, 0.12) !important;
+  border-radius: 8px !important;
+  min-width: toRem(144) !important;
+
+  :global(.MuiList-root) {
+    padding: toRem(8) 0;
+  }
+
+  .selectType_item {
+    padding: 0 toRem(16);
+    font-weight: 500;
+    font-size: toRem(12);
+    display: flex;
+    justify-content: flex-start;
+    line-height: toRem(16);
+    background-color: $white !important;
+    color: $defaultDark;
+    :global(.MuiFormControlLabel-root) {
+      margin-right: 0;
+      margin-left: -11px;
+    }
+    &:hover {
+      color: $primary;
+      background-color: rgba(0, 128, 255, 0.04) !important;
+    }
+  }
+}
+
+.userType_popover {
+  margin-top: 6px;
+  box-shadow: 0 0 8px rgba(37, 40, 43, 0.12);
+  border-radius: 8px;
+  width: toRem(300) !important;
+
+  :global(.MuiList-root) {
+    padding: toRem(16) 0 0 0;
+  }
+
+  .userType_item {
+    padding: toRem(5) toRem(18);
+    font-weight: 500;
+    font-size: toRem(12);
+    line-height: toRem(16);
+    color: $defaultDark;
+    &:hover {
+      background-color: rgba(0, 128, 255, 0.04);
+      color: $primary;
+    }
+
+    :global(.MuiFormControlLabel-root) {
+      margin-right: 0;
+    }
+
+    :global(.MuiTouchRipple-root) {
+      display: none;
+    }
+  }
+
+  .userType_item__search {
+    padding: 0 toRem(14);
+    margin-bottom: toRem(16);
+    background-color: $white !important;
+  }
+
+  :global(.search-bar) {
+    width: 100%;
+    :global(.form-group) {
+      min-width: auto;
+
+      :global(.form-control) {
+        min-height: toRem(48);
+        padding-left: toRem(44) !important;
+        padding-right: toRem(20);
+        font-size: toRem(14);
+        &::placeholder {
+          color: $disabledColor;
+          font-size: toRem(14);
+        }
+      }
+    }
+
+    :global(.search-icon) {
+      left: toRem(18) !important;
+      :global(.MuiSvgIcon-root) {
+        width: toRem(20);
+        fill: $white;
+      }
+    }
+  }
+
+  .vCustomScrollBarTrack {
+    margin-right: 4px;
+  }
+}

@@ -1,0 +1,380 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+@import "../style.module.scss";
+.staffList {
+  :global(.RegTable-footer) {
+    background-color: transparent !important;
+    padding: toRem(24) 0;
+  }
+
+  :global(.search-icon) svg {
+    fill: $whiteLight;
+    width: toRem(22);
+  }
+
+  :global(.company-list-search .search-bar) {
+    background-color: $whiteLight !important;
+
+    :global(.form-control) {
+      min-height: toRem(40);
+      background-color: $whiteLight;
+    }
+
+    :global(.form-group) {
+      border: 1px solid #dbdde0;
+      border-radius: 0;
+    }
+  }
+
+  .addNewBtn {
+    min-width: toRem(136);
+    min-height: toRem(46);
+    font-weight: 600;
+  }
+
+  // :global(.MuiTable-root) {
+  //   border: 1px solid $grayText1;
+  //   border-bottom: 0;
+
+  //   // :global(.MuiTableHead-root .MuiTableCell-root) span {
+  //   //   color: $bodyText;
+  //   // }
+
+  //   // :global(.MuiTableHead-root .MuiTableCell-root) {
+  //   //   padding: toRem(16) 0;
+  //   //   border-bottom: 1px solid $grayText1 !important;
+  //   // }
+  //   // :global(.MuiTableCell-root) {
+  //   //   color: $bodyText;
+  //   //   font-size: toRem(14);
+  //   //   line-height: toRem(20);
+  //   //   &:first-child {
+  //   //     padding-left: toRem(24) !important;
+  //   //   }
+  //   //   &:nth-child(5) {
+  //   //     color: $grayText;
+  //   //   }
+
+  //   //   &:nth-child(6) div {
+  //   //     margin-left: -6px;
+  //   //   }
+
+  //   //   &:last-child {
+  //   //     :global(.MuiButtonBase-root) {
+  //   //       left: 0;
+  //   //       background-color: transparent;
+  //   //     }
+  //   //     svg path {
+  //   //       fill: $bodyText;
+  //   //     }
+  //   //   }
+  //   // }
+
+  //   .createdByDesc {
+  //     span {
+  //       font-size: toRem(14);
+  //       line-height: toRem(20);
+  //       color: $grayText;
+  //     }
+  //   }
+  // }
+}
+
+:global(.MuiTooltip-popper) {
+  :global(.MuiTooltip-tooltip) {
+    padding: toRem(16);
+    font-size: toRem(14);
+    line-height: toRem(20);
+  }
+
+  &[data-popper-placement*="top"] {
+    :global(.MuiTooltip-arrow) {
+      border-width: 10px 10.5px 0 10.5px;
+    }
+  }
+
+  &[data-popper-placement*="bottom"] {
+    :global(.MuiTooltip-arrow) {
+      border-width: 0 10.5px 10px 10.5px;
+    }
+  }
+}
+
+.addStaffDialog {
+  border-radius: 8px;
+  :global(.MuiPaper-root) {
+    width: toRem(792);
+    overflow: hidden;
+  }
+  .fieldsWrap {
+    margin-right: toRem(24);
+    padding-top: 5px;
+  }
+
+  :global(.MuiDialogContent-root) {
+    padding: toRem(24) toRem(0) toRem(24) toRem(24);
+    margin-top: 0;
+  }
+
+  :global(.MuiDialogTitle-root) {
+    padding: toRem(24);
+    background-color: transparent;
+    border-bottom: 1px solid $grayText1;
+  }
+
+  :global(.MuiDialogActions-root) {
+    padding: toRem(16) toRem(24);
+  }
+
+  :global(.MuiCloseableDialogTitle-title) {
+    font-weight: 500;
+    font-size: toRem(18);
+    line-height: toRem(24);
+    color: $bodyText;
+    background-color: $white;
+  }
+
+  :global(.MuiDialogActions-root) {
+    :global(.MuiButton-root) {
+      min-width: toRem(120);
+      font-weight: 600;
+      &:first-child {
+        border-color: $defaultLight;
+        color: $grayText;
+      }
+    }
+  }
+  .field {
+    display: block;
+    position: relative;
+
+    > :global(.MuiFormLabel-root) {
+      display: block;
+    }
+    &:not(:first-child) {
+      margin-top: toRem(40);
+    }
+
+    :global(.MuiSvgIcon-root) {
+      top: 50%;
+      transform: translatey(-50%);
+      path {
+        fill: $defaultLight;
+      }
+    }
+
+    :global(.MuiOutlinedInput-root) {
+      &:global(.Mui-focused) {
+        :global(.MuiOutlinedInput-notchedOutline) {
+          border-color: $focusColor !important;
+        }
+
+        :global(.MuiSvgIcon-root) path {
+          fill: $focusColor;
+        }
+      }
+      &:hover {
+        :global(.MuiOutlinedInput-notchedOutline) {
+          border-color: $default;
+        }
+      }
+      :global(.MuiOutlinedInput-notchedOutline) {
+        border-color: $grayBorder;
+      }
+    }
+
+    :global(.MuiOutlinedInput-notchedOutline) {
+      top: 0;
+      legend {
+        display: none;
+      }
+    }
+
+    :global(.MuiFormLabel-root) {
+      font-weight: 500;
+      font-size: toRem(12);
+      line-height: toRem(16);
+      color: $default;
+      margin-bottom: 6px;
+    }
+
+    :global(.MuiOutlinedInput-input) {
+      box-sizing: content-box;
+      padding: toRem(14) toRem(16);
+      font-size: toRem(14);
+      color: $bodyText;
+      line-height: toRem(20);
+      &::placeholder {
+        color: $defaultLight;
+      }
+    }
+    :global(.MuiFormHelperText-root) {
+      margin-left: 0;
+      position: absolute;
+      margin-top: 6px !important;
+      top: calc(100%);
+      left: 0;
+      width: 100%;
+      margin-left: 0 !important;
+    }
+    :global(.MuiSelect-select) {
+      font-size: toRem(14);
+      line-height: toRem(20);
+      color: $bodyText;
+    }
+
+    .selectPlaceholder {
+      color: $defaultLight;
+      background-color: $white !important;
+    }
+  }
+  .vScrollbar {
+    right: toRem(8);
+  }
+}
+
+.deleteStaffDlg {
+  width: toRem(520);
+
+  :global(.reg-MuiCloseableDialogTitle-text) {
+    font-size: toRem(18);
+  }
+
+  :global(.reg-MuiPromptDialog-content) {
+    padding-bottom: toRem(8);
+    padding-top: toRem(24);
+    margin-top: 0;
+  }
+  :global(.MuiDialogTitle-root .MuiSvgIcon-root) {
+    path {
+      fill: $bodyText;
+    }
+  }
+
+  :global(.MuiInputBase-root .MuiInputBase-input) {
+    padding: 0 !important;
+    font-size: toRem(14);
+    &::placeholder {
+      color: $defaultLight;
+    }
+  }
+
+  :global(.MuiOutlinedInput-root) {
+    :global(.MuiSvgIcon-root) path {
+      fill: $defaultLight;
+    }
+    &:hover {
+      :global(.MuiOutlinedInput-notchedOutline) {
+        border-color: $default !important;
+      }
+      :global(.MuiSvgIcon-root) path {
+        fill: $default;
+      }
+    }
+  }
+
+  :global(.MuiDialogContent-root) {
+    font-weight: 600;
+    font-size: toRem(14);
+    line-height: toRem(20);
+    color: $grayText;
+    text-align: left;
+    p {
+      display: block;
+      width: 100%;
+      margin-bottom: 0;
+      text-align: left;
+      &:last-child {
+        font-weight: 400;
+      }
+    }
+  }
+
+  :global(.MuiInputBase-root) {
+    padding: toRem(14) toRem(16);
+    height: toRem(48);
+    :global(.MuiOutlinedInput-notchedOutline) {
+      top: 0;
+      border-color: $grayBorder;
+    }
+
+    &:global(.Mui-focused) {
+      :global(.MuiOutlinedInput-notchedOutline) {
+        border-color: $focusColor !important;
+      }
+      :global(.MuiSvgIcon-root) path {
+        fill: $focusColor;
+      }
+    }
+  }
+
+  :global(.MuiButton-root) {
+    font-weight: 600;
+  }
+
+  :global(.MuiButton-containedWhitePrimary) {
+    background-color: $white;
+  }
+}
+
+.paper {
+  box-shadow: 0 0 8px rgba(37, 40, 43, 0.12);
+  border-radius: 8px;
+  background-color: $white;
+  margin-top: 8px;
+  width: 100%;
+
+  :global([class*="vCustomScrollBarTrack"]) {
+    right: 8px;
+    width: 6px !important;
+    > div {
+      background: $grayBorder;
+    }
+  }
+
+  :global(.MuiAutocomplete-listbox) {
+    overflow: unset;
+
+    li {
+      padding: toRem(8) toRem(16);
+      cursor: pointer;
+
+      :global(.MuiOutlinedInput-root) {
+        height: toRem(48);
+      }
+
+      :global(.MuiAvatar-root) {
+        margin-right: toRem(12);
+        position: relative;
+        overflow: visible;
+        &:before {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 100%;
+          box-sizing: content-box;
+          position: absolute;
+          padding: 1px;
+          transform-origin: 0 0;
+          border-radius: 50%;
+          box-shadow: 0 0 0 1px $focusColor;
+          transition: opacity 0.3s ease-in-out;
+          opacity: 0;
+        }
+      }
+
+      &:hover {
+        :global(.reg-MuiUserAvatar-description) {
+          color: $focusColor;
+        }
+
+        :global(.MuiAvatar-root::before) {
+          opacity: 1;
+        }
+        background-color: rgba(0, 128, 255, 0.04);
+        :global(.MuiAvatar-root:before) {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

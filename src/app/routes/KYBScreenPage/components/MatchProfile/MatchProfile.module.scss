@@ -1,0 +1,526 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+$gutter: rem(26px);
+
+.CardHeaderContainer {
+  margin-left: rem(25px);
+  margin-right: rem(25px);
+  flex-direction: row;
+  display: flex;
+}
+.CardHeaderTitle {
+  font-size: rem(21px);
+}
+.CardHeaderName {
+  font-size: rem(21px);
+  font-weight: 600;
+}
+.TextDescription {
+  font-size: rem(14px);
+  color: #7a7a7a;
+}
+.CardContainer {
+  padding: 0 !important;
+  padding-top: rem(23px) !important;
+  margin-bottom: rem(5px) !important;
+}
+.StatusResolutionContainer {
+  padding: 0 !important;
+  padding-top: rem(23px) !important;
+  margin-bottom: rem(5px) !important;
+  border-top: 1px solid #f4f4f4;
+}
+.PageCommentContainer {
+  padding: 0 !important;
+  padding-top: rem(23px) !important;
+  margin-left: rem(30px) !important;
+  margin-bottom: rem(5px) !important;
+  border-top: 1px solid #f4f4f4;
+}
+.FullHeight {
+  min-height: rem(470px);
+}
+.PaddingUserID {
+  padding-top: rem(15px);
+  padding-bottom: rem(15px);
+}
+.PaddingTopText {
+  padding-top: rem(10px);
+}
+.IconButtonStyleLeft {
+  padding: 0;
+  margin: 0;
+  padding-left: 2px;
+}
+
+.IconButtonUnActiveStyle {
+  opacity: 0.6 !important;
+}
+
+.BodyBackground {
+  padding-top: rem(20px) !important;
+  padding-left: rem(25px) !important;
+  padding-right: rem(25px) !important;
+  margin-bottom: rem(5px) !important;
+  padding-bottom: rem(16px) !important;
+  border-top: 0.5px solid #e4e4e4;
+  min-height: rem(190px);
+}
+
+.TextHeaderDescription {
+  text-align: end;
+  align-items: center;
+  font-size: rem(14px);
+  color: #7a7a7a;
+  padding-left: 1rem;
+}
+.TextPossible {
+  color: #0080ff;
+}
+.AvatarStyle {
+  width: rem(75px) !important;
+  height: rem(75px) !important;
+}
+.KeywordStyle {
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+  padding-top: rem(4px);
+  padding-bottom: rem(4px);
+  border-radius: rem(12px);
+  margin-right: rem(10px);
+  margin-top: rem(4px);
+  margin-bottom: rem(4px);
+  font-size: rem(12px) !important;
+}
+.KeywordWrap {
+  flex-wrap: wrap;
+  flex: 1;
+  display: flex;
+  align-items: center !important;
+}
+.ProfileHeight {
+  height: 100%;
+  flex-direction: column;
+}
+.ProfileTabContainer {
+  padding: 0px !important;
+  margin: 0px !important;
+  border-radius: 10px;
+}
+.TableContent {
+  padding-left: rem(23px);
+  padding-right: rem(23px);
+  padding-top: rem(20px);
+  min-height: rem(562px);
+}
+@media (min-width: 768px) {
+  .TableContent {
+    padding-left: rem(23px);
+
+    padding-top: rem(20px);
+    min-height: rem(598px);
+  }
+}
+@media (min-width: 1366px) {
+  .TableContent {
+    padding-left: rem(23px);
+    padding-right: rem(23px);
+    padding-top: rem(20px);
+    min-height: rem(598px);
+  }
+}
+@media (min-width: 1920px) {
+  .TableContent {
+    padding-left: rem(23px);
+    padding-right: rem(23px);
+    padding-top: rem(20px);
+    min-height: rem(595px);
+  }
+}
+.tabItem {
+  flex: 1;
+  font-size: rem(14px) !important;
+  background-color: #f4f4f4;
+  min-width: 20% !important;
+  max-width: 25% !important;
+}
+.tabItemActive {
+  color: #0080ff;
+  font-size: rem(14px) !important;
+  background-color: #ffffff;
+  flex: 1;
+  min-width: 20% !important;
+  max-width: 25% !important;
+}
+.boxTabPanel {
+  border-bottom-left-radius: rem(6px);
+  border-bottom-right-radius: rem(6px);
+  background-color: #ffffff;
+  box-shadow: 0.5px 1px 5px 3px rgba(26, 26, 26, 0.1);
+}
+.tabContainer {
+  :global(.MuiTabs-indicator) {
+    background-color: white;
+  }
+  :global(.MuiTab-root) {
+    min-height: rem(48px);
+    @media (min-width: 600px) {
+      min-width: unset;
+    }
+  }
+  &:global(.MuiTabs-root) {
+    min-height: rem(48px);
+  }
+}
+.buttonStatus {
+  border-radius: rem(25px) !important;
+  color: white;
+  size: rem(15px);
+  background-color: #ea2134;
+  padding-left: rem(50px);
+  padding-right: rem(50px);
+  width: rem(153px);
+  margin-right: rem(5px);
+
+  &.Filter {
+    background: white;
+    border: 1px solid $primary;
+    color: $primary;
+    padding: {
+      left: rem(13px);
+      right: rem(13px);
+    }
+    border-radius: 4px;
+  }
+}
+.buttonStatusFalse {
+  border-radius: rem(25px) !important;
+  color: white;
+  size: rem(15px);
+  width: rem(153px);
+  background-color: #4caf4f;
+  padding-left: rem(50px);
+  padding-right: rem(50px);
+  margin-left: rem(5px);
+}
+.buttonGroup {
+  align-items: flex-start !important;
+  justify-content: flex-start;
+  display: flex;
+  flex: 1;
+  margin-top: rem(25px);
+}
+.buttonComment {
+  background-color: #606981;
+  border-radius: 3px;
+  color: white;
+  padding-left: rem(12px);
+  padding-right: rem(12px);
+  height: rem(36px);
+}
+.backIcon {
+  padding-left: rem(10px);
+  padding-top: 0;
+  margin-bottom: rem(15px);
+  margin-top: rem(-15px);
+}
+.PageHeading {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.buttonAddComment {
+  width: rem(100px);
+  height: rem(36px);
+}
+.notePadding {
+  padding-left: rem(25px) !important;
+  padding-right: rem(25px) !important;
+  padding-top: rem(14px) !important;
+  outline: none !important;
+  resize: none;
+}
+.NoteList {
+  max-height: rem(400px) !important;
+  overflow-x: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  > div {
+    padding: rem(20px) {
+      bottom: rem(14px);
+      left: 0;
+      right: 0;
+    }
+    border-top: 1px solid #e4e4e4;
+    :global(.MuiAvatar-root) {
+      width: rem(40px);
+      height: rem(40px);
+      font-size: rem(17px);
+    }
+  }
+}
+.JRCardComment {
+  margin-left: rem(20px);
+  margin-right: rem(20px);
+  margin-top: rem(20px);
+  padding-bottom: rem(20px) !important;
+  box-shadow: none !important;
+  border-top: 1px solid #c2c2c2;
+  border-right: 1px solid #c2c2c2;
+  border-left: 1px solid#C2C2C2;
+  border-bottom: 1px solid #c2c2c2;
+  min-height: 1px !important;
+}
+.textarea {
+  border-style: none;
+  border-color: Transparent;
+  overflow: auto;
+  width: 100%;
+  border: 0 !important;
+  font-size: 1rem;
+  ::placeholder {
+    font-size: 2rem !important;
+  }
+}
+.CommentContainer {
+  padding-bottom: rem(10px) !important;
+  width: 100%;
+  border-top: 0.5px solid #e4e4e4;
+}
+.ItemComment {
+  margin-left: rem(20px) !important;
+  margin-right: rem(20px) !important;
+}
+.textarea::placeholder {
+  font-size: 1rem;
+}
+.flag20 {
+  width: rem(20px) !important;
+  height: rem(20px) !important;
+}
+.FlagMargin {
+  width: rem(20px) !important;
+  height: rem(20px) !important;
+}
+.HeightFlag {
+  max-height: rem(20px) !important;
+}
+.DialogConfirmTitle {
+  color: #ea2134;
+  font-size: 1rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+.DialogRadioSelected {
+  color: #0080ff;
+}
+.DialogRadioSelectedGreen {
+  color: #4caf4f;
+  font-weight: 500;
+}
+.DialogConfirmButton {
+  padding-left: rem(60px);
+  padding-right: rem(60px);
+  margin-right: rem(10px);
+  margin-left: rem(10px);
+}
+
+.DialogCloseButton {
+  margin-top: rem(30px);
+  padding-left: rem(80px);
+  padding-right: rem(80px);
+  background-color: #a3a3a3 !important;
+}
+.GroupRadioStyle {
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+.DialogContainer {
+  padding-left: rem(26px) !important;
+  padding-right: rem(26px) !important;
+}
+.DialogActionContainer {
+  justify-content: center !important;
+  align-items: center !important;
+  padding-bottom: rem(40px) !important;
+}
+.ProgressContainer {
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: rem(50px);
+}
+.DialogHeaderAction {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.paddingButton {
+  padding-left: rem(80px);
+  padding-right: rem(80px);
+}
+.DialogHeaderBorderWidth {
+  background-color: white;
+  margin: 0 !important;
+  padding-right: rem(25px);
+  padding-left: rem(25px);
+  padding-top: rem(23px);
+  padding-bottom: rem(23px);
+  flex-direction: row;
+  display: flex;
+}
+.SourceTableContent {
+  padding-top: rem(20px);
+  min-height: rem(390px);
+}
+
+.borderKeyword {
+  background-color: #606981 !important;
+  border: 1px solid #606981 !important;
+  padding-left: rem(20px) !important;
+  padding-right: rem(20px) !important;
+  padding-top: rem(4px) !important;
+  padding-bottom: rem(4px) !important;
+  border-radius: rem(12px) !important;
+  margin-right: rem(10px) !important;
+  margin-top: rem(4px) !important;
+  margin-bottom: rem(4px) !important;
+  font-size: rem(12px) !important;
+  color: white;
+}
+.borderKeywordActive {
+  background-color: white !important;
+  border: 1px solid gray !important;
+  padding-left: rem(20px) !important;
+  padding-right: rem(20px) !important;
+  padding-top: rem(4px) !important;
+  padding-bottom: rem(4px) !important;
+  border-radius: rem(12px) !important;
+  margin-right: rem(10px) !important;
+  margin-top: rem(4px) !important;
+  margin-bottom: rem(4px) !important;
+  font-size: rem(12px) !important;
+}
+.KeywordWrapMargin {
+  padding-top: rem(20px) !important;
+  padding-bottom: rem(20px) !important;
+  padding-left: rem(20px);
+  border-bottom: 1px solid #e4e4e4 !important;
+}
+.iconCopyStyle {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+.TextOverFlow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: rem(332px) !important;
+}
+.alignCenter {
+  align-items: center;
+  margin-top: rem(4px);
+}
+.alignEnd {
+  align-items: flex-end !important;
+  text-align: end !important;
+  justify-content: end !important;
+  background-color: green !important;
+}
+.dropdownBorder {
+  border-radius: 100px;
+}
+.dropDownPositiveSelect {
+  color: white !important;
+  border-radius: 100px;
+  background-color: #ea2134;
+}
+.dropDownFalseSelect {
+  background-color: #4caf4f !important;
+  border-radius: 100px;
+  color: white;
+}
+.dropDownPositive {
+  color: #ea2134 !important;
+}
+.dropDownFalse {
+  color: #4caf4f !important;
+}
+.attachFileItem {
+  height: rem(36px) !important;
+  width: rem(196px) !important;
+  align-items: center !important;
+  display: flex;
+}
+.TableSource {
+  table-layout: fixed;
+  :global(.MuiTableRow-root) {
+    :global(.MuiTableCell-root) {
+      padding: toRem(16) toRem(24) !important;
+      background-color: $white;
+      letter-spacing: 0.1px;
+      &:global(.MuiTableCell-head) {
+        border: 0px;
+        background-color: $disabledBg;
+        padding-bottom: toRem(18);
+        span {
+          font-weight: normal !important;
+          line-height: toRem(16);
+        }
+      }
+    }
+  }
+  :global(.MuiTableBody-root) {
+    :global(.MuiTableRow-root) {
+      &:first-child {
+        :global(.MuiTableCell-root) {
+          padding-top: toRem(24);
+        }
+      }
+      &:last-child {
+        :global(.MuiTableCell-root) {
+          border: 0px;
+          padding-bottom: toRem(24) !important;
+        }
+      }
+    }
+  }
+}
+.disabledDiv {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.copyIcon {
+  button {
+    position: absolute;
+    top: -10px;
+    svg {
+      height: rem(16.37px);
+      width: rem(17.12px);
+    }
+  }
+}
+
+.removeHoverButton {
+  a {
+    color: #7a7a7a;
+  }
+  a:hover,
+  button:hover {
+    color: #7a7a7a;
+    background: transparent;
+    text-decoration: none;
+  }
+}
+.tabContainerKYB {
+  width: 100%;
+  background-color: #ffffff;
+  border-top-left-radius: rem(10px);
+  border-top-right-radius: rem(10px);
+}
+.ViewMore {
+  color: #1580fc;
+  font-size: rem(17px);
+  cursor: pointer;
+}

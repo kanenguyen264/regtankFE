@@ -1,0 +1,65 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.captionContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: toRem(24);
+}
+
+.caption {
+  display: flex;
+  align-items: center;
+}
+
+.caption:first-child {
+  margin-right: 32px;
+}
+
+.caption:last-child {
+  margin-left: 32px;
+}
+
+.colorCaption {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.contentCaption {
+  font-weight: 500;
+  font-size: toRem(14);
+  line-height: toRem(20);
+  color: $grayText;
+}
+
+.chartTooltip {
+  width: toRem(128);
+  height: toRem(48);
+  padding: 4px;
+  font-weight: 500;
+  border-radius: 8px;
+  font-size: toRem(14);
+  line-height: toRem(20);
+}
+
+.tooltip {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftTooltip {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.valueTooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 29px;
+  font-size: 12px;
+  border-radius: 5px;
+}

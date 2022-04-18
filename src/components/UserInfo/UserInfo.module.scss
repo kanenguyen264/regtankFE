@@ -1,0 +1,83 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.container {
+  min-width: toRem(328);
+  :global(.MuiAccordionSummary-root) {
+    min-height: toRem(48);
+  }
+
+  :global(.Mui-expanded) {
+    margin: 0 !important;
+  }
+  :global(.Mui-expanded:before) {
+    opacity: 1 !important;
+  }
+  :global(.MuiPaper-root.MuiAccordion-root::before) {
+    background-color: $grayText1;
+  }
+
+  :global(.MuiAccordionDetails-root) {
+    border-top: 1px solid $grayText1;
+    padding-top: toRem(16);
+    padding-bottom: toRem(16);
+  }
+
+  :global(.MuiAccordion-root::before) {
+    border-top: 1px solid $grayText1;
+  }
+  :global(.MuiAccordion-root:first-child) {
+    border-top: 1px solid $grayText1;
+
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  :global(.MuiAccordion-root:last-child) {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: 0px !important;
+  }
+}
+
+.user {
+  margin-right: toRem(16);
+  display: flex;
+  align-items: center;
+}
+.dropdownMenu {
+  border-radius: 8px;
+  border: 1px solid $grayText1 !important;
+  box-shadow: $boxShadow;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.profile {
+  padding: toRem(16) toRem(24) 0 toRem(24);
+  display: flex;
+}
+.packageLabel {
+  font-size: toRem(11);
+  color: $bodyText;
+  font-weight: 400;
+}
+.packageName {
+  font-size: toRem(11);
+  color: $bodyText;
+  font-weight: 500;
+  span {
+    font-weight: 400;
+  }
+}
+
+.logoutText {
+  color: $errorBorder;
+}
+.userInfo {
+  margin-top: toRem(16);
+}
+.renewButton {
+  background-color: $success !important;
+  border-radius: toRem(18) !important;
+}
+.dialogRenew {
+  display: flex;
+}

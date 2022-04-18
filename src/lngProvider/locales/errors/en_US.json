@@ -1,0 +1,5 @@
+{
+    "error.DATA_EXCEEDS_MAXIMUM": "You can only choose up to 5",
+    "error.DATA_DUPLICATED": "Duplicate ID",
+    "error.SOMETHING_WENT_WRONG": "OOps! Something went wrong."
+}

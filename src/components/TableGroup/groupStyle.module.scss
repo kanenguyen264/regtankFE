@@ -1,0 +1,265 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: toRem(24);
+  margin-top: toRem(11);
+  margin-bottom: toRem(10);
+  :global(.MuiPaper-root) {
+    margin-top: 0;
+  }
+
+  :global(.MuiTabs-root) {
+    border: unset;
+    font-size: toRem(12);
+    background-color: $disabledBg;
+    border-top-left-radius: toRem(4);
+    border-top-right-radius: toRem(4);
+    overflow: visible;
+    box-shadow: none;
+    width: toRem(1100);
+
+    @media (max-width: 1920px) {
+      width: toRem(1100);
+    }
+    @media (max-width: 1680px) {
+      width: toRem(1125);
+    }
+    @media (max-width: 1536px) {
+      width: toRem(960);
+    }
+    @media (max-width: 1440px) {
+      width: toRem(860);
+    }
+    @media (max-width: 1366px) {
+      width: toRem(950);
+    }
+    @media (max-width: 1280px) {
+      width: toRem(875);
+    }
+
+    position: relative;
+    :global(.MuiTabs-scroller) {
+      max-width: toRem(985);
+      @media (max-width: 1920px) {
+        max-width: toRem(985);
+      }
+      @media (max-width: 1680px) {
+        max-width: toRem(1020);
+      }
+      @media (max-width: 1536px) {
+        max-width: toRem(850);
+      }
+      @media (max-width: 1440px) {
+        max-width: toRem(755);
+      }
+      @media (max-width: 1366px) {
+        max-width: toRem(845);
+      }
+      @media (max-width: 1280px) {
+        max-width: toRem(770);
+      }
+    }
+    :global(.MuiTabScrollButton-root.Mui-disabled) {
+      opacity: 0.5;
+    }
+    :global(.MuiTabScrollButton-root) {
+      width: toRem(40);
+      height: toRem(40);
+      background-color: $white;
+      border: 1px solid $grayBorder;
+      position: absolute;
+      transform: "translateY(-50%)";
+      top: "50%";
+      top: toRem(5);
+      @media (max-width: 1680px) {
+        top: toRem(8);
+      }
+      @media (max-width: 1440px) {
+        top: toRem(8);
+      }
+      @media (max-width: 1366px) {
+        top: toRem(12);
+      }
+      @media (max-width: 1280px) {
+        max-width: toRem(670);
+      }
+      border-radius: toRem(8);
+      svg {
+        font-size: toRem(25);
+        color: $mainBlackText;
+      }
+    }
+    :global(.MuiTabScrollButton-root:nth-child(1)) {
+      right: toRem(50);
+    }
+    :global(.MuiTabScrollButton-root:nth-child(4)) {
+      right: 0;
+    }
+    :global(.MuiTabs-fixed) {
+      padding-bottom: 0.37px;
+
+      :global(.MuiTabs-flexContainer) {
+        border-bottom: 1px solid rgba(0, 128, 255, 0.2);
+      }
+    }
+
+    :global(.MuiTabs-indicator) {
+      display: flex;
+      justify-content: center;
+      background-color: transparent;
+      span {
+        width: calc(100% - 1.6rem);
+        height: 2px;
+        border-radius: 10px;
+        background-color: #0080ff;
+      }
+    }
+
+    :global(.MuiButtonBase-root.MuiTab-root) {
+      cursor: move;
+      padding: 0;
+      min-width: auto;
+      // max-width: 120px;
+    }
+
+    :global(.MuiTabs-scrollable) {
+      padding-bottom: 1px;
+      margin-bottom: -1px !important;
+    }
+
+    :global(.MuiTab-wrapper) p {
+      // max-width: 100px;
+    }
+  }
+}
+.DropdownBorder {
+  border: 0px solid #606981 !important;
+  color: #454545;
+  background-color: #ffffff !important;
+  margin-right: toRem(10);
+}
+.ExportSelected {
+  display: block;
+  border: none;
+  color: #343a40 !important;
+  font-size: toRem(12);
+  font-weight: 400;
+  padding-top: toRem(13);
+  padding-bottom: toRem(12);
+  &,
+  &:hover,
+  &:focus,
+  &:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+.addToArchive {
+  font-weight: 400;
+  font-size: toRem(12);
+}
+.textTab {
+  text-transform: none;
+  font-weight: 500;
+  color: #8c8c8c;
+  font-size: toRem(15);
+}
+.actionGroup {
+  display: flex;
+  align-items: center;
+}
+.actionGroupButtons {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+}
+.dividerPadding {
+  height: toRem(50);
+  width: 1px;
+  background-color: #eceef0;
+}
+.content {
+  display: flex;
+  align-items: center;
+}
+.disableTabScroll {
+  color: rgba(0, 0, 0, 0.26);
+  opacity: 1;
+}
+
+.AddButton {
+  display: flex;
+  align-items: center;
+  :global(.MuiIconButton-root) {
+    border: 1px solid $borderPrimaryColor;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: toRem(40);
+    height: toRem(40);
+  }
+}
+
+.DropdownIcon {
+  cursor: pointer;
+  margin: {
+    left: toRem(8);
+  }
+
+  svg {
+    width: 8px;
+    height: auto;
+  }
+}
+
+.DragDropItem {
+  padding: 0 toRem(24) 0 toRem(24);
+
+  :global(.MuiButtonBase-root) {
+    cursor: move;
+  }
+
+  &.IsDraging {
+    box-shadow: 0px 2px 4px rgba(34, 59, 96, 0.12);
+    .DropdownIcon {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}
+
+.SelectedGroup {
+  svg path {
+    fill: #0080ff;
+  }
+}
+.divider {
+  height: 1px;
+  background-color: #eceef0 !important;
+}
+.searchBox {
+  :global(.form-group) {
+    min-width: toRem(222) !important;
+    input {
+      padding-right: 0px;
+      font-size: toRem(12) !important;
+      &::placeholder {
+        font-size: toRem(12) !important;
+        font-weight: 500 !important;
+        color: #95a1ac !important;
+      }
+    }
+  }
+  @media (max-width: 1440px) {
+    :global(.search-icon) {
+      left: 2px !important;
+    }
+    :global(.form-group) {
+      input {
+        padding-left: toRem(36) !important;
+      }
+    }
+  }
+}

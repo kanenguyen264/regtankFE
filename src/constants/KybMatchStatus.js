@@ -1,0 +1,5 @@
+export const KYB_MATCHES = {
+  POSITIVE: "POSITIVE",
+  UNRESOLVED: "UNRESOLVED",
+  FALSE: "FALSE"
+};

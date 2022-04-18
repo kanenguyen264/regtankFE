@@ -1,0 +1,11 @@
+export { default as downloadReport } from "./components/downloadReport";
+export { default as KYTScreeningDetailsReport } from "./KYTScreeningDetailsReport";
+export { default as KYCMatchDetailsReport } from "./KYCMatchDetailsReport";
+export { default as KYBMatchDetailsReport } from "./KYBMatchDetailsReport";
+export { default as CaseDetailReport } from "./CaseDetailReport";
+export { default as KYCRiskScoringReport } from "./KYCRiskScoringReport";
+export { default as SettingScoringReport } from "./SettingScoringReport";
+export { default as KYBRiskScoringReport } from "./KYBRiskScoringReport";
+export { default as KYCScreeningDetailsReport } from "./KYCScreeningDetailsReport";
+export { default as KYBScreeningDetailsReport } from "./KYBScreeningDetailsReport";
+export { default as DJKYCRiskScoringReport } from "./DJKYCRiskScoringReport";

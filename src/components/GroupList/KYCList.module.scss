@@ -1,0 +1,320 @@
+@import "~@protego/sdk/styles/global/_global-dir";
+
+.Ids {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+  min-width: rem(180px);
+}
+.Status {
+  min-width: rem(180px);
+}
+.Update {
+  width: rem(180px);
+  min-width: rem(180px);
+}
+.Name {
+  min-width: rem(100px);
+}
+.Link {
+  color: #3f51b5;
+  cursor: pointer;
+  svg {
+    margin-top: rem(-6px);
+  }
+}
+.Header {
+  white-space: nowrap;
+}
+
+@media (min-width: 1280px) {
+  .width190 {
+    max-width: rem(175px);
+  }
+}
+@media (min-width: 1366px) {
+  .width190 {
+    max-width: rem(190px);
+  }
+}
+@media (min-width: 1920px) {
+  .width190 {
+    max-width: rem(200px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .width175 {
+    width: rem(175px);
+  }
+}
+@media (min-width: 1366px) {
+  .width175 {
+    width: rem(170px);
+  }
+}
+.width115 {
+  width: rem(115px);
+}
+.width120 {
+  width: rem(128px);
+}
+
+.width140 {
+  width: rem(140px);
+}
+.width195 {
+  width: rem(195px);
+}
+@media (min-width: 1366px) {
+  .width195 {
+    width: rem(230px);
+  }
+}
+@media (min-width: 1280px) {
+  .width195 {
+    width: rem(240px);
+  }
+}
+img.Flag {
+  width: rem(30px);
+  height: rem(30px);
+}
+.btnMarginRight {
+  margin-right: 1rem;
+}
+.btnMarginLeft {
+  margin-left: 1rem;
+}
+.searchWidth {
+  width: rem(460px);
+}
+.searchStyle {
+  font-size: 1rem;
+}
+.iconMf {
+  margin-left: 0.5rem;
+}
+.btnRisk {
+  width: rem(49px) !important;
+  height: rem(52px) !important;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  display: flex;
+  position: relative;
+}
+.itemAvatar {
+  width: 2rem !important;
+  height: 2rem !important;
+}
+.itemCellAvatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.itemCellAvatarDate {
+  display: flex;
+  flex-direction: column;
+}
+.cellTextSmall {
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+.cellStatus {
+  background-color: red !important;
+}
+.itemCellBadge {
+  background-color: white !important;
+  width: rem(20px) !important;
+  height: rem(20px) !important;
+  border-radius: 50%;
+  color: black;
+  margin-left: rem(6px);
+  text-align: center;
+  font-size: 0.9rem;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.itemCellKeyWord {
+  background-color: rgb(174, 243, 237) !important;
+  color: black;
+  padding: rem(6px) !important;
+  padding-left: rem(15px) !important;
+  padding-right: rem(15px) !important;
+  border-radius: 18px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.cleanPaddingJRCard {
+  padding: 0 !important;
+  margin: 0 !important;
+  height: rem(500px);
+}
+.iconCopyStyle {
+  svg {
+    width: 10px !important;
+    height: 12px !important;
+  }
+}
+.iconGroup {
+  opacity: 0.4;
+}
+.dropdownBorder {
+  border: 1px solid #606981 !important;
+  color: #454545;
+  background-color: #ffffff !important;
+}
+.flexEnd {
+  align-items: flex-end;
+  justify-content: flex-end;
+  display: flex;
+  flex: 1;
+}
+.flexCenter {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.searchBoxStyle {
+  ::placeholder {
+    color: blue;
+    font-size: 1.5em;
+  }
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1) !important;
+}
+.text {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.with180 {
+  width: rem(180px);
+}
+.addButton {
+  display: inline-block;
+  margin-left: 10px;
+  padding-bottom: 0;
+  path {
+    stroke: #d3d3d3;
+  }
+
+  &:hover path {
+    stroke: #0080ff !important;
+    opacity: 0.7;
+  }
+}
+.refreshButton {
+  background-color: #ffffff;
+  border: 1px solid #606981;
+  min-width: rem(20px) !important;
+}
+.btn {
+  font-weight: 500;
+  min-width: rem(104px);
+  height: rem(40px);
+  background: #0080ff;
+  color: white;
+  border: 1px solid #0080ff;
+  &:hover {
+    background: #0080ff;
+  }
+  &:disabled {
+    background: #ffffff;
+    border: 1px solid #d3d3d3;
+  }
+}
+.btnAdd {
+  min-width: rem(30px);
+}
+.btnRemove {
+  color: #ea2134;
+  border: 1px solid #ea2134;
+  background-color: white;
+  &:hover {
+    background: #ea2134;
+    color: white;
+  }
+}
+.btnPlaceholder {
+  color: #7a7a7a;
+  border: 1px solid #c2c2c2;
+  background-color: white;
+  &:hover {
+    background: #0080ff;
+    color: white;
+  }
+}
+.dialogCenter {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.textPlaceholder {
+  color: #7a7a7a !important;
+}
+.width30 {
+  width: rem(50px);
+}
+@media (min-width: 1280px) {
+  .width30 {
+    min-width: rem(50px);
+  }
+}
+@media (min-width: 1920px) {
+  .width30 {
+    min-width: rem(50px);
+  }
+}
+.iconButton {
+  background-color: #ebebeb;
+  color: #7a7a7a;
+  margin-right: rem(10px);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.textPlaceholderAdd {
+  color: #7a7a7a !important;
+  font-size: rem(14px);
+}
+.btnPrimary {
+  background-color: #0080ff;
+  color: white;
+  &:disabled {
+    background: #d3d3d3;
+  }
+  &:hover {
+    background: #0080ff;
+    color: white;
+  }
+}
+.content {
+  font-family: "Montserrat";
+  span {
+    font-weight: 600;
+  }
+}
+.contentPopupDelete {
+  font-size: rem(14px);
+}
+.groupName {
+  font-weight: 700;
+  font-size: toRem(14);
+}

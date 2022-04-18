@@ -1,0 +1,7 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.viewLogDialog {
+  :global(.reg-MuiPromptDialog-actions) {
+    display: "none";
+  }
+}

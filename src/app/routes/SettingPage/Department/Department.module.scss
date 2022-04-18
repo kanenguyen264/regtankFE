@@ -1,0 +1,141 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+.buttonDropdown {
+  margin-top: rem(5px);
+  justify-content: space-between;
+  :global(.MuiButton-label) {
+    justify-content: space-between;
+  }
+}
+.buttonDropdown:hover {
+  margin-top: rem(5px);
+  color: #abb4bd !important;
+  background: white !important;
+  :global(.MuiButton-label) {
+    justify-content: space-between;
+  }
+}
+.textButtonDropdown {
+  font-size: rem(16px);
+  font-weight: 400;
+  margin-left: rem(5px);
+  justify-content: space-between;
+}
+
+.formStyle {
+  padding-right: rem(16px);
+  padding-top: rem(16px);
+  padding-bottom: rem(16px);
+  overflow: hidden;
+  margin-left: rem(16px);
+}
+.btnDialogActionWidth {
+  width: rem(172px);
+}
+.deleteButtonDisable {
+  svg path {
+    stroke: #c2c2c2;
+  }
+}
+.deleteButton {
+  svg path {
+    stroke: #bfbfbf;
+  }
+}
+.deleteButton:hover {
+  svg path {
+    stroke: #ea2134;
+  }
+}
+.addButtonDisableCanlocked {
+  svg path {
+    stroke: #c2c2c2;
+  }
+}
+
+.addButtonDisableCanlocked:hover {
+  svg path {
+    stroke: #0080ff;
+  }
+}
+.addButtonDisable {
+  svg path {
+    stroke: #c2c2c2;
+  }
+}
+.addButton {
+  svg path {
+    stroke: #bfbfbf;
+  }
+}
+.addButton:hover {
+  svg path {
+    stroke: #0080ff;
+  }
+}
+.noOfStaff {
+  color: #0080ff;
+}
+.paddingButtonAddNewDepartment {
+  padding: 0px rem(30px);
+}
+.dialogActions {
+  padding: 0;
+  margin-top: toRem(32);
+}
+.PopoverContainerFull {
+  min-width: rem(208px);
+  box-shadow: none;
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+}
+
+.formStyle {
+  padding-right: rem(16px);
+  padding-top: rem(16px);
+  padding-bottom: rem(16px);
+  overflow: hidden;
+}
+.popoverBody {
+  height: 50px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  padding-left: rem(16px);
+  padding-right: rem(16px);
+}
+.textOverflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  padding-left: rem(16px);
+}
+
+.container {
+  align-items: center;
+  border-bottom: 1 solid #e6e6e6;
+
+  :global(.MuiButton-iconSizeMedium > *:first-child) {
+    font-size: toRem(16);
+  }
+  :global(.MuiDivider-root) {
+    background-color: #eceef0 !important;
+    height: toRem(30) !important;
+  }
+  :global(.MuiChip-root) {
+    background-color: $white;
+    max-width: 100% !important;
+    border: 1px solid #90c8ff;
+    color: $primary; // thay đổi khi có UI disable chip
+  }
+}
+.paddingChip {
+  margin-right: toRem(8);
+  // background-color: $primary;
+  margin-bottom: toRem(5);
+}
+
+.chipDelete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: toRem(4) toRem(4);
+}

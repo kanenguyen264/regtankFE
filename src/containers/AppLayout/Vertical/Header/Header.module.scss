@@ -1,0 +1,85 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.Container {
+  background-color: $whiteLight !important;
+}
+
+.NotiDropdown {
+  composes: mdc-elevation--z2 from global;
+  border: none;
+}
+.NotificationIcon {
+  cursor: pointer;
+}
+.NotificationBadge {
+  cursor: pointer;
+}
+.HeaderCover {
+  position: "absolute";
+  background-color: "#E5E5E5";
+  border-top-left-radius: "100%";
+  width: "45%";
+  right: 0;
+  padding-right: toRem(40);
+  flex-direction: "row";
+  align-items: "center";
+  align-content: "flex-end";
+  display: "flex";
+}
+.AppBarBackground {
+  background-color: "#0080FF";
+}
+
+@media (min-width: 768px) {
+  .PaddingSize {
+    padding-right: 25px;
+  }
+}
+@media (min-width: 1366px) {
+  .PaddingSize {
+    padding-right: 25px;
+  }
+}
+@media (min-width: 1920px) {
+  .PaddingSize {
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logoStyle {
+    margin-left: -58px;
+  }
+}
+@media (min-width: 1366px) {
+  .logoStyle {
+    margin-left: -54px;
+  }
+}
+@media (min-width: 1920px) {
+  .logoStyle {
+    margin-left: -35px;
+  }
+}
+.Divider {
+  width: 1px !important;
+  height: 20px !important;
+  background-color: $borderButton;
+}
+.appBarContainer {
+  :global(.MuiDivider-root) {
+    border-color: $grayText1 !important;
+    height: 0px !important;
+  }
+  :global(.mdc-elevation--z2) {
+    box-shadow: $boxShadow !important;
+    margin-top: toRem(14);
+  }
+
+  :global(.dropdown-menu::after) {
+    border-bottom: unset !important;
+  }
+  :global(.dropdown-menu::before) {
+    border-bottom: unset !important;
+  }
+}

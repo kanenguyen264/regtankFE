@@ -1,0 +1,5 @@
+{
+  "error.DATA EXCEEDS MAXIMUM": "您最多只能选择 5",
+  "error.DATA_DUPLICATED": "重复 ID",
+  "error.SOMETHING WENT_WRONG": "糟糕！出了点问题。"
+}

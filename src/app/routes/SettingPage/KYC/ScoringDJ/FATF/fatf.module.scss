@@ -1,0 +1,13 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.fatfWrapper {
+  padding: toRem(24) toRem(24);
+  // :global(.MuiOutlinedInput-root) {
+  //   margin-top: toRem(26);
+  // }
+  .headerBlock {
+    font-weight: 500;
+    font-size: rem(16px);
+    color: $mainBlackText;
+  }
+}

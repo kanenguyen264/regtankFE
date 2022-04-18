@@ -1,0 +1,10 @@
+{
+  "notifications.assignedToYou": "assigned to you",
+  "notification.click.remove": "Click to remove notification",
+  "notification.timeout.title": "Expiring Session Reminder",
+  "notification.timeout.content": "Your session is expiring soon. Would you like to continue?",
+  "notification.session.expired": "Session expired, Please login again",
+  "notification.bulkAssign": "<b>{assigner}</b> assigned <b>{total} {title}</b> to you",
+  "notifications.escalated": "<b>{assigner}</b> escalated <b>{title}</b> to you",
+  "notifications.kycMonitor": "<b>{name}</b> has been updated due to Ongoing Monitoring activity. Resolve now"
+}

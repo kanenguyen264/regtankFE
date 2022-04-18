@@ -1,0 +1,9 @@
+{
+  "credit.yourAccountCreditBalance": "Your Account Credit Balance",
+  "credit.top-up": "Top-up",
+  "credit.credits": "credits",
+  "credit.buyNow": "Buy now",
+  "credit.confirmTopUp": "Confirm Top Up ?",
+  "credit.creditTopUp": "Credit Top-up",
+  "credit.content": "Please contact your account manager or email to <a href=\"{linkEmail}\">{email}</a> to top up credits"
+}

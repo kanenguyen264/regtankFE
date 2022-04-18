@@ -1,0 +1,361 @@
+@import "~@protego/sdk/styles/global/_global-dir";
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.FormIndividual {
+  padding: rem(24px);
+
+  :global(.MuiRadio-root) {
+    padding: 6px 10px;
+  }
+
+  :global(.MuiOutlinedInput-root) {
+    margin-bottom: 0;
+  }
+
+  :global(.MuiOutlinedInput-root) input {
+    padding-top: rem(14px);
+    padding-bottom: rem(13px);
+  }
+  :global(.MuiSelect-select) {
+    padding-top: rem(16px);
+    padding-bottom: rem(11px);
+    height: rem(23px);
+    color: #7e7e7e;
+  }
+
+  :global(.MuiAutocomplete-input) {
+    padding-top: rem(6px) !important;
+    padding-bottom: rem(8px) !important;
+    height: rem(21px);
+  }
+
+  :global(.MuiAutocomplete-inputRoot) {
+    padding: 0 !important;
+    padding-right: 32px;
+  }
+
+  :global(.MuiBox-root) {
+    padding: 0;
+  }
+  :global(.MuiButton-contained) {
+    min-width: toRem(120);
+    background-color: $defaultLight;
+    font-weight: 600;
+    line-height: toRem(0.2);
+  }
+  :global(.MuiButton-outlined) {
+    border: 1px solid $grayBorder;
+    color: #606E7B;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: toRem(16);
+    line-height: 20px;
+    min-width: toRem(120);
+    &:hover {
+      background-color: #fcfcfc;
+    }
+
+    &:focus {
+      background-color: #fcfcfc;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.08);
+    }
+  }
+  .DatasetField {
+    margin-right: rem(8px);
+    .label {
+      font-style: normal;
+      font-weight: 500;
+      font-size: rem(14px);
+      line-height: rem(20px);
+      color: $defaultDark;
+    }
+  }
+  .strickDateMatchField {
+    margin-top: toRem(10);
+  }
+  .switchTitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(14px);
+    line-height: rem(20px);
+    align-items: center;
+    color: $defaultDark;
+  }
+  .profileNotes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  .gender {
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(12px);
+    line-height: rem(16px);
+    letter-spacing: rem(0.2px);
+    color: $default;
+  }
+  .groupAction {
+    padding-top: 0 !important;
+    div {
+      padding: 0 !important;
+    }
+  }
+}
+
+.textField {
+  box-sizing: border-box;
+
+  :global(.MuiOutlinedInput-root) {
+    height: rem(52px);
+  }
+
+  :global(.MuiOutlinedInput-root.Mui-focused fieldset) {
+    border-color: #0080ff !important;
+  }
+
+  :global(.MuiInputLabel-outlined) {
+    transform: translate(rem(24px), rem(20px));
+    color: #2b2b2bb2 !important;
+  }
+
+  :global(.MuiOutlinedInput-notchedOutline) {
+    padding: 0 rem(24px);
+  }
+
+  :global(.MuiInputLabel-outlined.Mui-focused),
+  :global(.MuiInputLabel-outlined.MuiFormLabel-filled) {
+    font-size: rem(14px);
+    transform: translate(rem(30.5px), rem(-6px));
+  }
+
+  :global(.MuiInputLabel-outlined.Mui-focused) {
+    color: #0080ff !important;
+  }
+
+  :global(.MuiAutocomplete-endAdornment) {
+    right: rem(23px) !important;
+  }
+
+  :global(.MuiAutocomplete-popupIndicator):hover {
+    background-color: transparent;
+  }
+
+  legend {
+    font-size: rem(14px) !important;
+
+    span {
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+  }
+
+  :global(.MuiOutlinedInput-input) {
+    padding: rem(16px) rem(24px) !important;
+  }
+}
+
+.tooltipIcon {
+  box-sizing: border-box;
+  width: rem(17px);
+  height: rem(17px);
+  path {
+    fill: #7a7a7a;
+  }
+}
+
+.colorRadio {
+  color: #7e7e7e;
+}
+
+.formError {
+  color: $danger;
+  font-size: rem(12px);
+}
+.widthBoxYear {
+  input {
+    padding-right: 0 !important;
+  }
+}
+.cardReScreening {
+  border-radius: 6px;
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
+}
+
+.spaceFeilds {
+  margin-bottom: toRem(17);
+}
+
+.spacingLine {
+  margin-top: rem(27px);
+  margin-bottom: rem(27px);
+}
+
+.containerSwitches {
+  padding: unset !important;
+  .boxSwitches {
+    &:first-child {
+      margin-right: rem(80px);
+      padding: 0;
+    }
+  }
+}
+
+.reScreening {
+  margin-left: 0;
+}
+
+.RadioLabel {
+  :global(.MuiTypography-root) {
+    color: #2b2b2b;
+    font-size: rem(17px);
+    line-height: rem(22px);
+  }
+}
+
+.DatePicker {
+  box-sizing: border-box;
+}
+
+.YearPicker {
+  border: 1px solid #eceef0;
+  box-sizing: border-box;
+  box-shadow: 0 3px 6px rgba(35, 35, 35, 0.14);
+  border-radius: 6px;
+  width: rem(634px);
+  margin-top: rem(8px);
+
+  .YearPickerWrap {
+    padding: rem(24px) rem(24px) rem(18px);
+  }
+
+  .yearFromInput,
+  .yearToInput {
+    width: 100%;
+    margin-bottom: rem(28px);
+    legend {
+      font-size: rem(14px);
+      line-height: 1.57;
+      margin-bottom: rem(4px);
+      color: rgba(43, 43, 43, 0.7);
+    }
+
+    :global(.MuiOutlinedInput-notchedOutline) {
+      border: 1px solid #dbdde0;
+      box-sizing: border-box;
+      background-color: #f3f3f3;
+      border-radius: 6px;
+    }
+
+    :global(.MuiOutlinedInput-input) {
+      font-size: rem(14px);
+      line-height: 1.57;
+      height: rem(42px);
+      color: #2b2b2b;
+      box-sizing: border-box;
+      background-color: transparent;
+      z-index: 10;
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  .yearFromWrap {
+    padding-right: rem(16px);
+  }
+
+  .yearToWrap {
+    padding-left: rem(16px);
+  }
+
+  .yearFromHeader,
+  .yearToHeader {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      font-weight: 500;
+      font-size: rem(14px);
+      line-height: rem(22px);
+      padding: 10px 12px;
+      border: 1px solid $grayText1;
+      color: $grayText;
+      border-radius: 6px;
+    }
+    svg {
+      font-size: 30px;
+      cursor: pointer;
+      color: $mainBlackText;
+    }
+  }
+
+  :global(.react-datepicker) {
+    :global(.react-datepicker__header) {
+      margin-bottom: rem(28px);
+    }
+
+    :global(.react-datepicker__year-wrapper) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: rem(26px);
+    }
+    
+
+    :global(.react-datepicker__year-text) {
+      padding: rem(15px) rem(30px);
+      font-size: rem(14px);
+      line-height: rem(22px);
+      text-align: center;
+      color: $mainBlackText;
+      cursor: pointer;
+      border-radius: 8px;
+      &:global(.react-datepicker__year-text--disabled) {
+        pointer-events: none;
+        color: #dbdde0;
+        background-color: $white;
+      }
+
+      &:global(.react-datepicker__year-text--selected) {
+        background-color: $primary;
+        color: $white;
+      }
+      .nextPrevButton {
+
+      }
+    }
+  }
+
+  .yearPickerControl {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      padding: rem(8px) rem(40px);
+      font-size: rem(14px);
+      line-height: rem(22px);
+    }
+  }
+}
+.textCredit {
+  font-weight: 400;
+  color: #2b2b2b;
+  font-size: rem(16px);
+  text-align: center;
+}
+.omDivider {
+  margin-top: rem(3px);
+  margin-bottom: 0;
+}
+.Tabs {
+  margin-bottom: rem(23px);
+}
+:global(.btn-valid) {
+  background-color: $primary !important;
+}
+
+.profileGroupTooltip {
+  width: toRem(256);
+  line-height: toRem(20);
+}

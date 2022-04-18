@@ -1,0 +1,88 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+.addNewDlg {
+  :global(.MuiDialogActions-root) {
+    margin: 0;
+
+    :global(.MuiButton-root) {
+      width: toRem(120);
+      &:first-child {
+        margin-right: toRem(16);
+      }
+
+      &:global(.MuiButton-containedWhite) {
+        border: 1px solid $default;
+        color: $default;
+      }
+    }
+  }
+
+  .reg-MuiCloseableDialogTitle-title {
+    font-size: toRem(18);
+    line-height: toRem(24);
+    color: #232323;
+  }
+
+  :global(.MuiPaper-root) {
+    width: toRem(520);
+  }
+
+  :global(.MuiDialogActions-root) {
+    padding-top: 0;
+  }
+
+  :global(.MuiDialogContent-root) {
+    padding-right: 0;
+  }
+
+  :global(.RegScrollbarView) {
+    padding-right: toRem(24);
+  }
+
+  :global(.RegScrollbarVThumb) {
+    right: toRem(10);
+  }
+
+  .fieldForm:not(:last-child) {
+    margin-bottom: toRem(24);
+  }
+
+  :global(.reg-MuiCloseableDialogTitle-title) {
+    font-size: toRem(18);
+    line-height: toRem(24);
+    color: #232323;
+  }
+
+  :global(.MuiPaper-root) {
+    width: toRem(520);
+  }
+
+  :global(.MuiDialogActions-root) {
+    padding-top: 0;
+  }
+
+  :global(.MuiDialogContent-root) {
+    padding-right: 0;
+  }
+
+  :global(.RegScrollbarView) {
+    padding-right: toRem(24);
+  }
+
+  :global(.RegScrollbarVThumb) {
+    right: toRem(10);
+  }
+
+  :global(.MuiFormHelperText-root.Mui-error),
+  .errorInput {
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.66;
+    position: relative;
+    margin-top: 6px;
+
+    &:global(.Mui-error) {
+      color: #ef5151;
+    }
+  }
+}
+

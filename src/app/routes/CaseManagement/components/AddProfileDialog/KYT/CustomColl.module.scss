@@ -1,0 +1,35 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+.CustomColWrapper {
+  margin-left: 55px;
+  margin-top: toRem(16);
+  .rowCustom {
+    margin-top: toRem(14);
+    display: flex;
+  };
+  .ml_2{
+    margin-left: toRem(2);
+  }
+  .Col_1 {
+    width: rem(166px);
+    margin-bottom: toRem(5);
+  }
+  .Col_2 {
+    width: rem(183px);
+    margin-bottom: toRem(5);
+  }
+  .Col_3 {
+    width: rem(123px); //toRem func the same rem func
+    margin-bottom: toRem(5);
+  }
+  .avatarAssign{
+    :global(.MuiAvatar-root){
+      margin: unset !important;
+    }
+  }
+  .CellText {
+    color: #656565;
+    font-weight: normal;
+    line-height: 26px;
+    font-style: normal;
+  }
+}

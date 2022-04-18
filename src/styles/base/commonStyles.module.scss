@@ -1,0 +1,28 @@
+@import "~@protego/sdk/styles/global/_global-dir";
+.ml16 {
+  margin-left: rem(16px);
+}
+.mr16 {
+  margin-right: rem(16px);
+}
+.searchBoxStyle {
+  height: rem(50px);
+  width: rem(272px);
+  display: flex;
+  align-items: center;
+}
+.searchBoxStyle::placeholder {
+  font-size: 1rem;
+  color: #7a7a7a;
+}
+
+.btnMedium {
+  height: rem(50px);
+}
+.input {
+  height: rem(52px);
+}
+.textWeight500 {
+  font-weight: 500;
+  font-size: rem(17px);
+}

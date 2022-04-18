@@ -1,0 +1,216 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.CardHeaderContainer {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+
+  :global(.MuiTypography-root) {
+    line-height: toRem(20);
+  }
+}
+.CardHeaderTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.TextDescription {
+  font-size: toRem(14);
+  color: $steelGray;
+}
+
+.PaddingTopText {
+  padding-top: toRem(10);
+}
+
+.BodyBackground {
+  padding-top: toRem(0);
+
+  :global(.MuiTypography-labelFieldForm) {
+    margin-bottom: 6px;
+  }
+}
+
+.linkSrc {
+  cursor: pointer;
+  display: block;
+  word-break: break-word;
+  color: $primary;
+  &:hover {
+    text-decoration-thickness: 1px;
+    color: $raidenBlue;
+    text-decoration-color: $raidenBlue;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 2px;
+  }
+}
+
+.TextPossible {
+  color: $primary;
+}
+
+.KeywordStyle {
+  padding-left: toRem(20);
+  padding-right: toRem(20);
+  padding-top: toRem(4);
+  padding-bottom: toRem(4);
+  border-radius: toRem(12);
+  margin-right: toRem(10);
+  margin-top: toRem(4);
+  margin-bottom: toRem(4);
+  font-size: toRem(12) !important;
+}
+
+.ProfileTabContainer {
+  padding: 0px !important;
+  margin: 0px !important;
+  border-radius: 10;
+}
+.TableContent {
+  padding-left: toRem(23);
+  padding-right: toRem(23);
+  padding-top: toRem(20);
+  min-height: toRem(562);
+}
+@media (min-width: 768) {
+  .TableContent {
+    padding-left: toRem(23);
+
+    padding-top: toRem(20);
+    min-height: toRem(598);
+  }
+}
+@media (min-width: 1366px) {
+  .TableContent {
+    padding-left: toRem(23);
+    padding-right: toRem(23);
+    padding-top: toRem(20);
+    min-height: toRem(598);
+  }
+}
+@media (min-width: 1920px) {
+  .TableContent {
+    padding-left: toRem(23);
+    padding-right: toRem(23);
+    padding-top: toRem(20);
+    min-height: toRem(595);
+  }
+}
+
+.boxTabPanel {
+  border-bottom-left-radius: toRem(6);
+  border-bottom-right-radius: toRem(6);
+  background-color: $white;
+  box-shadow: 0.5px 1px 5px 3px rgba(26, 26, 26, 0.1);
+}
+.tabContainer {
+  :global(.MuiTabs-indicator) {
+    background-color: $white;
+  }
+  :global(.MuiTab-root) {
+    min-height: toRem(48);
+    @media (min-width: 600px) {
+      min-width: unset;
+    }
+  }
+  &:global(.MuiTabs-root) {
+    min-height: toRem(48);
+  }
+}
+
+.backIcon {
+  padding-left: toRem(10);
+  padding-top: 0;
+  margin-bottom: toRem(15);
+  margin-top: toRem(-15);
+}
+.PageHeading {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.textarea::placeholder {
+  font-size: 1torem;
+}
+
+.HeightFlag {
+  max-height: toRem(20) !important;
+}
+
+.TextOverFlow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: toRem(332) !important;
+}
+
+
+.TableSource {
+  table-layout: fixed;
+}
+
+.copyIcon {
+  button {
+    position: absolute;
+    top: -10px;
+    svg {
+      height: toRem(16.37);
+      width: toRem(17.12);
+    }
+  }
+}
+
+.tabCustom {
+  min-width: 0px !important;
+  width: 25% !important;
+}
+
+.userAvatarInMatch {
+  font-size: 28px;
+  line-height: 36px;
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+.copyButton {
+  &:hover {
+    svg {
+      path:nth-child(2) {
+        fill: unset !important;
+      }
+    }
+  }
+  svg {
+    float: left;
+    width: toRem(18.33);
+    height: toRem(18.33);
+    font-size: toRem(18.33);
+    position: relative;
+    top: toRem(3);
+  }
+}
+.CardContainer {
+  border: unset;
+}
+.keywordStyle {
+  & span {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+}
+
+.matchesPagination {
+  box-sizing: border-box;
+  :global(.MuiButton-root) {
+    width: toRem(32);
+    height: toRem(32);
+    padding: 0 !important;
+    line-height: 0;
+
+    :global(.MuiSvgIcon-root) {
+      width: toRem(18);
+    }
+  }
+}

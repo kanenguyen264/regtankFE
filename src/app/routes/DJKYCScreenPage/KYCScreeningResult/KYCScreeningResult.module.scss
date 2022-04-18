@@ -1,0 +1,467 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+$gutter: toRem(35);
+$colorPrimary: $primary;
+$colorGray: $grayText1;
+$red: $errorBorder;
+$green: $green;
+.container {
+  :global(.MuiSwitch-root) {
+    margin-left: 0;
+  }
+  :global(.MuiDivider-root) {
+    background-color: $colorGray;
+    height: 1px;
+  }
+}
+.SectionDetail {
+  .CopyButton {
+    margin-top: toRem(-12);
+    margin-bottom: toRem(-12);
+
+    div {
+      line-height: toRem(20);
+    }
+  }
+}
+.UserInfo {
+  composes: d-flex from global;
+
+  .Field {
+    margin-bottom: toRem(24);
+  }
+  > div {
+    word-break: break-word;
+    flex: 1 1 auto;
+    padding: {
+      left: toRem(25.5);
+      right: toRem(25.5);
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  [data-border-right] {
+    border-right: 1px solid $extraWhiteLight;
+  }
+}
+.StatusTitle {
+  font-size: toRem(17) !important;
+}
+.textMatches {
+  font-size: toRem(12) !important;
+}
+.statusPoints {
+  font-size: toRem(21) !important;
+}
+.StatusNumber {
+  text-align: center;
+  > * {
+    display: block;
+  }
+  > :first-child {
+    font-size: toRem(15);
+  }
+  > :nth-child(2) {
+    font-size: toRem(21);
+    font-weight: bold;
+  }
+  > :nth-child(3) {
+    color: #7a7a7a !important;
+  }
+}
+.Search {
+  visibility: visible;
+}
+.SearchResult {
+  font-size: toRem(21);
+}
+.TwoLines {
+  @include table-cell-lines;
+}
+@mixin resolveButton($color) {
+  composes: text-white from global;
+  background: $color;
+  &:hover {
+    background: darken($color, 8%);
+  }
+}
+.Unresolved {
+  @include resolveButton($colorPrimary);
+}
+.Positive {
+  @include resolveButton($red);
+}
+.False {
+  @include resolveButton($green);
+}
+.PositiveFalseButton {
+  font-size: toRem(15);
+  height: toRem(36);
+  border-radius: 6px;
+  border: 1px solid $green;
+  padding: {
+    left: toRem(16);
+    right: toRem(16);
+  }
+
+  &.Filter {
+    background: white !important;
+    border: 1px solid $primary;
+    color: $primary;
+    padding: {
+      left: toRem(13);
+      right: toRem(13);
+    }
+    border-radius: 4px;
+  }
+}
+.StatusToggle {
+  :global(.MuiDropdown-dropdownLabel) {
+    width: toRem(81);
+  }
+}
+
+.Table {
+  :global(.MuiTableCell-root:first-child) {
+    padding-left: toRem(24) !important;
+    min-width: toRem(92) !important;
+  }
+  .CopyButtonRoot {
+    display: flex;
+    align-items: center;
+    :global(.MuiCopyButton-copyButton svg) {
+      width: toRem(17);
+    }
+  }
+  :global(.MuiTableCell-root) {
+    text-align: left;
+  }
+  .CopyButton {
+    margin-top: toRem(-12);
+    margin-bottom: toRem(-12);
+  }
+  .TableIdColumn {
+    height: toRem(22);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-all;
+  }
+}
+
+.HeaderInputs {
+  margin-top: toRem(-2);
+  margin-bottom: toRem(-2);
+}
+.AssigneeEditorInput {
+  composes: HeaderInputs;
+  margin: {
+    left: toRem(14);
+    right: toRem(-10);
+  }
+  width: toRem(200);
+  .AssigneeEditorInputUser {
+    margin-top: toRem(-6);
+    margin-bottom: toRem(-6);
+    margin-left: toRem(-4);
+  }
+}
+.disabledDiv {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.textOverflow {
+  max-width: toRem(110);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.maxHeighMenuPaperAssignee {
+  max-height: toRem(500);
+}
+.btnPrimary {
+  background-color: $colorPrimary;
+  border: 1px solid $colorPrimary;
+  box-shadow: 0px 2px 4px rgba(35, 35, 35, 0.1);
+  border-radius: 6px;
+  height: toRem(40);
+  color: $white;
+  &:hover {
+    background-color: $colorPrimary;
+    color: $white;
+  }
+}
+.btnOutlined {
+  background-color: $white;
+  border: 1px solid $colorPrimary;
+  box-shadow: 0px 2px 4px rgba(35, 35, 35, 0.1);
+  border-radius: 6px;
+  height: toRem(40);
+  color: $colorPrimary;
+}
+.textViewLog {
+  cursor: pointer;
+  color: $colorPrimary;
+  font-size: toRem(15);
+}
+.noMargin {
+  margin: 0 !important;
+}
+
+.switchesWrapper {
+  padding: 0;
+  @media (max-width: 1440px) {
+    padding: toRem(2) 0 toRem(6);
+  }
+  @media (max-width: 1336px) {
+    padding-bottom: 0px;
+  }
+  align-items: center;
+  justify-content: space-between;
+  > div:not(:last-child) {
+    margin-right: toRem(40);
+  }
+
+  .heading {
+    font-size: toRem(19);
+    font-weight: 500;
+  }
+
+  .boxSwitches {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:first-child {
+      margin-right: toRem(77);
+    }
+
+    .btnSwitch {
+      margin-left: toRem(0);
+    }
+  }
+}
+
+.heading {
+  font-size: toRem(19);
+  font-weight: 500;
+  line-height: toRem(24);
+  color: rgba(33, 37, 41, 0.870588);
+  margin-bottom: 0;
+}
+
+.searchResultTable {
+  font-size: toRem(21);
+  background-color: $white;
+  border-radius: 6px;
+  border: 1px solid $grayText1;
+}
+
+.headingTable {
+  padding: toRem(20) toRem(24);
+  justify-content: space-between;
+  display: flex;
+  border-bottom: 1px solid $scrollbarThumbCl;
+  > div {
+    width: 100%;
+  }
+  :global(.MuiButton-root) {
+    min-width: toRem(100);
+  }
+}
+
+.buttonViewDetail {
+  font-size: toRem(14);
+  line-height: ren(20);
+  color: $colorPrimary;
+  cursor: pointer;
+  &:hover {
+    color: $raidenBlue;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-color: $raidenBlue;
+    text-decoration-style: dashed;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+  }
+}
+.Link {
+  color: $colorPrimary;
+  svg {
+    height: toRem(12.38);
+    width: toRem(12.36);
+  }
+
+  .boxSwitches {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:first-child {
+      margin-right: toRem(68);
+    }
+
+    .btnSwitch {
+      margin-left: toRem(28);
+    }
+  }
+}
+.BlId {
+  svg {
+    height: toRem(12.38);
+    width: toRem(12.36);
+  }
+}
+.livenessApproved {
+  color: $devilGrass;
+  font-size: toRem(16);
+}
+.noTable {
+  font-size: toRem(17);
+  text-align: center;
+  color: $nanamaGray;
+  margin: toRem(50) 0px;
+}
+.StatusToggle {
+  :global(.MuiDropdown-dropdownLabel) {
+    width: toRem(81);
+  }
+}
+
+.False {
+  &:global(.Mui-disabled) {
+    background: rgba(76, 175, 79, 0.5) !important;
+  }
+}
+
+.Positive {
+  &:global(.Mui-disabled) {
+    background: rgba(234, 33, 52, 0.5) !important;
+    border-color: transparent !important;
+  }
+}
+.copyButton {
+  &:hover {
+    svg {
+      path:nth-child(2) {
+        fill: unset !important;
+      }
+    }
+  }
+  svg {
+    float: left;
+    width: toRem(18.33);
+    height: toRem(18.33);
+    font-size: toRem(18.33);
+    position: relative;
+    top: toRem(3);
+  }
+}
+
+.iconBack {
+  color: $bodyText;
+  padding: 0;
+  width: 6px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: toRem(16);
+}
+.userTitle {
+  margin-bottom: toRem(24);
+}
+.completeButton {
+  padding: 0 toRem(16) 0 toRem(16);
+}
+.widthStatus {
+  width: toRem(235);
+}
+
+.widthName {
+  width: toRem(245);
+}
+.exportButton {
+  min-width: toRem(112) !important;
+}
+.textOm {
+  text-align: left;
+  & b {
+    font-weight: 600;
+  }
+}
+.contentInfo {
+  margin-bottom: toRem(-22);
+}
+
+.exportBtn,
+.exportCsv {
+  :global(.MuiButton-startIcon) {
+    margin-right: toRem(12);
+  }
+}
+
+.exportCsv {
+  padding: toRem(12) toRem(18);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cardWrap {
+  :global(.RegCard-header),
+  :global(.RegCard-body) {
+    padding: toRem(24);
+
+    :global(.MuiBox-root) {
+      min-width: auto;
+    }
+  }
+
+  :global(.RegCard-header) {
+    line-height: toRem(20);
+  }
+}
+
+.headingTable {
+  border-bottom: 0;
+}
+
+.Field {
+  :global(.MuiTypography-root) {
+    line-height: toRem(20);
+  }
+}
+
+.CopyButton {
+  padding-left: 4px;
+}
+
+.contentInfo {
+  + hr {
+    margin-top: toRem(24);
+    margin-bottom: toRem(24);
+  }
+}
+
+.boxSwitches {
+  &:first-child {
+    margin-right: toRem(70);
+  }
+  :global(.MuiSwitch-root) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.searchResultTable {
+  border-radius: 8px;
+}
+.headingTable {
+  padding: toRem(16) toRem(24);
+}

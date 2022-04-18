@@ -1,0 +1,104 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+$green: #4caf4f;
+
+.False {
+  background: $green;
+  &:hover {
+    background: darken($green, 8%);
+  }
+}
+.PositiveFalseButton {
+  font-size: toRem(15);
+  height: toRem(36);
+  border-radius: 6px;
+  border: 1px solid $green;
+  padding: {
+    left: toRem(16);
+    right: toRem(16);
+  }
+
+  &.Filter {
+    background: $white;
+    border: 1px solid $primary;
+    color: $primary;
+    padding: {
+      left: toRem(13);
+      right: toRem(13);
+    }
+    border-radius: 4px;
+  }
+}
+
+.searchResultTable {
+  font-size: toRem(21);
+  background-color: $white;
+  border-radius: 6px;
+  border: 1px solid $grayText1;
+}
+
+.headingTable {
+  padding: toRem(20) toRem(24);
+  justify-content: space-between;
+  display: flex;
+  border-bottom: 1px solid $grayText1;
+
+  > div {
+    width: 100%;
+  }
+}
+
+.heading {
+  font-size: toRem(19);
+  font-weight: 500;
+  line-height: toRem(24);
+  color: rgba(33, 37, 41, 0.870588);
+  margin-bottom: 0;
+}
+
+.Table {
+  .CopyButtonRoot {
+    display: flex;
+    align-items: center;
+  }
+  .CopyButton {
+    margin-top: toRem(-12);
+    margin-bottom: toRem(-12);
+  }
+  .TableIdColumn {
+    // width: toRem(140px);
+    //display: inline-block;
+    height: toRem(22);
+    // text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-all;
+  }
+}
+
+.disabledDiv {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.buttonViewDetail {
+  font-size: toRem(14);
+  line-height: ren(20);
+  font-weight: 600;
+  color: $primary;
+  cursor: pointer;
+  &:hover {
+    color: #0052a3;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-color: #0052a3;
+    text-decoration-style: dashed;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+  }
+}
+.exportButton {
+  min-width: toRem(112);
+}

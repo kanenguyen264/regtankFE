@@ -1,0 +1,254 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+[data-border-right] {
+  border-right: 1px solid #e4e4e4;
+}
+
+.textBorderColor {
+  border-radius: 16px;
+  background-color: #3f51b5;
+  text-align: center;
+  color: #ffffff;
+  padding: 6px;
+  display: inherit;
+}
+
+.itemCellBadge {
+  background-color: white !important;
+  width: rem(25px) !important;
+  height: rem(25px) !important;
+  border-radius: 50%;
+  color: black;
+  margin-left: 6px;
+}
+
+.with100 {
+  width: rem(100px) !important;
+}
+
+.with130 {
+  width: rem(130px) !important;
+}
+
+.with150 {
+  width: rem(150px) !important;
+}
+
+.with200 {
+  width: rem(200px) !important;
+}
+
+.with210 {
+  width: rem(210px) !important;
+}
+.KytId {
+  @include table-cell-lines(1);
+  width: rem(130px);
+}
+.Ids {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+  min-width: rem(140px);
+}
+
+.searchBoxStyle {
+  width: rem(460px) !important;
+  ::placeholder {
+    color: blue;
+    font-size: 1.5em;
+  }
+  box-shadow: 0px 2px 4px rgba(35, 35, 35, 0.1) !important;
+}
+.textSearchPlaceholder {
+  ::placeholder {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 1920px) {
+  .textSearchPlaceholder {
+    ::placeholder {
+      font-size: 2em;
+    }
+  }
+}
+
+.copyButton {
+  button {
+    position: absolute;
+    top: -10px;
+    svg {
+      height: rem(16.37px);
+      width: rem(17.12px);
+    }
+  }
+}
+.btn {
+  font-weight: 500;
+  min-width: rem(104px);
+  height: rem(40px);
+  background: #0080ff;
+  color: white;
+  border: 1px solid #0080ff;
+  &:hover {
+    background: #0080ff;
+  }
+  &:disabled {
+    background: #ffffff;
+    border: 1px solid #d3d3d3;
+  }
+}
+.btnAdd {
+  min-width: rem(30px);
+}
+.btnRemove {
+  color: #ea2134;
+  border: 1px solid #ea2134;
+  background-color: white;
+  &:hover {
+    background: #ea2134;
+    color: white;
+  }
+}
+.btnPlaceholder {
+  color: #7a7a7a;
+  border: 1px solid #c2c2c2;
+  background-color: white;
+  &:hover {
+    background: #0080ff;
+    color: white;
+  }
+}
+.dialogCenter {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.textPlaceholder {
+  color: #7a7a7a !important;
+}
+.width30 {
+  width: rem(50px);
+}
+@media (min-width: 1280px) {
+  .width30 {
+    min-width: rem(50px);
+  }
+}
+@media (min-width: 1920px) {
+  .width30 {
+    min-width: rem(50px);
+  }
+}
+.iconButton {
+  background-color: #ebebeb;
+  color: #7a7a7a;
+  margin-right: rem(10px);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.textPlaceholderAdd {
+  color: #7a7a7a !important;
+  font-size: rem(14px);
+}
+.btnPrimary {
+  background-color: #0080ff;
+  color: white;
+  &:disabled {
+    background: #d3d3d3;
+  }
+  &:hover {
+    background: #0080ff;
+    color: white;
+  }
+}
+.cleanPadding {
+  padding: rem(10px);
+  height: rem(500px);
+}
+@media (min-width: 1366px) {
+  .cleanPadding {
+    padding: rem(20px);
+  }
+}
+@media (min-width: 1920px) {
+  .cleanPadding {
+    padding: rem(10px);
+  }
+}
+.bgTabGroup {
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.14);
+}
+.marginHeader {
+  margin-top: -20px;
+}
+@media (min-width: 1280px) {
+  .marginHeader {
+    margin-top: -10px;
+  }
+}
+.contentTable {
+  padding-top: rem(120px);
+}
+.textOverflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+.addButton {
+  display: inline-block;
+  padding-bottom: 0;
+  cursor: pointer;
+  svg {
+    width: rem(14px);
+    height: auto;
+  }
+  path {
+    stroke: #d3d3d3;
+  }
+
+  &:hover path {
+    stroke: #0080ff !important;
+    opacity: 0.7;
+  }
+}
+.boxTabPanel {
+  padding-top: rem(13px);
+  padding-bottom: rem(12px);
+  padding-right: rem(16px);
+}
+.Link {
+  color: #0080ff;
+  cursor: pointer;
+  svg {
+    height: rem(12.38px);
+    width: rem(12.36px);
+  }
+}
+
+.tableFixed {
+  :global(.MuiTableRow-root .MuiTableCell-root:first-child) {
+    min-width: rem(70px);
+    max-width: rem(70px);
+  }
+
+  :global(.MuiTableRow-root .MuiTableCell-root:not(:first-child)) {
+    width: calc(100% - 4.2rem) !important;
+  }
+}
+
+.statusBadge {
+  box-sizing: border-box;
+  > div {
+    padding-right: rem(13px);
+  }
+}
+
+.tabsContainer {
+  color:red;
+}

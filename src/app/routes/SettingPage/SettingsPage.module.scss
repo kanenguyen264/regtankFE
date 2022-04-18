@@ -1,0 +1,456 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.JRCardContainer {
+  // border-bottom-left-radius: 6px;
+  // border-bottom-right-radius: 6px;
+  // border: 1px solid #f4f4f6;
+  border-radius: 0;
+  :global(.MuiTable-root) {
+    :global(.MuiTableHead-root) {
+      :global(.MuiTableRow-root) {
+        background-color: $backgroundHeader;
+        th {
+          border-top: 1px solid $grayText1;
+          border-bottom: 1px solid $grayText1;
+          font-size: toRem(12);
+          color: $mainBlackText;
+        }
+      }
+    }
+    :global(.MuiTableBody-root) {
+      :global(.MuiTableCell-root) {
+        border-bottom: 1px solid $grayText1;
+        color: $grayText;
+      }
+    }
+  }
+}
+.ButtonGroup {
+  flex-direction: row;
+  margin-top: rem(20px);
+  margin-bottom: rem(20px);
+  display: flex;
+  margin-top: rem(50px);
+  margin-left: rem(20px);
+  margin-right: rem(20px);
+}
+.ButtonGroupDescription {
+  justify-content: flex-start;
+  align-items: flex-end;
+  display: flex;
+}
+.tabItem {
+  width: rem(188px) !important;
+  border-top-left-radius: rem(6px);
+  border-top-right-radius: rem(6px);
+  background-color: #f4f4f4 !important;
+  font-size: rem(14px) !important;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+}
+.tabItemKYCSetting {
+  width: rem(188px) !important;
+  font-size: rem(14px) !important;
+}
+.tabItemActive {
+  width: rem(188px) !important;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: rem(6px);
+  border-top-right-radius: rem(6px);
+  color: #252525;
+  font-size: rem(14px) !important;
+  background-color: #ffffff;
+}
+.tabItemActiveKYCSetting {
+  width: rem(188px) !important;
+  color: #0080ff;
+  font-size: rem(14px) !important;
+  background-color: #ffffff;
+  &:global(.Mui-selected) span {
+    font-weight: bold;
+  }
+}
+.tabContainer {
+  background-color: $white !important;
+  :global(.MuiTab-root) {
+    font-size: toRem(14);
+    text-transform: capitalize;
+  }
+}
+.tabContainerKYC {
+  background-color: #ffffff;
+}
+.tabPanel {
+  padding: 0;
+  background-color: #ffffff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.inputRiskLevelSetting {
+  width: rem(100px);
+}
+.tableCellInput {
+  width: rem(100px);
+  overflow: hidden;
+  background-color: $white;
+  margin-top: toRem(-11);
+  input {
+    text-align: left !important;
+  }
+  :global(.Mui-error) {
+    border: 1px solid $error;
+    border-radius: 5px;
+  }
+  :after,
+  :before {
+    border-bottom: 0 !important;
+  }
+}
+
+.tableCellInputOther {
+  width: rem(100px);
+  background-color: #ffffff !important;
+  text-align: center !important;
+  border: 1px solid #dadada;
+  border-radius: 9.5px;
+}
+.ButtonSize {
+  width: toRem(140);
+}
+.TextLabel {
+  color: #707070 !important;
+}
+.TablePadding {
+  background-color: white;
+  padding-bottom: rem(24px) !important;
+}
+.tableContainer {
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+}
+.tableMargin {
+  margin-top: rem(25px);
+}
+.cleanPadding {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.chartItemColor {
+  width: rem(35px);
+  height: rem(35px);
+  border-radius: 4px;
+  margin-right: rem(16px);
+}
+.chartCircle {
+  width: rem(431px);
+  height: rem(431px);
+  border-radius: 50%;
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(90px);
+  margin-top: rem(100px);
+}
+.chartTitle {
+  font-size: rem(100px);
+  color: rgb(195, 199, 216);
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex: 1;
+}
+.chartContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.chartTextDescription {
+  color: "#707070" !important;
+  font-size: "1rem";
+  font-weight: 400;
+}
+.chartFlexRow {
+  flex-direction: row;
+  display: flex;
+}
+.chartTextLabel {
+  font-size: 0.8rem;
+  padding: rem(10px) !important;
+}
+.chartTooltip {
+  background-color: rgba(235, 235, 235, 0.6);
+  color: "#292929";
+  text-align: center !important;
+  border: 1px solid #95cefd;
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+  padding-top: rem(10px);
+  padding-bottom: rem(10px);
+}
+.activeshapeStyle {
+  background-color: green !important;
+}
+.inputGroup {
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+  padding-top: rem(20px);
+}
+.groupInput {
+  margin-top: rem(20px) !important;
+}
+.jrCardStyle {
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+}
+.searchBoxStyle {
+  ::placeholder {
+    color: blue;
+    font-size: 1.5em;
+  }
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1) !important;
+  // margin-bottom: rem(20px) !important;
+  width: rem(400px);
+}
+.itemCellAvatar {
+  display: "flex";
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.itemCellAvatarDate {
+  display: "flex";
+  flex-direction: column;
+  padding-left: rem(10px);
+}
+.Link {
+  color: #3f51b5 !important;
+  cursor: pointer;
+  svg {
+    margin-right: rem(9.4px);
+    height: rem(16.37px);
+    width: rem(17.12px);
+    margin-top: rem(-6px);
+  }
+}
+.Ids {
+  @include table-cell-lines(1);
+  height: rem(22px);
+}
+.chipStyleActive {
+  background: #dcefdb;
+  border: 0px;
+  color: black;
+}
+.chipStyleDormant {
+  color: black;
+  background: rgb(239 239 239);
+  border: 0px;
+}
+.chipStyle {
+  height: auto;
+  padding: rem(4px) rem(16px) !important;
+  color: #00350c !important;
+  border: 0px !important;
+
+  :global(.MuiChip-label) {
+    padding: 0;
+  }
+
+  &.chipStyleActive {
+    background: #dcefdd;
+  }
+
+  &.chipStyleDormant {
+    background: #efefef;
+  }
+}
+.errorTitle {
+  color: red;
+  align-items: center !important;
+  display: flex;
+  font-size: 0.8rem !important;
+}
+.textStatus {
+  font-size: 1rem;
+  color: #252525;
+  font-weight: 400;
+}
+.textSettingValue {
+  font-size: 1rem;
+  color: #6a6a6a;
+}
+.textActivityDateTime {
+  color: #9e9e9e;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.itemContainer {
+  padding-left: 0px;
+  padding-right: 0px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.itemPadding {
+  padding-bottom: rem(10px);
+  padding-top: rem(10px);
+}
+.LinkActivity {
+  color: #3f51b5 !important;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1rem;
+  svg {
+    margin-right: rem(9.4px);
+    height: rem(16.37px);
+    width: rem(17.12px);
+    margin-top: rem(-6px);
+  }
+}
+
+.inputFormCustom {
+  :global(div.MuiOutlinedInput-root) {
+    margin-bottom: 0;
+  }
+}
+
+.generalSettingForm {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.alignItemsBaseline {
+  align-items: baseline;
+}
+.livenessSlider {
+  width: 100%;
+  padding-top: 46px;
+}
+.marginRadioCenter {
+  margin: 0px rem(100px) !important;
+}
+
+.boxShadowCard {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.14);
+}
+
+.RiskLevelTbl {
+  :global(.MuiTableBody-root) {
+    :global(.MuiTableCell-root) {
+      padding-bottom: toRem(30);
+      padding-top: toRem(30);
+    }
+  }
+}
+
+.FATFTable {
+  th,
+  td {
+    border-bottom: 0;
+  }
+
+  // .tableCellInput > div {
+  //   background-color: #ffffff;
+  // }
+}
+
+.TableChart {
+  margin-left: rem(35px);
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  :global(.MuiTableCell-head) {
+    background-color: #f5f5f5;
+
+    p {
+      color: #575757;
+      font-weight: 500;
+    }
+  }
+
+  :global(.MuiTableRow-root):last-child :global(.MuiTableCell-root) {
+    border-bottom: 0;
+  }
+
+  :global(.MuiTableCell-root) {
+    padding-top: rem(24px);
+    padding-bottom: rem(24px);
+  }
+}
+.rowNoBrd {
+  :global(.MuiTableCell-root) {
+    border-bottom: 0 !important;
+  }
+}
+.leftContent {
+  :global(.RegCard-body) {
+    padding: 0 !important;
+  }
+}
+
+.weightTableWrapper {
+  :global(.MuiTable-root) {
+    table-layout: fixed;
+    th {
+      p {
+        font-weight: 500;
+        color: $mainBlackText;
+      }
+    }
+  }
+  .collapseCol {
+    text-align: right;
+    span {
+      cursor: pointer;
+    }
+  }
+}
+
+.scoreSetting {
+  :global(.MuiOutlinedInput-root) {
+    input::placeholder {
+      font-style: italic !important;
+      font-size: toRem(14) !important;
+    }
+    textarea::placeholder {
+      font-style: italic !important;
+      font-size: toRem(14) !important;
+    }
+  }
+}
+.kybSetting {
+  // .headerTitleTable {
+  //   font-weight: 600;
+  //   // padding: rem(20px) rem(25px);
+  //   // background: #ffffff;
+  // }
+  .card {
+    :global(.RegCard-body) {
+      padding: 0;
+    }
+  }
+}
+.headCell {
+  background-color: "red" !important;
+  color: "#232323";
+  border: 0;
+}
+.inputScoring {
+  width: toRem(100);
+}
+.iconBack {
+  color: $mainBlackText;
+  padding: 0;
+  width: 6px;
+  cursor: pointer;
+}
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: toRem(16);
+}
+.scoringWrapper {
+  :global(.PageHeading-root){
+    margin-top: toRem(-60);
+  } 
+}

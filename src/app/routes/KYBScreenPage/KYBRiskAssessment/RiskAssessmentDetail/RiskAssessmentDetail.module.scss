@@ -1,0 +1,79 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.Container {
+  padding-top: toRem(24);
+  & hr {
+    border-top: 1px solid $grayBorder;
+  }
+}
+.copyButton {
+  &:hover {
+    svg {
+      path:nth-child(2) {
+        fill: unset !important;
+      }
+    }
+  }
+  svg {
+    float: left;
+    width: toRem(18.33);
+    height: toRem(18.33);
+    font-size: toRem(18.33);
+    position: relative;
+    top: toRem(0);
+  }
+}
+.JRCardBorder {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.flexGrow {
+  flex-grow: 1;
+}
+.noteGroup {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.Link {
+  font-size: rem(12px);
+  color: $primary;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.buttonEditGroup {
+  margin-top: toRem(10);
+  display: flex;
+  :global(.MuiButton-root) {
+    min-width: toRem(40);
+  }
+}
+.businessInfoNote {
+  textarea {
+    padding: toRem(12) toRem(16) toRem(12) toRem(16);
+    margin-top: toRem(6);
+    border: 1px solid $grayBorder;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 6px;
+    font-size: toRem(14);
+    color: $mainBlackText;
+    &:focus {
+      outline: none;
+    }
+    &:disabled {
+      resize: none;
+      background-color: $white;
+      border: unset;
+      padding: 0;
+    }
+  }
+}
+.switchesWrapper {
+  margin-left: toRem(-6) !important;
+}
+.switchGroup {
+  margin-top: toRem(-10);
+}

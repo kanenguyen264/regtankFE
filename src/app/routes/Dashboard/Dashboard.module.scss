@@ -1,0 +1,249 @@
+@use "sass:map";
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+$font-size-title: rem(20px);
+$font-size-sub-title: rem(16px);
+$font-weight-bold: 500;
+
+.cardDashBoard {
+  border: 1px solid $grayText1;
+  border-radius: 8px;
+  padding: toRem(24);
+  margin-bottom: toRem(24);
+}
+
+.cardDashBoardCase {
+  padding-top: rem(18px);
+  border: 1px solid $grayBorder;
+}
+
+.header {
+  margin-top: rem(5px);
+  margin-bottom: rem(20px);
+  font-weight: $font-weight-bold;
+  font-size: rem(30px);
+}
+
+.titleLg {
+  font-size: $font-size-title;
+  font-weight: $font-weight-bold;
+}
+
+.title {
+  margin-bottom: rem(20px);
+  font-weight: 600;
+  font-size: toRem(18);
+  line-height: toRem(24);
+  color: $bodyText;
+}
+
+.titleCard {
+  font-size: $font-size-sub-title;
+  font-weight: $font-weight-bold;
+  min-height: rem(50px);
+}
+
+.card {
+  margin-bottom: 0px;
+  padding: rem(12px);
+  background-color: $backgroundCard;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid $grayBorder;
+}
+
+.marginLeft {
+  margin-left: rem(16px);
+}
+
+.totalCardKyc {
+  font-size: rem(42px);
+  font-weight: $font-weight-bold;
+  color: map.get($theme_colors, "kycStatistics");
+}
+.totalCardKyb {
+  font-size: rem(42px);
+  font-weight: $font-weight-bold;
+  color: map.get($theme_colors, "kybStatistics");
+}
+.totalCardKyt {
+  font-size: rem(42px);
+  font-weight: $font-weight-bold;
+  color: map.get($theme_colors, "kytStatistics");
+}
+
+.kycStatus {
+  align-items: center;
+  margin-bottom: rem(24px);
+  font-size: $font-size-sub-title;
+}
+.kybStatus {
+  align-items: center;
+  margin-bottom: rem(24px);
+  font-size: $font-size-sub-title;
+}
+
+.parameter {
+  font-size: rem(14px);
+  text-align: center;
+}
+.kytHeaderParameter {
+  font-size: rem(14px);
+  text-align: center;
+  margin-left: -5px;
+}
+
+.assetContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftContainer {
+  padding-right: rem(24px);
+}
+
+.staffContainer {
+  text-align: center;
+  margin-top: rem(24px);
+}
+
+.bodyItem {
+  margin-bottom: rem(18px);
+}
+
+.bodyContainer {
+  margin-top: rem(24px);
+}
+
+.assignee {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  margin-right: rem(16px);
+}
+
+.bodyAssignee {
+  display: flex;
+}
+
+.assigneeAvatar {
+  width: 27px;
+  height: 27px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.scoreTitle {
+  font-weight: 600;
+  font-size: toRem(18);
+  line-height: toRem(24);
+  color: $bodyText;
+  margin-bottom: toRem(28);
+}
+
+.statisticCard {
+  :global(.MuiGrid-item) {
+    &:first-child {
+      padding-right: toRem(12);
+    }
+    &:last-child {
+      padding-left: toRem(12);
+    }
+  }
+  .title {
+    margin-bottom: toRem(16);
+  }
+
+  .card {
+    padding: toRem(22) toRem(32);
+    background: $disabledBg;
+    border: 0;
+    border-radius: 8px;
+  }
+
+  .titleCard {
+    font-weight: 500;
+    line-height: toRem(24);
+    text-align: left;
+    color: $grayText;
+  }
+
+  .totalCard {
+    font-weight: bold;
+    font-size: toRem(52);
+    line-height: toRem(64);
+    margin-bottom: toRem(7);
+    text-align: left;
+
+    &.totalCardKyc {
+      color: map.get($dashBoard, "kyc");
+    }
+
+    &.totalCardKyb {
+      color: map.get($dashBoard, "kyb");
+    }
+
+    &.totalCardKyt {
+      color: map.get($dashBoard, "kyt");
+    }
+  }
+}
+
+.statusCard {
+  .parameter {
+    font-weight: 500;
+    font-size: toRem(14);
+    line-height: toRem(20);
+    color: $grayText;
+    text-align: left;
+  }
+
+  > :global(.RegCard-body) {
+    padding: 0 !important;
+  }
+
+  .title {
+    margin-bottom: toRem(24);
+  }
+}
+
+.statusItem {
+  margin-bottom: toRem(28);
+  display: flex;
+  align-items: center;
+
+  .titleStatus {
+    font-weight: 500;
+    font-size: toRem(14);
+    line-height: toRem(20);
+    color: $bodyText;
+    padding-right: toRem(16);
+  }
+
+  .barStatus {
+    padding-right: toRem(12);
+  }
+
+  .parameter {
+    color: $bodyText;
+    text-align: left;
+  }
+}
+
+.kytStatusCard {
+  padding-right: toRem(8);
+  :global(.RegCard-body > .MuiGrid-container),
+  :global(.RegScrollbarView > .MuiGrid-container) {
+    padding-right: toRem(16);
+  }
+
+  :global(.RegScrollbarVTrack) {
+    right: toRem(0);
+  }
+
+  :global(.RegScrollbarVThumb) {
+    background-color: $grayLight;
+  }
+}

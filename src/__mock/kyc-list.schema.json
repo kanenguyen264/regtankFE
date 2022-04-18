@@ -1,0 +1,146 @@
+{
+  "type": "array",
+  "minItems": 30,
+  "maxItems": 40,
+  "items": {
+    "$ref": "#/definitions/kyt"
+  },
+  "definitions": {
+    "keyword": {
+      "type": "object",
+      "required": ["text", "color"],
+      "properties": {
+        "text": {
+          "type": "string",
+          "faker": {
+            "random.arrayElement": [["PEP", "LF", "AM", "FR","SA"]]
+          }
+        },
+        "color": {
+          "type": "string",
+          "faker": {
+            "internet.color": [88, 88, 88]
+          }
+        }
+      }
+    },
+    "kytNote": {
+      "type": "object",
+      "required": ["note", "createdAt"],
+      "properties": {
+        "note": {
+          "type": "string",
+          "faker": {
+            "lorem.sentences": [3]
+          }
+        },
+        "createdAt": {
+          "type": "string",
+          "faker": {
+            "date.recent": [10]
+          }
+        }
+      }
+    },
+    "kyt": {
+      "type": "object",
+      "required": [
+        "id",
+         "checked",
+        "risk",
+        "reference",
+        "name",
+        "dob",
+        "geo",
+        "keywords",
+        "nationality",
+        "avatar",
+        "status",
+        "createdBy",
+        "lastModified"
+      ],
+    
+      "properties": {
+        "id": {
+          "type": "string",
+          "faker": {
+            "fake":"KYC{{random.number}}"
+          }
+        },
+         "nationality": {
+          "type": "string",
+          "faker": {
+            "address.countryCode": [2]
+          }
+        },
+        "checked": {
+          "type": "boolean",
+          "faker": "random.boolean"
+        },
+        "risk": {
+          "type": "number",
+          "faker": {
+            "random.number": [
+              {
+                "min": 1,
+                "max": 100
+              }
+            ]
+          }
+        },
+        "reference": {
+          "type": "string",
+          "faker": {
+            "random.alphaNumeric": [8]
+          }
+        },
+        "name": {
+          "type": "string",
+          "faker": "name.findName"
+        },
+        "dob": {
+          "type": "string",
+          "faker": {
+            "date.past": [30]
+          }
+        },
+         "createdBy": {
+          "type": "string",
+          "faker": {
+            "date.past": [30]
+          }
+        },
+         "lastModified": {
+          "type": "string",
+          "faker": {
+            "date.past": [30]
+          }
+        },
+        "geo": {
+          "type": "string",
+          "faker": {
+            "address.countryCode": [2]
+          }
+        },
+        "keywords":{
+          "type":"array",
+          "minItems":0,
+          "maxItems": 3,
+          "items": {
+            "$ref": "#/definitions/keyword"
+          }
+        },
+         "avatar": {
+        "type": "string",
+          "faker": "image.imageUrl"
+        },
+         "status":{
+         "type": "string",
+         "faker": {
+                        "random.arrayElement": [["Completed", "Unresolved","Pending Scoring"]]
+          }
+        }
+      }
+    }
+  }
+}

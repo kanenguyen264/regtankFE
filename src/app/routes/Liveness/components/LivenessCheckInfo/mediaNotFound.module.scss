@@ -1,0 +1,16 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.mediaNotFoundWrapper {
+  width: toRem(336);
+  height: toRem(203);
+  background-color: $grayBorder;
+  padding-top: toRem(65);
+  text-align: center;
+  .icon {
+    height: 40px;
+  }
+  .description {
+    color: $grayText;
+    font-size: toRem(14);
+  }
+}

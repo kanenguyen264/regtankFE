@@ -1,0 +1,48 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.container {
+  &:not(:empty) {
+    margin-top: toRem(20);
+  }
+}
+
+.item {
+  position: relative;
+  font-size: toRem(14);
+  font-weight: 400;
+  line-height: toRem(18);
+  color: #606e7b;
+
+  strong {
+    color: #606e7b;
+    font-weight: 700;
+  }
+
+  &:not(:first-child) {
+    margin-left: toRem(8);
+    padding-left: toRem(12);
+    &::before {
+      content: "";
+      display: inline-block;
+      border-radius: 50%;
+      margin-right: toRem(8);
+      width: toRem(4);
+      height: toRem(4);
+      background: #c4c4c4;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translatey(-50%);
+    }
+  }
+}
+
+.icon {
+  width: toRem(20);
+  height: auto;
+  margin-right: toRem(8.5);
+
+  path {
+    stroke: #95A1AC;
+  }
+}

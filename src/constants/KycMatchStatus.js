@@ -1,0 +1,5 @@
+export const KYC_MATCHES = {
+  POSITIVE: "POSITIVE",
+  UNRESOLVED: "UNRESOLVED",
+  FALSE: "FALSE"
+};

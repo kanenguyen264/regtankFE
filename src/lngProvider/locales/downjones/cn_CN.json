@@ -1,0 +1,15 @@
+{
+  "dj.match.detail.Deceased": "死者",
+  "appModule.filter.DJ/PEP": "政治公眾人物 - PEP",
+  "appModule.filter.DJ/RCA": "親戚或親密夥伴 - RCA",
+  "appModule.filter.DJ/SAN": "制裁名單 - SAN",
+  "appModule.filter.DJ/OOL": "其他官方列表 - OOL",
+  "appModule.filter.DJ/SI": "特殊興趣人士 - SI",
+  "appModule.filter.DJ/SI-LT": "特殊興趣人士下限 - SI-LT",
+  "setting.generalSettings.dj.credit.title": "由於這是一個免費的 <br /> 30 天試用期，因此不會扣除任何積分。",
+  "dj.screen.tooltip.rescreening": "启用此选项可根据风险评估重新筛选此实体。<br /><br />有关详细信息，请参阅<b>设置 > 道琼斯 KYC</b>。",
+  "dj.screen.tooltip.rescreening.disabled": "存档列表中的筛选无法使用此功能",
+  "djkyc.import.template.instruction.dateOfBirth": "DD / mm / yyyy。如果使用出生年份范围，则停用",
+  "djkyc.import.template.instruction.yearOfBirth": "yyyy  -  yyyy。如果使用出生日期，请停用。",
+  "djkyc.import.template.instruction.strictDateMatch": "真实|假（如果保持空白，则为假）。如果使用出生年份范围，则停用"
+}

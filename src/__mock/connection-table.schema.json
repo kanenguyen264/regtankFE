@@ -1,0 +1,74 @@
+{
+  "type": "array",
+  "minItems": 30,
+  "maxItems": 40,
+  "items": {
+    "$ref": "#/definitions/connectionobj"
+  },
+  "definitions": {
+    "keyword": {
+      "type": "object",
+      "required": ["text", "color"],
+      "properties": {
+        "text": {
+          "type": "string",
+          "faker": {
+            "fake": "AB"
+          }
+        },
+        "color": {
+          "type": "string",
+          "faker": {
+            "internet.color": [220,239,220]
+          }
+        }
+      }
+    },
+    "connectionobj": {
+      "type": "object",
+      "required": [
+        "id",
+         "name",
+        "connection",
+        "keywords",
+        "pep"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "faker": {
+            "fake":"KYC{{random.number}}"
+          }
+        },
+        "name": {
+          "type": "string",
+          "faker": "name.findName"
+        },
+        "connection": {
+          "type": "string",
+          "faker": "name.findName"
+        },
+       
+        "keywords":{
+          "type":"array",
+          "minItems":0,
+          "maxItems": 3,
+          "items": {
+            "$ref": "#/definitions/keyword"
+          }
+        },
+         "pep": {
+          "type": "number",
+          "faker": {
+             "random.number": [
+              {
+                "min": 1,
+                "max": 10
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

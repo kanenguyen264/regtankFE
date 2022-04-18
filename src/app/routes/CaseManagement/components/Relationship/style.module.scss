@@ -1,0 +1,68 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.relationship {
+  &_body {
+    width: 100%;
+  }
+
+  hr {
+    background: $grayText1;
+  }
+
+  &_item {
+    display: flex;
+    padding: toRem(10) toRem(17);
+    justify-content: space-between;
+    background: $white;
+    align-items: center;
+    min-height: toRem(91);
+    border-left: 4px solid $primary;
+
+    > span {
+      font-weight: 500;
+      font-size: toRem(16);
+      line-height: toRem(20);
+      color: rgba(35, 35, 35, 0.9);
+    }
+    &:not(:last-child) {
+      margin-bottom: toRem(16);
+    }
+  }
+
+  &_number {
+    font-weight: 600;
+    font-size: toRem(30);
+    line-height: toRem(37);
+    color: #3ba873;
+    margin-right: toRem(11);
+  }
+
+  &_associations {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: toRem(12);
+    line-height: toRem(20);
+    color: $grayText;
+  }
+
+  :global(.RegCard-body) {
+    align-items: flex-start;
+    background: #fbfbfb;
+    min-height: toRem(345);
+  }
+
+  &__empty {
+    :global(.RegCard-body) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-weight: 500;
+      font-size: toRem(12);
+      line-height: toRem(20);
+      text-align: center;
+      color: $grayText;
+    }
+  }
+}

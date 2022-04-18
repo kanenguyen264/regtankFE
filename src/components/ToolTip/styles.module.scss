@@ -1,0 +1,155 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+@mixin wTooltip {
+  width: auto;
+}
+
+.tooltipWrapper {
+  padding-left: rem(10px);
+  padding-right: rem(10px);
+
+  svg {
+    min-width: rem(25px);
+  }
+}
+
+.contentToolTip {
+  color: $white;
+  .contentShort {
+    padding-left: 5px;
+    font-size: toRem(14);
+    p {
+      font-size: toRem(14);
+    }
+  }
+  .headerTitle {
+    font-size: rem(16px);
+    font-weight: 500;
+    font-weight: rem(24px);
+    margin-bottom: 8px;
+  }
+  .content {
+    font-size: rem(14px);
+    line-height: 1.6;
+    padding-left: 5px;
+    .subtext1 {
+      padding-left: 0;
+      p {
+        display: none;
+      }
+    }
+  }
+  .headerTitleContent {
+    font-size: rem(14px);
+    font-weight: 500;
+    padding-bottom: rem(16px);
+  }
+  .maxHeightContent {
+    @include wTooltip;
+    overflow: hidden;
+  }
+  .minHeightContent {
+  }
+  .readMore {
+    cursor: pointer;
+    margin-top: rem(10px);
+    font-size: rem(12px);
+    font-weight: 700;
+    line-height: 16px;
+  }
+  .lineHeight {
+    line-height: 1;
+  }
+
+  .tooltipWithScrollbar {
+    margin-right: rem(-18px);
+  }
+  .tooltipDownJonesWithScrollbar {
+    margin-right: rem(-18px);
+  }
+  .vCustomScrollBarTrack {
+    position: absolute;
+    width: 6px;
+    right: 10px;
+    bottom: 3px;
+    top: 15px;
+    border-radius: 3px;
+  }
+
+  .vCustomScrollBarThumb {
+    background-color: $default;
+    border-radius: 100px;
+  }
+
+  .rvScrollBar {
+    margin-right: -18px !important;
+    margin-bottom: -18px !important;
+    padding-right: rem(18px);
+  }
+
+  .tooltipItemsLvl1 {
+    list-style-type: none;
+    padding-left: 0 !important;
+    li {
+      margin-bottom: rem(16px);
+      position: relative;
+      color: #b9b9b9;
+      padding-left: 13px;
+      &:before {
+        content: " ";
+        display: block;
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        left: 0;
+        background-color: #b9b9b9;
+        border-radius: 50%;
+        top: rem(8.5px);
+      }
+    }
+  }
+  .tooltipDJItemsLvl1 {
+    :global(.MuiTypography-root) {
+      font-size: toRem(14);
+      font-weight: 400;
+    }
+    list-style-type: none;
+    padding-left: 0 !important;
+    li {
+      position: relative;
+      color: #cdd0da;
+      padding-left: 13px;
+      &:before {
+        content: " ";
+        display: block;
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        left: 0;
+        background-color: #b9b9b9;
+        border-radius: 50%;
+        top: rem(8.5px);
+      }
+    }
+  }
+
+  .tooltipItemsLvl2 {
+    font-size: toRem(12);
+    font-weight: 400;
+    margin-left: -13px;
+
+    span {
+      display: block;
+      color: #cdd0da;
+      line-height: toRem(20);
+    }
+  }
+}
+
+.showLess {
+  .tooltipItemsLvl1 > li {
+    color: #cdd0da;
+  }
+}
+.tooltipCustom {
+}

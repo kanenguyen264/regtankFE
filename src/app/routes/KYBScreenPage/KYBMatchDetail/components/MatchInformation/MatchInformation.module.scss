@@ -1,0 +1,254 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+$gutter: toRem(26);
+
+.CardHeaderTitle {
+  font-size: toRem(21);
+  padding-left: toRem(20);
+  padding-right: toRem(20);
+}
+.CardHeaderTitleSafari {
+  font-size: toRem(18);
+  padding-left: toRem(20);
+  padding-right: toRem(20);
+}
+@media (min-width: 1920px) {
+  .CardHeaderTitleSafari {
+    font-size: toRem(21);
+    padding-left: toRem(20);
+    padding-right: toRem(20);
+  }
+}
+
+.CardHeaderName {
+  font-size: toRem(21);
+  font-weight: 600;
+}
+
+.CardContainer {
+  width: 100%;
+  padding: 0px !important;
+  margin: 0px;
+  min-height: toRem(910);
+  display: flex;
+  flex-direction: column;
+}
+.HeaderCustom {
+  background-color: white;
+  padding-top: toRem(23);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10;
+  padding-bottom: toRem(18);
+}
+.BodyBackground {
+  padding-bottom: toRem(20);
+  padding-left: toRem(25) !important;
+  padding-right: toRem(25) !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+.PaddingUserID {
+  padding-top: toRem(15);
+  padding-bottom: toRem(15);
+}
+.Container {
+  // padding-top: toRem(16);
+  // :global(.MuiSwitch-root) {
+  //   margin-left: 0px;
+  // }
+  :global(.MuiGrid-item) {
+    &:nth-last-child(-n + 2) {
+      border-bottom: unset !important;
+    }
+    &:nth-child(3) {
+      min-height: toRem(56);
+    }
+    min-height: toRem(52);
+    border-bottom: 1px solid $borderTable;
+    display: flex;
+    align-items: center;
+  }
+}
+:global(.MuiTypography-Subtitle2) {
+  line-height: toRem(20);
+}
+.IconButtonStyle {
+  margin-left: calc(#{toRem(11)} - 12);
+  margin-top: toRem(-12);
+  margin-bottom: toRem(-12);
+}
+.MarginLeftIconButtonStyle {
+  margin-left: toRem(30);
+}
+
+.buttonComment {
+  background-color: #606981;
+  border-radius: 3px;
+  color: white;
+}
+.TextOverFlow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.flexRow {
+  flex-direction: row;
+  display: flex;
+}
+.flexCenter {
+  margin-top: toRem(-20) !important;
+}
+.iconCopyStyle {
+  display: contents;
+}
+.flexEnd {
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex: 1;
+  display: flex !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+.noteGroup {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.iconCenter {
+  align-items: center !important;
+  justify-content: center !important;
+  display: flex;
+  flex: 1;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.flexGrow {
+  flex-grow: 1;
+}
+
+.NewNote {
+  margin-top: toRem(17);
+  border-top: 1px solid #c2c2c2;
+  padding-top: toRem(25);
+  height: calc(100% - 20px);
+}
+
+.copyIcon {
+  button {
+    position: absolute;
+    top: -10px;
+    svg {
+      height: toRem(16.37);
+      width: toRem(17.12);
+    }
+  }
+}
+
+.assigneeBottom {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20;
+}
+.livenessApproved {
+  color: #4caf50;
+  font-size: toRem(16);
+  font-weight: 500;
+}
+@media (max-width: 767) {
+  .assigneeBottom {
+    position: relative;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1025px) {
+  .assigneeBottom {
+    position: relative;
+  }
+}
+.JRCardBorder {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.hr {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.MatchContainer {
+  :global(.RegCard-body) {
+    padding-bottom: 0px;
+  }
+  & :global(.headerCardCol) {
+    width: 50%;
+  }
+  & > :global(.RegCard-body) {
+    padding-top: toRem(16);
+  }
+}
+.lastChild {
+  border-bottom: unset !important;
+}
+
+.copyButton {
+  &:hover {
+    svg {
+      path:nth-child(2) {
+        fill: unset !important;
+      }
+    }
+  }
+  svg {
+    float: left;
+    width: toRem(18.33);
+    height: toRem(18.33);
+    font-size: toRem(18.33);
+    position: relative;
+    top: toRem(3);
+    & > path {
+      stroke: $success;
+    }
+    & > rect {
+      fill: $success;
+    }
+  }
+}
+.noteButton {
+  min-width: toRem(40);
+  padding: toRem(7);
+  svg {
+    width: toRem(24);
+    height: toRem(24);
+  }
+}
+.noteButtonActive {
+  min-width: toRem(40);
+  border: 1px solid $primary;
+  padding: toRem(7);
+  svg {
+    width: toRem(24);
+    height: toRem(24);
+  }
+}
+.noteContainer {
+  :global(.RegCard-root) {
+    border: unset;
+  }
+}
+.textOm {
+  & b {
+    font-weight: 600;
+  }
+}
+.itemRescreening {
+  color: red;
+  :global(.MuiSwitch-root) {
+    border: unset;
+  }
+}
+.filterSearch {
+  background-color: #f9f9fa !important;
+}

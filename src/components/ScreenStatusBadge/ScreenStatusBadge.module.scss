@@ -1,0 +1,74 @@
+@import "~@protego/sdk/styles/global/_global-dir";
+
+.KeywordWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Root {
+  display: flex;
+  flex-wrap: nowrap;
+  background: rgba(45, 57, 89, 0.2);
+  border: 1px solid rgba(45, 57, 89, 0.1);
+  border-radius: 100px;
+  color: #1e2844;
+  padding: rem(5px) rem(13px);
+  align-items: center;
+  font-size: rem(14px);
+}
+
+.Badge {
+  background-color: white;
+  min-width: rem(24px);
+  border-radius: 100px;
+  color: #464646;
+  margin-left: 6px;
+  text-align: center;
+  font-size: rem(14px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: rem(2px) rem(8px);
+  font-weight: 500;
+  display: flex;
+  -webkit-justify-content: center;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+}
+
+.status-UNRESOLVED {
+  padding-top: rem(3px);
+  padding-bottom: rem(3px);
+  padding-right: rem(5px);
+}
+
+.status-NO_MATCH {
+  background: rgba(254, 192, 41, 0.2);
+  border: 1px solid rgba(254, 192, 41, 0.1);
+  color: #805b01;
+}
+
+.status-COMPLETED {
+  background: rgba(135, 0, 255, 0.17);
+  border: 1px solid rgba(135, 0, 255, 0.07);
+  color: #4f0194;
+}
+
+.status-POSITIVE_MATCH {
+  background: rgba(0, 128, 255, 0.2);
+  border: 1px solid rgba(0, 128, 255, 0.1);
+  color: #004e9b;
+}
+
+.status-APPROVED {
+  background: rgba(0, 204, 105, 0.2);
+  border: 1px solid rgba(0, 204, 105, 0.1);
+  color: #01572c;
+}
+
+.status-REJECTED {
+  background: rgba(238, 47, 65, 0.18);
+  border: 1px solid rgba(238, 47, 65, 0.08);
+  color: #a20e1c;
+}

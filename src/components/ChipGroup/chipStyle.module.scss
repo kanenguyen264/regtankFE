@@ -1,0 +1,10 @@
+@import "~@protego/sdk/styles/global/_global-dir";
+.mgChip {
+  margin-right: rem(8px);
+  margin-bottom: rem(8px);
+}
+.chipDelete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

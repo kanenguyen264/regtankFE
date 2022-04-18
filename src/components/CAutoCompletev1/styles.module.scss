@@ -1,0 +1,221 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.TextField {
+  label {
+    font-weight: 500;
+    font-size: toRem(12);
+    line-height: toRem(16);
+    color: $default;
+    transform: translate(0, 1.5px) scale(1);
+    letter-spacing: toRem(0.2);
+  }
+  :global(.MuiInput-underline) {
+    &:before {
+      border-bottom: 1px solid $grayLight;
+    }
+    &:after {
+      border-bottom: 2px solid $primary;
+    }
+    &:global(.Mui-error):after {
+      border-color: $errorBorder;
+    }
+    &:hover {
+      &:before {
+        border-bottom: 1px solid #95a1ac;
+      }
+    }
+    :global(.MuiAutocomplete-popupIndicator) {
+      color: $defaultLight;
+    }
+  }
+  :global(.MuiAutocomplete-endAdornment) {
+    :global(.MuiAutocomplete-popupIndicatorOpen) {
+      color: $primary;
+    }
+  }
+  :global(.Mui-error) {
+    :global(.MuiAutocomplete-endAdornment) {
+      :global(.MuiAutocomplete-popupIndicatorOpen) {
+        color: $errorBorder;
+      }
+    }
+    :global(.MuiAutocomplete-popupIndicator) {
+      color: $errorBorder;
+    }
+    :global(.MuiInputBase-input) {
+      -webkit-text-fill-color: $mainBlackText;
+      &::placeholder {
+        color: $mainBlackText;
+        opacity: 1;
+      }
+    }
+  }
+  :global(.MuiInputBase-input) {
+    padding: toRem(8) 0 toRem(6);
+    font-size: toRem(14);
+    color: #232323;
+    &::placeholder {
+      font-weight: 400;
+      font-size: toRem(14);
+      line-height: toRem(20);
+      color: $defaultLight;
+      letter-spacing: toRem(0.1);
+    }
+  }
+  :global(.Mui-focused) label {
+    color: #0080ff;
+  }
+
+  :global(.Mui-error),
+  .errorMsg {
+    color: $errorBorder;
+  }
+
+  :global(.MuiFormHelperText-root) {
+    font-weight: 500;
+    font-size: toRem(12);
+    line-height: toRem(16);
+    margin-top: 4px;
+  }
+}
+
+.paper {
+  background-color: $white;
+  width: 100%;
+  overflow: hidden;
+
+  :global(.RegScrollbarVTrack) {
+    right: 8px;
+    width: 6px !important;
+    > div {
+      background: $grayBorder;
+    }
+  }
+
+  :global(.MuiAutocomplete-listbox) {
+    overflow: unset;
+
+    li {
+      cursor: pointer;
+      font-weight: 500;
+      font-size: toRem(12);
+      line-height: toRem(16);
+      letter-spacing: toRem(0.12);
+      color: $defaultDark;
+      padding: toRem(12) toRem(16) !important;
+
+      :global(.MuiOutlinedInput-root) {
+        height: toRem(48);
+      }
+
+      :global(.MuiAvatar-root) {
+        margin-right: toRem(12);
+        position: relative;
+        overflow: visible;
+        &:before {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 100%;
+          box-sizing: content-box;
+          position: absolute;
+          padding: 1px;
+          transform-origin: 0 0;
+          border-radius: 50%;
+          box-shadow: 0 0 0 1px $primary;
+          transition: opacity 0.3s ease-in-out;
+          opacity: 0;
+        }
+      }
+
+      &:hover {
+        background-color: $itemHover;
+        :global(.reg-MuiUserAvatar-description) {
+          color: $primary;
+        }
+        :global(.MuiAvatar-root::before) {
+          opacity: 1;
+        }
+        :global(.MuiAvatar-root:before) {
+          opacity: 1;
+        }
+      }
+      &:global(.Mui-focused) {
+        background-color: $itemHover !important;
+        color: $primary;
+      }
+    }
+  }
+
+  :global(.RegCAutoComplete-chips) {
+    &:not(:empty) {
+      margin-top: toRem(16);
+    }
+    :global(.MuiChip-root) {
+      margin: 0 8px 0 0;
+      background-color: $white;
+      border: 1px solid $primaryExtraLight;
+      border-radius: 24px;
+      height: 24px;
+    }
+
+    :global(.MuiChip-label) {
+      font-weight: 500;
+      font-size: toRem(12);
+      line-height: toRem(16);
+      color: $primary;
+      padding: 0 8px;
+    }
+
+    :global(.MuiChip-deleteIcon) {
+      width: auto;
+      margin-left: 2px;
+      svg {
+        transform: scale(1.6);
+      }
+    }
+  }
+}
+.disableSearch {
+  :global(.MuiInputBase-input) {
+    -webkit-text-fill-color: $mainBlackText;
+  }
+}
+
+.chipsWrap {
+  &:not(:empty) {
+    margin-top: toRem(16);
+  }
+  :global(.MuiChip-root) {
+    margin: 0 8px 0 0;
+    background-color: $white;
+    border: 1px solid $primaryExtraLight;
+    border-radius: 24px;
+    height: 24px;
+  }
+
+  :global(.MuiChip-label) {
+    font-weight: 500;
+    font-size: toRem(12);
+    line-height: toRem(16);
+    color: $primary;
+    padding: 0 8px;
+  }
+
+  :global(.MuiChip-deleteIcon) {
+    width: auto;
+    margin-left: 2px;
+    svg {
+      transform: scale(1.6);
+    }
+  }
+}
+
+.addItem {
+  :global(.optionText) {
+    font-size: toRem(12);
+    line-height: toRem(16);
+    color: $primary;
+    font-weight: 500;
+  }
+}

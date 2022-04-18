@@ -1,0 +1,11 @@
+@import "~@protego/sdk/styles/global/_global-dir";
+
+.PieChart {
+  display: flex;
+  align-items: center;
+}
+.LegendIcon {
+  width: rem(18px);
+  height: rem(18px);
+  border-radius: rem(3px);
+}

@@ -1,0 +1,16 @@
+@import "~@protego/sdk/styles/global/_global-dir";
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(18px);
+  line-height: rem(20px);
+  color: $bodyText;
+  padding: rem(24px);
+  margin-bottom: unset;
+  border-bottom: 1px solid $grayText1;
+}
+.djkycJrCard {
+  padding: unset;
+}

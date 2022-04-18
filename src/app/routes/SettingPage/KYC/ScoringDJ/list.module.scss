@@ -1,0 +1,12 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+.riskAssementSettingDJ {
+  margin-top: toRem(24);
+  border-radius: toRem(8);
+  .TabsRoot {
+    border: unset !important;
+    border-radius: 0 !important;
+  }
+  :global(.titleHeaderTabs) {
+    border-bottom: 1px solid $grayText1;
+  }
+}

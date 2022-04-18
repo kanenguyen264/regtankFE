@@ -1,0 +1,14 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+.cleanMargin {
+  margin: 0px;
+}
+
+.cleanPadding {
+  padding: 0px !important;
+}
+
+.wrapperSwitchFormControl {
+  :global(.MuiFormControlLabel-labelPlacementEnd){
+    margin-left: toRem(-32) !important;
+  }
+}

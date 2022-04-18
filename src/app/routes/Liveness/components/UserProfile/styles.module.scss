@@ -1,0 +1,75 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+.containerBox {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	margin-left: toRem(-24);
+	width: calc(100% + #{toRem(24)});
+}
+.itemBox {
+	width: 20%;
+	margin-bottom: toRem(24);
+	margin-left: toRem(24);
+	width: calc(20% - #{toRem(24)});
+}
+.titleBox {
+	font-weight: 500;
+	font-size: toRem(12);
+	line-height: 16px;
+	letter-spacing: 0.12px;
+	color: $grayText;
+}
+.valueBox {
+	color: $bodyText;
+	font-weight: normal;
+	font-size: toRem(14);
+	line-height: 20px;
+	letter-spacing: 0.1px;
+	margin-top: toRem(6);
+	word-break: break-all;
+	:global(span) {
+		color: $bodyText;
+		font-weight: normal;
+		font-size: toRem(14);
+		line-height: 20px;
+		letter-spacing: 0.1px;
+		word-break: break-all;
+		margin: 0;
+	}
+}
+.copyTextBox {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	:global(.MuiCopyButton-copyButton) {
+		&:hover {
+			svg path {
+				fill: unset !important;
+			}
+		}
+	}
+}
+.copyButton {
+	:global(.MuiTypography-titleForm) {
+		color: $primary;
+	}
+	svg {
+		width: toRem(18);
+		height: toRem(18);
+	}
+}
+.userProfileBox {
+	:global(.RegCard-header *) {
+		font-weight: 600;
+		font-size: toRem(18);
+		line-height: 20px;
+		letter-spacing: 0.2px;
+		color: $bodyText;
+	}
+	:global(.RegCard-body) {
+		padding-top: 0px !important;
+	}
+	:global(.MuiDivider-root) {
+		border-color: $grayText1;
+	}
+}

@@ -1,0 +1,391 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.filter {
+  &_list {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 toRem(20);
+  }
+
+  &_txt {
+    margin-right: toRem(20);
+    font-weight: 500;
+    font-size: toRem(14);
+    line-height: toRem(20);
+    color: rgba(35, 35, 35, 0.7);
+  }
+
+  &_fields {
+    display: flex;
+    align-items: center;
+    > :global(.MuiFormControl-root):not(:last-child) {
+      margin-right: toRem(16);
+    }
+  }
+
+  &_chips {
+    display: flex;
+    flex-wrap: wrap;
+    &:not(:empty) {
+      padding: toRem(9) 0 0;
+    }
+  }
+
+  &_chip {
+    border: 1px solid #90c8ff;
+    border-radius: 24px;
+    padding: toRem(4) toRem(8);
+    background: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #0080ff;
+    margin: 2px 0;
+    &:not(:last-child) {
+      margin-right: toRem(8);
+    }
+
+    :global(.MuiSvgIcon-root) {
+      font-size: toRem(16);
+      margin-left: toRem(10);
+      cursor: pointer;
+    }
+  }
+
+  //Select type
+
+  .selectType {
+    background-color: $white;
+    border: 1px solid $borderButton;
+    border-radius: 6px;
+    cursor: pointer;
+    height: toRem(40);
+
+    > :global(.MuiOutlinedInput-root) {
+      display: flex;
+      align-items: center;
+
+      legend {
+        display: none;
+      }
+      > :global(.MuiSelect-select) {
+        color: rgba(35, 35, 35, 0.7);
+        padding: toRem(8) toRem(31) toRem(8) toRem(8);
+        height: 0;
+        cursor: pointer;
+        span {
+          font-size: toRem(16);
+          line-height: toRem(20);
+        }
+
+        margin-bottom: 0;
+      }
+
+      > :global(.MuiSvgIcon-root) {
+        width: toRem(12);
+        height: auto;
+        position: absolute;
+        right: toRem(8);
+        cursor: pointer;
+        pointer-events: none;
+        path {
+          fill: rgba(35, 35, 35, 0.7);
+        }
+      }
+
+      > :global(.MuiOutlinedInput-notchedOutline) {
+        display: none;
+      }
+    }
+  }
+}
+
+.selectType_popover {
+  margin-top: 6px;
+  box-shadow: 0 0 8px rgba(37, 40, 43, 0.12) !important;
+  border-radius: 8px !important;
+  min-width: toRem(144) !important;
+
+  :global(.MuiList-root) {
+    padding: toRem(8) 0;
+  }
+
+  .selectType_item {
+    padding: 0 toRem(16);
+    font-weight: 500;
+    font-size: toRem(12);
+    display: flex;
+    justify-content: flex-start;
+    line-height: toRem(16);
+    background-color: $white !important;
+    color: $defaultDark;
+    :global(.MuiFormControlLabel-root) {
+      margin-right: 0;
+      margin-left: -11px;
+    }
+    &:hover {
+      color: $primary;
+      background-color: rgba(0, 128, 255, 0.04) !important;
+    }
+  }
+}
+
+.userType_popover {
+  margin-top: 6px;
+  box-shadow: 0 0 8px rgba(37, 40, 43, 0.12);
+  border-radius: 8px;
+  width: toRem(300) !important;
+
+  :global(.MuiList-root) {
+    padding: toRem(16) 0 0 0;
+  }
+
+  .userType_item {
+    padding: toRem(5) toRem(18);
+    font-weight: 500;
+    font-size: toRem(12);
+    line-height: toRem(16);
+    color: $defaultDark;
+    &:hover {
+      background-color: rgba(0, 128, 255, 0.04);
+      color: $primary;
+    }
+
+    :global(.MuiFormControlLabel-root) {
+      margin-right: 0;
+    }
+
+    :global(.MuiTouchRipple-root) {
+      display: none;
+    }
+  }
+
+  .userType_item__search {
+    padding: 0 toRem(14);
+    margin-bottom: toRem(16);
+    background-color: $white !important;
+  }
+
+  :global(.search-bar) {
+    width: 100%;
+    :global(.form-group) {
+      min-width: auto;
+
+      :global(.form-control) {
+        min-height: toRem(48);
+        padding-left: toRem(44) !important;
+        padding-right: toRem(20);
+        &::placeholder {
+          color: $disabledColor;
+          font-size: toRem(14);
+        }
+      }
+    }
+
+    :global(.search-icon) {
+      left: toRem(18) !important;
+      :global(.MuiSvgIcon-root) {
+        width: toRem(20);
+        fill: $white;
+      }
+    }
+  }
+
+  .vCustomScrollBarTrack {
+    margin-right: 4px;
+  }
+}
+
+// @import "~@protego/sdk/styles/global/_global-dir";
+// $gutter: rem(26px);
+
+// .headerTitle {
+//   font-size: rem(21px) !important;
+//   padding-top: rem(20px);
+//   padding-left: rem(20px);
+//   border-bottom: 1px solid #f4f4f4;
+//   padding-bottom: rem(20px);
+//   color: #252525;
+// }
+.JRCardStyle {
+  :global(.RegCard-body) {
+    padding: 0;
+  }
+}
+
+.itemContent {
+  padding-left: rem(20px);
+  padding-bottom: rem(10px);
+  padding-top: rem(10px);
+}
+
+.marginTop {
+  margin-top: -1rem !important;
+}
+.textDateTime {
+  color: #9e9e9e !important;
+  font-size: 1rem !important;
+}
+.Link {
+  color: #3f51b5 !important;
+  cursor: pointer;
+  svg {
+    margin-right: rem(9.4px);
+    height: rem(16.37px);
+    width: rem(17.12px);
+    margin-top: rem(-6px);
+  }
+}
+.Ids {
+  @include table-cell-lines(1);
+  width: rem(100px);
+  height: rem(22px);
+}
+.TextLink {
+  color: green !important;
+}
+.textActivityDateTime {
+  color: #9e9e9e;
+  font-size: rem(15px);
+  font-weight: 400;
+}
+.FilterButton {
+  min-width: rem(104px);
+  height: rem(40px);
+  white-space: nowrap;
+}
+.FilterButtonSelect {
+  min-width: rem(240px);
+  height: rem(40px);
+  white-space: nowrap;
+  color: #7e7e7e;
+}
+.Popover {
+  border-radius: rem(5px);
+  :global(.MuiCardContent-root) {
+    padding: rem(16px) rem(24px);
+  }
+  :global(.MuiFormGroup-row) {
+    margin-top: rem(-8.5px);
+  }
+  hr {
+    background-color: #bfbfbf;
+    margin: {
+      top: rem(18.5px);
+      bottom: rem(18.5px);
+    }
+  }
+
+  &.NameFilter {
+    :global(.MuiAutocomplete-popper) {
+      width: 100% !important;
+    }
+    :global(.MuiCardContent-root) {
+      padding: rem(16px);
+    }
+    :global(.MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"]) {
+      padding: 2px;
+    }
+  }
+}
+.checkBoxStyle {
+  color: #0080ff;
+}
+.formStyle {
+  padding-right: rem(16px);
+  padding-top: rem(16px);
+  padding-bottom: rem(16px);
+  overflow: hidden;
+}
+.formStyleStaff {
+  padding-bottom: rem(16px);
+  overflow: hidden;
+}
+.popoverContainer {
+  max-height: 100px;
+  overflow-y: auto;
+}
+.popoverBody {
+  height: 50px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  padding-left: rem(16px);
+  padding-right: rem(16px);
+}
+.textOverflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  padding-left: rem(16px);
+}
+
+.textLabel {
+  font-weight: 500;
+  padding-bottom: rem(6px);
+  padding-top: rem(6px);
+}
+
+.labelList {
+  padding-left: rem(24px);
+}
+@media (min-width: 1366px) {
+  .labelList {
+    padding-left: rem(22px);
+  }
+}
+@media (min-width: 1920px) {
+  .labelList {
+    padding-left: rem(16px);
+  }
+}
+.textBold {
+  // font-weight: 500;
+}
+.FilterActionButton {
+  font-weight: 500;
+  background-color: #ffffff;
+  font-size: rem(14px);
+  color: #484f60;
+  border-radius: 5px;
+}
+.mr8 {
+  margin-right: rem(8px);
+}
+.chipPadding {
+  margin: 0 rem(8px) rem(8px) 0;
+}
+.btnOutlined {
+  background-color: #ffffff;
+  color: #0080ff;
+  border: 1px solid #0080ff;
+  svg path {
+    fill: #0080ff;
+  }
+}
+.itemContainer {
+  padding-left: 0px;
+  padding-right: 0px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.itemAuditContainer {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.itemPadding {
+  padding-right: rem(20px);
+  padding-bottom: rem(10px);
+  padding-top: rem(10px);
+}
+.FilterButtonContained {
+  font-weight: 500;
+  min-width: rem(104px);
+  height: rem(40px);
+  background: white;
+  color: #7a7a7a;
+  border: 1px solid #e6e6e6;
+  font-size: rem(14px);
+  padding: 0 rem(12px) 0 rem(12px);
+}

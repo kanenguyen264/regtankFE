@@ -1,0 +1,36 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+.CustomCollWrapper {
+  display: flex;
+  margin-left: 52px;
+  margin-top: toRem(13);
+  .headerCell {
+    margin-bottom: toRem(3);
+  }
+  .riskScoreCell {
+    width: toRem(140);
+    // background-color: khaki;
+    margin-left: toRem(4);
+  }
+  .refIDCell {
+    width: toRem(148);
+    // background-color: rgb(32, 105, 19);
+  }
+  .assigneeCell {
+    width: toRem(156);
+    // background-color: rgb(240, 222, 140);
+  }
+  .lastModifyCell {
+    width: toRem(150);
+  }
+  .avatarAssign {
+    div {
+      margin: unset !important;
+    }
+  }
+  .CellText {
+    color: #656565;
+    font-weight: normal;
+    line-height: 26px;
+    font-style: normal;
+  }
+}

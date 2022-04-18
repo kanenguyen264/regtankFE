@@ -1,0 +1,119 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+.dialogWrapper {
+  .headerPopup {
+    background: #0080ff;
+    padding-left: rem(20px);
+    padding-right: rem(20px);
+  }
+  .label {
+    color: #606E7B;
+    font-size: rem(12px);
+    opacity: 0.8;
+  }
+  .text {
+    color: #232323;
+    font-size: rem(14px);
+  }
+  .updateBy {
+    color: #21A453;
+    font-size: rem(14px);
+    line-height: 20px;
+  }
+  .textTitle {
+    font-size: rem(21px);
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .noteContent {
+    color: #252525;
+    font-size: rem(14px);
+    line-height: rem(20px);
+  }
+  .contentHeight {
+    height: rem(540px);
+    padding: 0px;
+  }
+  .dialogContent {
+    padding-top: rem(23px);
+    padding-left: rem(20px);
+    padding-right: rem(8px);
+  }
+  .icActivityLog {
+    padding-right: rem(8px);
+  }
+  .viewMore {
+    color: #0080ff;
+    cursor: pointer;
+    padding-left: rem(5px);
+    font-size: rem(14px);
+  }
+  .textNote {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    word-break: break-word;
+  }
+  .collapsed {
+    overflow: hidden;
+  }
+  .expanded {
+    overflow: visible;
+    height: auto;
+    white-space: inherit;
+  }
+  
+  .breakWord {
+    word-break: break-word;
+  }
+  .gridItem {
+    margin-top: rem(6px);
+  }
+  .itemContent {
+    margin-bottom: rem(24px);
+  }
+  .itemNote {
+    padding-top: rem(16px);
+  }
+  .dividerPadding {
+    padding-top: rem(15px);
+    :global(.MuiDivider-root) {
+      border-bottom: 1px solid $grayText1;
+    }
+  }
+  :global(.MuiPaper-root) {
+    width: toRem(746);
+    max-width: toRem(800);
+  }
+
+  /* scroll bar */
+  /* width */
+  ::-webkit-scrollbar {
+    width: toRem(6);
+    position: relative;
+    right: 5px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: toRem(5);
+    width: toRem(20);
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ECEEF0;
+    border-radius: 10px;
+    width: toRem(6);
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ECEEF0;
+  }
+  :global(.MuiDialogContent-root) {
+    margin-right: toRem(6);
+  }
+}

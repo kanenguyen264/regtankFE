@@ -1,0 +1,53 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.headerPopup {
+  background: #0080ff;
+  padding-left: rem(32px);
+  font-size: rem(21px);
+}
+.label {
+  color: #232323;
+  font-size: rem(16px);
+  margin-bottom: rem(8px);
+  font-style: normal;
+  font-weight: normal;
+}
+.contentHeight {
+  height: rem(540px);
+}
+.icActivityLog {
+  margin-right: rem(8px);
+}
+.viewMore {
+  color: #0080ff;
+  cursor: pointer;
+}
+.textNote {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.dropdownButton {
+  color: #232323 !important;
+  box-shadow: none;
+  border: 1px solid #e6e6e6 !important;
+  background-color: #ffffff !important;
+  font-weight: normal !important;
+  svg{
+    fill: #232323 !important;
+  }
+  font-weight: normal;
+  &:hover {
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    box-shadow: none;
+  }
+  width: 100%;
+  font-size: rem(16px) !important;
+}
+
+.DialogWrap{
+  position: absolute !important;
+}

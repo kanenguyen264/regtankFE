@@ -1,0 +1,132 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+.editForm {
+  .editForm_addField {
+    min-width: toRem(283);
+    height: toRem(52);
+    background: #f9f9fa !important;
+    font-weight: 500;
+    font-size: toRem(12);
+    line-height: toRem(20);
+    border: 1px dashed #dbdde0;
+    color: rgba(35, 35, 35, 0.9) !important;
+    svg {
+      width: toRem(20);
+      margin-right: toRem(4);
+    }
+  }
+  .editForm_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  :global(.MuiFormControl-root) {
+    width: 100%;
+  }
+
+  :global(.MuiInput-underline) {
+    :global(.MuiInputBase-input) {
+      padding-top: toRem(6);
+      padding-bottom: toRem(8);
+    }
+    &:before {
+      border-width: 1px !important;
+    }
+  }
+
+  :global(.RegCard-body) {
+    min-height: toRem(315);
+    max-height: toRem(315);
+  }
+
+  .editForm_btn {
+    min-width: toRem(40);
+    height: toRem(40);
+    display: inline-block;
+    padding: 0;
+    border-radius: 6px;
+
+    :global(.MuiSvgIcon-root) {
+      width: toRem(16);
+    }
+  }
+
+  .editForm_btn__cancel {
+    border: 1px solid #f4f4f6;
+  }
+
+  .editForm_btn__save {
+    background: #0080ff;
+    margin-left: toRem(16);
+  }
+
+  .editDetailBtn {
+    border-radius: toRem(4.5);
+    border: 1.125px solid #F4F4F6;
+  }
+
+  .editForm_wrap {
+    display: flex;
+  }
+
+  .editForm_fixed {
+    max-width: toRem(280);
+    margin-right: toRem(50);
+    :global(.MuiFormControl-root) {
+      height: toRem(78);
+      margin-bottom: toRem(-7);
+    }
+  }
+
+  .styles_TextField {
+    width: 100%;
+
+    :global(.MuiInputLabel-shrink) {
+      color: $default;
+    }
+  }
+
+  .editForm_deleteField {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    width: toRem(20);
+  }
+
+  .editForm_dynamicItem {
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      grid-column-start: 1;
+    }
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      grid-column-start: 2;
+      grid-row-start: 1;
+      margin-left: toRem(50);
+    }
+  }
+  .copyButton {
+    &:hover {
+      svg {
+        path:nth-child(2) {
+          fill: unset !important;
+        }
+      }
+    }
+    svg {
+      float: left;
+      width: toRem(18.33);
+      height: toRem(18.33);
+      font-size: toRem(18.33);
+      position: relative;
+      top: toRem(3);
+    }
+  }
+  .AssignSelect {
+    border-top: toRem(1) solid #F4F4F6;
+    padding: rem(15px) rem(20px);
+    margin-top: toRem(-68);
+  }
+}

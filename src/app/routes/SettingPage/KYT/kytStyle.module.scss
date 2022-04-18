@@ -1,0 +1,39 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+@import "../SettingsPage.module.scss";
+
+.kytSettingWrapper {
+  .tableCustom {
+    background: #ffffff;
+    border: 1px solid #f4f4f6;
+    border-radius: 8px;
+    :global(.MuiTableCell-head) {
+      background: #fcfcfc;
+      border-bottom: 1px solid #f4f4f6;
+    }
+    :global(.MuiTableCell-body) {
+      border-bottom: 1px solid #f4f4f6;
+    }
+    .footerTable {
+      padding: toRem(32) toRem(24) toRem(28) toRem(24);
+    }
+    .inputScore {
+      width: toRem(184);
+      :global(.MuiInput-root) {
+        height: toRem(48);
+        input {
+          height: toRem(48);
+        }
+      }
+    }
+    .riskLevelCol {
+      width: toRem(320);
+    }
+    .scoreCol {
+      width: toRem(500);
+    }
+    .tableCellDescription {
+      color: #000000;
+      font-weight: normal;
+    }
+  }
+}

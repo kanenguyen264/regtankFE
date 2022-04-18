@@ -1,0 +1,71 @@
+$primary-dark-theme: #e0e0e0 !default;
+$secondary-dark-theme: lighten($primary-dark-theme, 3%);
+$dark-theme-text: #e0e0e0 !default;
+
+.staff-detail-avatar {
+  padding: 1rem;
+  padding-bottom: 2rem;
+  background-color: #f4f4f7;
+}
+.staff-detail-input {
+  margin: 2rem;
+}
+.jrcard-custom {
+  padding: 0px;
+  margin: 0px;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.text-footer-description {
+  color: #7e7e7e !important;
+}
+.backstyle {
+  margin-top: -0.6rem;
+  padding-left: 0.8rem;
+  padding-bottom: 10px;
+}
+.circleButtonshadow {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+.circleButton {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+.arrowback {
+  flex: 1;
+  display: flex;
+  padding-left: 0.8rem;
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+.flex-center-start {
+  flex: 1;
+  align-items: flex-end;
+  justify-content: flex-start;
+  display: flex;
+}
+.flex-end {
+  flex: 1;
+  align-items: flex-end;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.color-picker-palette {
+  position: absolute;
+  z-index: 1;
+}
+.color-picker-cover {
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}

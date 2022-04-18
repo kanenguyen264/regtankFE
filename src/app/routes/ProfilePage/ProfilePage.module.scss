@@ -1,0 +1,192 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+$focusColor: $primary;
+
+.SectionCommon > div {
+  display: flex;
+}
+.iconIputPassword {
+  visibility: hidden;
+}
+.buttonSize {
+  width: rem(180px);
+}
+.Link {
+  color: $primary;
+  cursor: pointer;
+  svg {
+    margin-top: rem(-6px);
+  }
+}
+.fCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btnVerify {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  background-color: $primary;
+  color: $white;
+}
+.textCode {
+  font-weight: 500;
+}
+.qrCodeBorder {
+  display: flex;
+  justify-content: center;
+  border: 2px solid $gainsboro;
+  border-radius: 5px;
+  padding: 6px;
+}
+.icAuthy {
+  width: rem(60px);
+  height: rem(65px);
+}
+.disableDiv {
+  :global(.MuiInputLabel-root) {
+    color: $default;
+  }
+
+  input + fieldset {
+    border-color: $grayLight !important;
+  }
+
+  input {
+    pointer-events: none;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: toRem(16);
+  margin-top: toRem(-14);
+}
+.profileHeader {
+  display: flex;
+  min-width: toRem(390);
+  justify-content: center;
+  margin-top: toRem(48);
+}
+.jrCardContainer {
+  :global(.RegCard-body) {
+    padding: 0px !important;
+  }
+}
+.profileContent {
+  border-left: 1px solid $grayText1;
+  padding-bottom: toRem(24);
+}
+.profileTitle {
+  padding-bottom: toRem(24);
+  padding-left: toRem(24);
+  padding-top: toRem(22);
+  border-bottom: 1px solid $grayText1;
+  margin-bottom: toRem(22);
+}
+.contentInfo {
+  padding-left: toRem(24);
+  padding-right: toRem(24);
+}
+
+.titleAvatar {
+  font-weight: 600;
+  font-size: toRem(65);
+  line-height: 1;
+  color: $disabledBg;
+}
+.avatar {
+  width: toRem(200);
+  height: toRem(200);
+}
+.required {
+  color: $errorBorder;
+}
+.lastEditText {
+  color: $black;
+}
+
+.inputAdornment {
+  height: toRem(40);
+  z-index: 1000;
+  position: relative;
+}
+.textField {
+  display: block;
+  position: relative;
+  label {
+    font-weight: 500;
+    font-size: toRem(12);
+    line-height: toRem(16);
+    color: $default;
+    transform: translate(0, 1.5px) scale(1);
+    letter-spacing: toRem(0.2);
+  }
+
+  :global(.MuiSvgIcon-root) {
+    path {
+      fill: $defaultLight;
+    }
+  }
+
+  :global(.Mui-focused .MuiInputLabel-root .MuiFormLabel-root) {
+    color: $primary;
+  }
+
+  :global(.MuiInput-underline) {
+    &:before {
+      border-bottom: 1px solid $grayLight;
+    }
+    &:after {
+      border-bottom: 2px solid $primary;
+    }
+    &:global(.Mui-error):after {
+      border-color: $errorBorder;
+    }
+    &:hover {
+      &:before {
+        border-bottom: 1px solid $default;
+      }
+    }
+  }
+
+  :global(.MuiInputBase-input) {
+    &:disabled {
+      color: $disabledColor;
+      background-color: $white;
+    }
+    padding: toRem(8) 0 toRem(6);
+    font-size: toRem(14);
+    color: $bodyText;
+    &::placeholder {
+      font-weight: 400;
+      font-size: toRem(14);
+      line-height: toRem(20);
+      color: $defaultLight;
+      letter-spacing: toRem(0.1);
+      opacity: 1;
+    }
+  }
+  :global(.MuiFormHelperText-root) {
+    margin-left: 0;
+    position: absolute;
+    margin-top: 6px !important;
+    top: calc(100%);
+    left: 0;
+    width: 100%;
+    margin-left: 0 !important;
+  }
+
+  .required {
+    color: $errorBorder;
+  }
+  :global(.Mui-error),
+  .errorMsg {
+    color: $errorBorder;
+  }
+}
+
+.iconBack {
+  color: $bodyText;
+  padding: 0;
+}

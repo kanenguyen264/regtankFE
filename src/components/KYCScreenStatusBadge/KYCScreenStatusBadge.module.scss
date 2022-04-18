@@ -1,0 +1,35 @@
+@import "~@protego/sdk/styles/global/_global-dir";
+
+.KeywordWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Root {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #3f51b5;
+  border-radius: rem(18px);
+  color: #ffffff;
+  padding: rem(6px) rem(13px);
+  align-items: center;
+}
+.Badge {
+  background-color: white;
+  min-width: rem(20px);
+  height: rem(20px);
+  border-radius: rem(10px);
+  color: black;
+  margin-left: rem(6px);
+  text-align: center;
+  font-size: 0.9rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0 rem(3.5px);
+}
+.approve {
+  background-color: #53be4d;
+}
+.reject {
+  background-color: #f9374a;
+}

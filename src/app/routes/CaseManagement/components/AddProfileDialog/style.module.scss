@@ -1,0 +1,16 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.profileWrapper {
+    :global(.MuiDialogContent-root) {
+        padding-right: toRem(4);
+        box-sizing: content-box;
+    }
+    :global(.MuiTable-root) {
+        padding-right: toRem(11);
+    }
+}
+
+.customScrollbarView {
+    padding-left: 2px;
+    padding-right: 2px;
+}

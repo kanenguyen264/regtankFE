@@ -1,0 +1,10 @@
+{
+  "notifications.assignedToYou": "分配给您",
+  "notification.click.remove": "點擊刪除通知",
+  "notification.timeout.title": "會話提醒即將過期",
+  "notification.timeout.content": "您的會話即將到期。你想繼續嗎？",
+  "notification.session.expired": "會話已過期，請重新登錄",
+  "notification.bulkAssign": "<b>{assigner}</b> 分配 <b>{total} {title}</b> 给你",
+  "notifications.escalated": "<b>{assigner}</b> 将 <b>{title}</b> 给您 ",
+  "notifications.kycMonitor": "<b>{name}</b>已被更新，由于持续的监视活动。 立即解决 "
+}

@@ -1,0 +1,372 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+.KYTScreenPage {
+  :global {
+    .fade-enter {
+      opacity: 0;
+    }
+    .fade-exit {
+      opacity: 1;
+    }
+    .fade-enter-active {
+      opacity: 1;
+    }
+    .fade-exit-active {
+      opacity: 0;
+    }
+    .fade-enter-active,
+    .fade-exit-active {
+      transition: opacity 125ms;
+    }
+  }
+  :global(.RegCard-root) {
+    box-shadow: unset;
+  }
+  .searchWalletFormWrapper {
+    margin-bottom: toRem(24);
+    :global(.RegCard-header) {
+      font-size: toRem(18);
+      color: #232323;
+      font-weight: 600;
+    }
+  }
+}
+%colorRed {
+  //background-color: #ea2134;
+  //border-color: #ea2134;
+  color: #ea2134;
+}
+%colorGreen {
+  //background-color: #4CAF4F;
+  //border-color: #4CAF4F;
+  color: #4caf4f;
+}
+%colorGrey {
+  //background-color: #e4e4e4;
+  //border-color: #e4e4e4;
+  color: #252525;
+}
+.SearchForm {
+  composes: d-flex from global;
+  margin: {
+    left: rem(-7.5px);
+    right: rem(-7.5px);
+  }
+  > * {
+    padding: {
+      left: rem(7.5px);
+      right: rem(7.5px);
+    }
+    flex: 1 1 auto;
+  }
+  :global(.Mui-error) {
+    padding: {
+      left: rem(7.5px);
+    }
+  }
+  > :last-child {
+    flex-grow: 0;
+  }
+  :global(.MuiInputBase-root) {
+    height: rem(50px);
+  }
+  .Submit {
+    width: rem(150px);
+    margin-top: 22px;
+  }
+}
+.RiskScore {
+  @extend %colorRed;
+  border-radius: rem(8px);
+  text-align: center;
+  [data-score] {
+    font-size: rem(41px);
+  }
+  color: white;
+  padding: rem(20px) rem(15px);
+  p {
+    margin-bottom: rem(3px);
+  }
+  &.Small {
+    border-radius: rem(6px);
+    [data-score] {
+      font-size: 1rem;
+    }
+    padding: rem(9px);
+    width: rem(38px);
+  }
+}
+.WalletDetail {
+  composes: d-flex justify-content-between flex-grow-1 from global;
+  > * {
+    flex: 1 1 auto;
+  }
+  small {
+    font-size: rem(12px);
+    color: #606E7B !important;
+  }
+  p {
+    color: #232323;
+  }
+}
+@mixin wallet-detail2-info($pseudo) {
+  &,
+  & + div {
+    font-size: rem(14px);
+    color: #7a7a7a;
+    margin: {
+      left: rem(47px);
+      right: rem(47px);
+    }
+  }
+  & + div {
+    [data-number] {
+      @extend %#{$pseudo};
+      font-weight: 500;
+      display: block;
+    }
+  }
+}
+.CurrentBalance {
+  @include wallet-detail2-info(colorGrey);
+}
+.Received {
+  @include wallet-detail2-info(colorGreen);
+}
+.Sent {
+  @include wallet-detail2-info(colorRed);
+}
+.Table {
+  :global(.MuiTableCell-head) {
+    background-color: white;
+  }
+  tr :global(.MuiTableCell-root) {
+    &:first-child {
+      padding-left: rem(20px);
+    }
+    &:last-child {
+      padding-right: rem(20px);
+    }
+  }
+  .Ids {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-all;
+    height: rem(44px);
+    &.Received {
+      color: #3f51b5;
+    }
+  }
+}
+
+.SplitVBar {
+  width: rem(14px);
+  height: 1px;
+  background-color: #808080;
+  margin-top: rem(45px / 2);
+}
+.DialogContentRoot {
+  //padding: rem(45px) rem(60px);
+  padding: rem(8px) rem(24px);
+  width: (569vw/19.2);
+  .ListItemTextPrimary {
+    line-height: (23/17);
+    margin-bottom: rem(11px);
+  }
+}
+.DialogContainer .DialogActionsRoot {
+  padding: rem(8px) rem(24px) {
+    bottom: rem(24px);
+  }
+  .DialogButtonRoot {
+    padding: rem(15px) rem(36px);
+  }
+}
+
+//new design
+.ExportButton {
+  // margin-left: rem(16px);
+}
+.RiskDescription {
+  margin-top: rem(16px);
+  padding: {
+    left: rem(15px);
+    right: rem(15px);
+  }
+  height: rem(37px);
+  border-radius: rem(37px/2);
+  color: white;
+  line-height: 2.15;
+}
+.TextKytMatrixBottom {
+  font-size: rem(14px);
+  color: #808080;
+  font-style: italic;
+}
+
+.AssigneeEditorInput {
+  margin: {
+    left: rem(14px);
+    top: rem(-2px);
+    bottom: rem(-2px);
+    right: rem(-10px);
+  }
+  width: rem(200px);
+  .AssigneeEditorInputUser {
+    margin-top: rem(-6px);
+    margin-bottom: rem(-6px);
+    margin-left: rem(-4px);
+  }
+}
+.textOverflow {
+  max-width: rem(110px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.maxHeighMenuPaperAssignee {
+  max-height: rem(500px);
+}
+.checkTransactionButton {
+  color: #fff;
+  background-color: #3f51b5;
+}
+.transaction {
+  vertical-align: top !important;
+  .MuiTableRow-root {
+    color: inherit;
+    display: table-row;
+    outline: 0;
+    vertical-align: top !important;
+  }
+}
+.titleMonitoring {
+  font-size: rem(12px);
+  font-weight: 500;
+  color: #95a1ac;
+}
+.title {
+  font-size: rem(21px);
+  font-weight: 500;
+}
+.cleanPadding {
+  margin-left: 0px !important;
+  padding: 0px !important;
+}
+.switchPaddingLeft {
+  padding-left: 0px !important;
+}
+.switchPl {
+  display: flex;
+  padding-left: 0px !important;
+}
+.switchStyle {
+  min-width: rem(379px);
+}
+.Link {
+  color: #0080ff !important;
+  cursor: pointer;
+  svg {
+    margin-right: rem(9.4px);
+    height: rem(16.37px);
+    width: rem(17.12px);
+    margin-top: rem(-6px);
+  }
+}
+.titleCard {
+  // margin-top: rem(32px);
+  // margin-bottom: rem(28px);
+}
+.boxSwitches {
+  padding: 0 !important;
+  box-shadow: none;
+  :global(.MuiSwitch-root) {
+    margin-left: rem(28px);
+  }
+}
+.titleSwitches {
+  height: rem(14px);
+}
+.assetOption {
+  font-size: rem(12px);
+}
+.editForm_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .titleHeader {
+    font-weight: 500;
+    color: #606e7b;
+    font-size: rem(14px);
+  }
+  .titleHeaderId {
+    font-weight: 600;
+    color: #232323;
+    font-size: rem(18px);
+  }
+  .assignee {
+    font-weight: 500;
+    color: #606e7b;
+    font-size: rem(12px);
+    margin-right: rem(5px);
+  }
+  .pdfButton {
+    background-color: #0080ff;
+  }
+  .pdfButton:hover {
+    background-color: #0080ff;
+  }
+}
+.noteContainer {
+  :global(.RegCard-header) {
+    padding-bottom: 0px;
+  }
+  :global(.RegCard-body) {
+    padding-top: 0px;
+  }
+  :global(.RegCard-root) {
+    overflow: visible;
+    border: 0;
+  }
+  padding-right: 0 !important;
+}
+.riskcoreView {
+  padding-right: 0 !important;
+}
+.noteRisk {
+  margin-bottom: 0;
+  .vScrollBarTrack {
+    right: toRem(6);
+  }
+}
+.fetchArea {
+  word-spacing: "1rem";
+  text-align: "right";
+}
+.fetchSelect {
+  // lineHeight: 1.7,
+  width: toRem(100);
+  text-align: "initial";
+}
+.submitButton {
+  width: toRem(150);
+}
+.lineHeight {
+  line-height: toRem(50);
+  margin-top: toRem(-15);
+  white-space: "nowrap";
+}
+.checkButton {
+  max-height: toRem(30);
+  font-size: "0.85em";
+}
+.ratingTop {
+  margin-top: toRem(-7);
+  height: toRem(50);
+}
+.dropdownButton {
+  justify-content: space-between !important;
+}

@@ -1,0 +1,23 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.countDownDialogWrapper {
+  :global(.MuiDialogContent-root) {
+    height: toRem(65);
+    width: toRem(600);
+  }
+  :global(.MuiButton-root) {
+    width: toRem(120);
+  }
+  .cancelButton {
+    width: toRem(150);
+  }
+  .okButton {
+    width: toRem(150);
+    margin-left: toRem(20);
+  }
+  .textCenter {
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+}

@@ -1,0 +1,40 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.btnIsReject {
+  background-color: #d44333 !important;
+  color: #ffffff !important;
+  &:hover {
+    background: #d44333;
+  }
+  border: #d44333 !important;
+  :global(.MuiButton-startIcon) {
+    top: 42% !important;
+  }
+}
+
+.btnPrimary {
+  height: rem(40px);
+  :global(.MuiButton-startIcon) {
+    top: 42% !important;
+  };
+  cursor: "default";
+}
+
+.btnIsApprove {
+  background-color: #55d05b !important;
+  color: #ffffff;
+  &:hover {
+    background: #55d05b;
+  }
+  &:disabled {
+    color: white;
+  }
+  margin-left: 0px;
+}
+.textViewLog {
+  cursor: pointer;
+  color: #0080ff;
+  font-size: rem(15px);
+  padding-left: rem(18px);
+  padding-right: rem(18px);
+}

@@ -1,0 +1,526 @@
+@import "~@protego/sdk/RegtankUI/v1/styles/global.scss";
+
+.CardHeaderContainer {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+.CardHeaderTitle {
+  display: flex;
+  flex-direction: column;
+}
+.CardHeaderName {
+  font-size: toRem(21);
+  font-weight: 600;
+}
+.TextDescription {
+  font-size: toRem(14);
+  color: #7a7a7a;
+}
+
+.StatusResolutionContainer {
+  padding: 0 !important;
+  padding-top: toRem(23) !important;
+  margin-bottom: toRem(5) !important;
+  border-top: 1px solid #f4f4f4;
+}
+.PageCommentContainer {
+  padding: 0 !important;
+  padding-top: toRem(23) !important;
+  margin-left: toRem(30) !important;
+  margin-bottom: toRem(5) !important;
+  border-top: 1px solid #f4f4f4;
+}
+.FullHeight {
+  min-height: toRem(470);
+}
+.PaddingUserID {
+  padding-top: toRem(15);
+  padding-bottom: toRem(15);
+}
+.PaddingTopText {
+  padding-top: toRem(10);
+}
+.IconButtonStyleLeft {
+  padding: 0;
+  margin: 0;
+  padding-left: 2px;
+}
+
+.BodyBackground {
+  padding-top: toRem(0);
+}
+
+.linkSrc {
+  cursor: pointer;
+  display: block;
+  word-break: break-word;
+  color: #0080ff;
+  &:hover {
+    text-decoration-thickness: 1px;
+    color: #0052a3;
+    text-decoration-color: #0052a3;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 2px;
+  }
+}
+
+.TextPossible {
+  color: #0080ff;
+}
+.AvatarStyle {
+  width: toRem(75) !important;
+  height: toRem(75) !important;
+}
+.KeywordStyle {
+  padding-left: toRem(20);
+  padding-right: toRem(20);
+  padding-top: toRem(4);
+  padding-bottom: toRem(4);
+  border-radius: toRem(12);
+  margin-right: toRem(10);
+  margin-top: toRem(4);
+  margin-bottom: toRem(4);
+  font-size: toRem(12) !important;
+}
+.KeywordWrap {
+  flex-wrap: wrap;
+  flex: 1;
+  display: flex;
+  align-items: center !important;
+}
+.ProfileHeight {
+  height: 100%;
+  flex-direction: column;
+}
+.ProfileTabContainer {
+  padding: 0px !important;
+  margin: 0px !important;
+  border-radius: 10;
+}
+.TableContent {
+  padding-left: toRem(23);
+  padding-right: toRem(23);
+  padding-top: toRem(20);
+  min-height: toRem(562);
+}
+@media (min-width: 768) {
+  .TableContent {
+    padding-left: toRem(23);
+
+    padding-top: toRem(20);
+    min-height: toRem(598);
+  }
+}
+@media (min-width: 1366px) {
+  .TableContent {
+    padding-left: toRem(23);
+    padding-right: toRem(23);
+    padding-top: toRem(20);
+    min-height: toRem(598);
+  }
+}
+@media (min-width: 1920px) {
+  .TableContent {
+    padding-left: toRem(23);
+    padding-right: toRem(23);
+    padding-top: toRem(20);
+    min-height: toRem(595);
+  }
+}
+.tabItem {
+  flex: 1;
+  font-size: toRem(14) !important;
+  background-color: #f4f4f4;
+  min-width: 0px !important;
+  max-width: 25% !important;
+}
+.tabItemActive {
+  color: #0080ff;
+  font-size: toRem(14) !important;
+  background-color: #ffffff;
+  flex: 1;
+  min-width: 0px !important;
+}
+.boxTabPanel {
+  border-bottom-left-radius: toRem(6);
+  border-bottom-right-radius: toRem(6);
+  background-color: #ffffff;
+  box-shadow: 0.5px 1px 5px 3px rgba(26, 26, 26, 0.1);
+}
+.tabContainer {
+  :global(.MuiTabs-indicator) {
+    background-color: white;
+  }
+  :global(.MuiTab-root) {
+    min-height: toRem(48);
+    @media (min-width: 600px) {
+      min-width: unset;
+    }
+  }
+  &:global(.MuiTabs-root) {
+    min-height: toRem(48);
+  }
+}
+.buttonStatus {
+  border-radius: toRem(25) !important;
+  color: white;
+  size: toRem(15);
+  background-color: #ea2134;
+  padding-left: toRem(50);
+  padding-right: toRem(50);
+  width: toRem(153);
+  margin-right: toRem(5);
+
+  &.Filter {
+    background: white;
+    border: 1px solid $primary;
+    color: $primary;
+    padding: {
+      left: toRem(13);
+      right: toRem(13);
+    }
+    border-radius: 4px;
+  }
+}
+.buttonStatusFalse {
+  border-radius: toRem(25) !important;
+  color: white;
+  size: toRem(15);
+  width: toRem(153);
+  background-color: #4caf4f;
+  padding-left: toRem(50);
+  padding-right: toRem(50);
+  margin-left: toRem(5);
+}
+.buttonGroup {
+  align-items: flex-start !important;
+  justify-content: flex-start;
+  display: flex;
+  flex: 1;
+  margin-top: toRem(25);
+}
+.buttonComment {
+  background-color: #606981;
+  border-radius: 3px;
+  color: white;
+  padding-left: toRem(12);
+  padding-right: toRem(12);
+  height: toRem(36);
+}
+.backIcon {
+  padding-left: toRem(10);
+  padding-top: 0;
+  margin-bottom: toRem(15);
+  margin-top: toRem(-15);
+}
+.PageHeading {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.buttonAddComment {
+  width: toRem(100);
+  height: toRem(36);
+}
+.notePadding {
+  padding-left: toRem(25) !important;
+  padding-right: toRem(25) !important;
+  padding-top: toRem(14) !important;
+  outline: none !important;
+  resize: none;
+}
+.NoteList {
+  max-height: toRem(400) !important;
+  overflow-x: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  > div {
+    padding: toRem(20) {
+      bottom: toRem(14);
+      left: 0;
+      right: 0;
+    }
+    border-top: 1px solid #e4e4e4;
+    :global(.MuiAvatar-root) {
+      width: toRem(40);
+      height: toRem(40);
+      font-size: toRem(17);
+    }
+  }
+}
+.JRCardComment {
+  margin-left: toRem(20);
+  margin-right: toRem(20);
+  margin-top: toRem(20);
+  padding-bottom: toRem(20) !important;
+  box-shadow: none !important;
+  border-top: 1px solid #c2c2c2;
+  border-right: 1px solid #c2c2c2;
+  border-left: 1px solid#C2C2C2;
+  border-bottom: 1px solid #c2c2c2;
+  min-height: 1px !important;
+}
+.textarea {
+  border-style: none;
+  border-color: Transparent;
+  overflow: auto;
+  width: 100%;
+  border: 0 !important;
+  font-size: 1rem;
+  ::placeholder {
+    font-size: 2rem !important;
+  }
+}
+.CommentContainer {
+  padding-bottom: toRem(10) !important;
+  width: 100%;
+  border-top: 0.5px solid #e4e4e4;
+}
+.ItemComment {
+  margin-left: toRem(20) !important;
+  margin-right: toRem(20) !important;
+}
+.textarea::placeholder {
+  font-size: 1torem;
+}
+.flag20 {
+  width: toRem(20) !important;
+  height: toRem(20) !important;
+}
+.FlagMargin {
+  width: toRem(20) !important;
+  height: toRem(20) !important;
+}
+.HeightFlag {
+  max-height: toRem(20) !important;
+}
+.DialogConfirmTitle {
+  color: #ea2134;
+  font-size: 1torem;
+  text-align: center;
+  padding-bottom: 1torem;
+  font-weight: 500;
+}
+.DialogRadioSelected {
+  color: #0080ff;
+}
+.DialogRadioSelectedGreen {
+  color: #4caf4f;
+  font-weight: 500;
+}
+.DialogConfirmButton {
+  padding-left: toRem(60);
+  padding-right: toRem(60);
+  margin-right: toRem(10);
+  margin-left: toRem(10);
+}
+
+.DialogCloseButton {
+  margin-top: toRem(30);
+  padding-left: toRem(80);
+  padding-right: toRem(80);
+  background-color: #a3a3a3 !important;
+}
+.GroupRadioStyle {
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+.DialogContainer {
+  padding-left: toRem(26) !important;
+  padding-right: toRem(26) !important;
+}
+.DialogActionContainer {
+  justify-content: center !important;
+  align-items: center !important;
+  padding-bottom: toRem(40) !important;
+}
+.ProgressContainer {
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: toRem(50);
+}
+.DialogHeaderAction {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.paddingButton {
+  padding-left: toRem(80);
+  padding-right: toRem(80);
+}
+.DialogHeaderBorderWidth {
+  background-color: white;
+  margin: 0 !important;
+  padding-right: toRem(25);
+  padding-left: toRem(25);
+  padding-top: toRem(23);
+  padding-bottom: toRem(23);
+  flex-direction: row;
+  display: flex;
+}
+.SourceTableContent {
+  padding-top: toRem(20);
+  min-height: toRem(390);
+}
+
+.borderKeyword {
+  background-color: #606981 !important;
+  border: 1px solid #606981 !important;
+  padding-left: toRem(20) !important;
+  padding-right: toRem(20) !important;
+  padding-top: toRem(4) !important;
+  padding-bottom: toRem(4) !important;
+  border-radius: toRem(12) !important;
+  margin-right: toRem(10) !important;
+  margin-top: toRem(4) !important;
+  margin-bottom: toRem(4) !important;
+  font-size: toRem(12) !important;
+  color: white;
+}
+.borderKeywordActive {
+  background-color: white !important;
+  border: 1px solid gray !important;
+  padding-left: toRem(20) !important;
+  padding-right: toRem(20) !important;
+  padding-top: toRem(4) !important;
+  padding-bottom: toRem(4) !important;
+  border-radius: toRem(12) !important;
+  margin-right: toRem(10) !important;
+  margin-top: toRem(4) !important;
+  margin-bottom: toRem(4) !important;
+  font-size: toRem(12) !important;
+}
+.KeywordWrapMargin {
+  padding-top: toRem(20) !important;
+  padding-bottom: toRem(20) !important;
+  padding-left: toRem(20);
+  border-bottom: 1px solid #e4e4e4 !important;
+}
+.iconCopyStyle {
+  margin-top: -1torem;
+  margin-bottom: -1torem;
+}
+.TextOverFlow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: toRem(332) !important;
+}
+.alignCenter {
+  align-items: center;
+  margin-top: toRem(4);
+}
+.alignEnd {
+  align-items: flex-end !important;
+  text-align: end !important;
+  justify-content: end !important;
+  background-color: green !important;
+}
+.dropdownBorder {
+  border-radius: 100px;
+}
+.dropDownPositiveSelect {
+  color: white !important;
+  border-radius: 100px;
+  background-color: #ea2134;
+}
+.dropDownFalseSelect {
+  background-color: #4caf4f !important;
+  border-radius: 100;
+  color: white;
+}
+.dropDownPositive {
+  color: #ea2134 !important;
+}
+.dropDownFalse {
+  color: #4caf4f !important;
+}
+.attachFileItem {
+  height: toRem(36) !important;
+  width: toRem(196) !important;
+  align-items: center !important;
+  display: flex;
+}
+.TableSource {
+  table-layout: fixed;
+}
+.disabledDiv {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.copyIcon {
+  button {
+    position: absolute;
+    top: -10px;
+    svg {
+      height: toRem(16.37);
+      width: toRem(17.12);
+    }
+  }
+}
+
+.toRemoveHoverButton {
+  a {
+    color: #7a7a7a;
+  }
+  a:hover,
+  button:hover {
+    color: #7a7a7a;
+    background: transparent;
+    text-decoration: none;
+  }
+}
+.tabContainerKYC {
+  background-color: #ffffff;
+  border-top-left-radius: toRem(10);
+  border-top-right-radius: toRem(10);
+}
+
+.tabCustom {
+  min-width: 0px !important;
+  width: 25% !important;
+}
+
+.userAvatarInMatch {
+  font-size: 28px;
+  line-height: 36px;
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+.ViewMore {
+  color: #1580fc;
+  font-size: toRem(17);
+  cursor: pointer;
+}
+.copyButton {
+  &:hover {
+    svg {
+      path:nth-child(2) {
+        fill: unset !important;
+      }
+    }
+  }
+  svg {
+    float: left;
+    width: toRem(18.33);
+    height: toRem(18.33);
+    font-size: toRem(18.33);
+    position: relative;
+    top: toRem(3);
+  }
+}
+.CardContainer {
+  border: unset;
+}
+.keywordStyle {
+  & span {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+}
